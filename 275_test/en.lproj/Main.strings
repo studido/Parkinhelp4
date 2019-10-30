@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "Welcome to ParkinHelp"; ObjectID = "Ae6-x9-aqg"; */
+"Ae6-x9-aqg.text" = "Welcome to ParkinHelp";
+
+/* Class = "UIButton"; normalTitle = "Sign in with Google"; ObjectID = "D24-Ki-hul"; */
+"D24-Ki-hul.normalTitle" = "Sign in with Google";
+
+/* Class = "UIButton"; normalTitle = "Sign in with Facebook"; ObjectID = "oTE-tN-xAO"; */
+"oTE-tN-xAO.normalTitle" = "Sign in with Facebook";
