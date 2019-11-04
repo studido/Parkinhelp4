@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//control the basic features of the menu page
 private let reuseIdentifier = "MenuOptionCell"
 class MenuController: UIViewController{
     // Mark: - Properties
@@ -24,7 +24,7 @@ class MenuController: UIViewController{
         configureTableView()
     }
     // Mark: - Handlers
-    
+    // set the features of the tables(buttons) of the menu page
     func configureTableView() {
         tableView = UITableView()
         tableView.delegate = self

@@ -51,6 +51,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
 
     }
 
+    //Call google sign in when user clicks on google sign in button
     @objc func signinUserUsingGoogle(_sender: UIButton) {
         // Do any additional setup after loading the view, typically from a nib.
         GIDSignIn.sharedInstance()?.uiDelegate = self
@@ -58,8 +59,11 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance()?.signIn()
     }
     
+    
+    
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
+            //Authenticate with firebase
             guard let authentication = user.authentication else { return }
             let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
             Auth.auth().signIn(with: credential) { (authResult, error) in

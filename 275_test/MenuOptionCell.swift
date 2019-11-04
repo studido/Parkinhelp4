@@ -5,7 +5,7 @@
 //  Created by MICHAEL on 2019-11-03.
 //  Copyright © 2019 MICHAEL. All rights reserved.
 //
-
+// thia class is going to manage the arrangement of the menu page
 import UIKit
 
 class MenuOptionCell: UITableViewCell {
@@ -28,10 +28,10 @@ class MenuOptionCell: UITableViewCell {
         return label
     }()
     // MARK: -Init
+    //set the menu color and button position
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
     {
         super.init(style:style, reuseIdentifier: reuseIdentifier)
-        
         backgroundColor = .darkGray
         
         addSubview(iconImageView)

@@ -5,7 +5,7 @@
 //  Created by MICHAEL on 2019-11-03.
 //  Copyright © 2019 MICHAEL. All rights reserved.
 //
-
+// this is the viewController to display the mainpage and the menu page
 import UIKit
 
 class ContainerController: UIViewController{
@@ -30,6 +30,7 @@ class ContainerController: UIViewController{
         
     }
     // Mark: - Handlers
+    //display the main menu
     func configureHomeController(){
         let homeController = HomeController()
         homeController.delegate = self
@@ -39,6 +40,7 @@ class ContainerController: UIViewController{
         addChild(centerController)
         centerController.didMove(toParent: self)
     }
+    //display the menu page
     func configureMenuController(){
         if menuController == nil{
             // adding the menu controller
@@ -49,6 +51,7 @@ class ContainerController: UIViewController{
             print("Did add menu controller..")
         }
     }
+    //set the position of the menu page
     func showMenuController(shouldExpand: Bool)
     {
         if shouldExpand
@@ -69,7 +72,7 @@ class ContainerController: UIViewController{
 }
 
 
-
+//it decides to display the main page or menu page
 extension ContainerController: HomeControllerDelegate {
     func handleMenuToggle(){
         

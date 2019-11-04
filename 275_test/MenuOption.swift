@@ -5,7 +5,7 @@
 //  Created by MICHAEL on 2019-11-03.
 //  Copyright © 2019 MICHAEL. All rights reserved.
 //
-
+//create the menu and put the labels inside 
 import UIKit
 
 enum MenuOption: Int,CustomStringConvertible {
@@ -26,10 +26,10 @@ enum MenuOption: Int,CustomStringConvertible {
     
     var image: UIImage {
         switch self {
-        case .myAccount: return UIImage(named: "ic_person_outline_white_2x") ?? UIImage()
-        case .Message: return UIImage(named: "ic_mail_outline_white_2x") ?? UIImage()
-        case .Notification: return UIImage(named: "ic_menu_white_3x") ?? UIImage()
-        case .aboutUs: return UIImage(named: "baseline_settings_white_24dp") ?? UIImage()
+        case .myAccount: return UIImage(named: "person") ?? UIImage()
+        case .Message: return UIImage(named: "mail") ?? UIImage()
+        case .Notification: return UIImage(named: "menu") ?? UIImage()
+        case .aboutUs: return UIImage(named: "settings") ?? UIImage()
         }
     }
     

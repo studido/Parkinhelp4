@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//set the fetures for the home page
 class HomeController: UIViewController{
     // Mark: - Properties
     
@@ -116,7 +116,7 @@ class HomeController: UIViewController{
         //print("Home Page Button testingggggggg")
         configureNavigationBar()
     }
-    
+    // tester for the buttons on the footer
     @objc func buttonClicked(_ : UIButton) {
         print("Button testing")
     }
@@ -133,7 +133,7 @@ class HomeController: UIViewController{
         navigationController?.navigationBar.barTintColor = .darkGray
         navigationController?.navigationBar.barStyle = .black
         navigationItem.title = "Statistic"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "ic_menu_white_3x").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "menu").withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(handleMenuToggle))
     }
     
 }

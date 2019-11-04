@@ -9,7 +9,7 @@
 import UIKit
 
 class SurveyViewController: UIViewController {
-
+    //reference the UIs, connect them with codes
     @IBOutlet weak var FirstName: UITextField!
     @IBOutlet weak var Height: UITextField!
     @IBOutlet weak var DateofBirth: UITextField!
@@ -26,8 +26,9 @@ class SurveyViewController: UIViewController {
     @IBOutlet weak var EmergencyCNumber: UITextField!
     @IBOutlet weak var ContactRelation: UITextField!
     
-    
+    //reference the button, connect it with codes
     @IBAction func Done(_ sender: Any) {
+        //after click the button, go to MainMenu page
         let surveyView: UIStoryboard = UIStoryboard(name: "MainMenu", bundle: nil)
         let mainMenuView = surveyView.instantiateViewController(withIdentifier: "MainMenu") as! ContainerController
         self.present(mainMenuView, animated:false, completion: nil)
@@ -37,6 +38,7 @@ class SurveyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //initialize their value
         FirstName.delegate = self as? UITextFieldDelegate
         Height.delegate = self as? UITextFieldDelegate
         DateofBirth.delegate = self as? UITextFieldDelegate
@@ -54,7 +56,10 @@ class SurveyViewController: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    //this function cooperates with function ViewController : UITextFieldDelegate, to allow user hide the keyboard after enter some value
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         Age.resignFirstResponder()
         Weight.resignFirstResponder()
         Gender.resignFirstResponder()
@@ -71,6 +76,7 @@ class SurveyViewController: UIViewController {
         ContactRelation.resignFirstResponder()
     }
 }
+
 extension ViewController : UITextFieldDelegate{
         
         func textFieldShouldReturn(_ textField: UITextField) -> Bool{
