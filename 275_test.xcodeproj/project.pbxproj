@@ -20,6 +20,11 @@
 		993139D1236BBF24008802A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 993139D0236BBF24008802A9 /* GoogleService-Info.plist */; };
 		99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 99767344236FC49900C544C5 /* 275_test.xcworkspace */; };
 		997673A3236FE86A00C544C5 /* Survey in Resources */ = {isa = PBXBuildFile; fileRef = 997673A2236FE86900C544C5 /* Survey */; };
+		A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EE923701EE1008B4F96 /* background.jpg */; };
+		A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EEB237024B4008B4F96 /* frame.jpg */; };
+		A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EED23702B3B008B4F96 /* white.jpg */; };
+		A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E952370CDEE0070E1A4 /* Survey.storyboard */; };
+		A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,12 @@
 		9934D225236BCD3D0036F20F /* unnamed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = unnamed.jpg; path = ../../../Downloads/unnamed.jpg; sourceTree = "<group>"; };
 		99767344236FC49900C544C5 /* 275_test.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = 275_test.xcworkspace; sourceTree = SOURCE_ROOT; };
 		997673A2236FE86900C544C5 /* Survey */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Survey; sourceTree = "<group>"; };
+		A48E4EE923701EE1008B4F96 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		A48E4EEB237024B4008B4F96 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
+		A48E4EED23702B3B008B4F96 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
+		A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4E00E952370CDEE0070E1A4 /* Survey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
+		A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
 		C8649A0543F3749D9A9311D6 /* Pods-275_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-275_test.release.xcconfig"; path = "Target Support Files/Pods-275_test/Pods-275_test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +108,9 @@
 				348983052368F6D400C623F2 /* 275_testTests */,
 				348983102368F6D400C623F2 /* 275_testUITests */,
 				348982EF2368F6D200C623F2 /* Products */,
+				A48E4EED23702B3B008B4F96 /* white.jpg */,
+				A48E4EEB237024B4008B4F96 /* frame.jpg */,
+				A48E4EE923701EE1008B4F96 /* background.jpg */,
 				34BB20B2236BBAD3001379EE /* unnamed.jpg */,
 				EA894B148B64BEBB311C1605 /* Pods */,
 				6B8728FA4FB590EBC464F22A /* Frameworks */,
@@ -116,12 +130,15 @@
 		348982F02368F6D200C623F2 /* 275_test */ = {
 			isa = PBXGroup;
 			children = (
+				A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */,
 				997673A2236FE86900C544C5 /* Survey */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
 				348982F32368F6D200C623F2 /* ViewController.swift */,
 				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
+				A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */,
 				34BB20AE236BB846001379EE /* Main.storyboard */,
+				A4E00E952370CDEE0070E1A4 /* Survey.storyboard */,
 				348982F82368F6D400C623F2 /* Assets.xcassets */,
 				348982FA2368F6D400C623F2 /* LaunchScreen.storyboard */,
 				993139D0236BBF24008802A9 /* GoogleService-Info.plist */,
@@ -277,6 +294,10 @@
 				348982F92368F6D400C623F2 /* Assets.xcassets in Resources */,
 				997673A3236FE86A00C544C5 /* Survey in Resources */,
 				34BB20B3236BBAD3001379EE /* unnamed.jpg in Resources */,
+				A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */,
+				A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */,
+				A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */,
+				A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */,
 				34BB20AF236BB846001379EE /* Main.storyboard in Resources */,
 				99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */,
 			);
@@ -347,6 +368,7 @@
 			files = (
 				34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */,
 				348982F42368F6D200C623F2 /* ViewController.swift in Sources */,
+				A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */,
 				348982F22368F6D200C623F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

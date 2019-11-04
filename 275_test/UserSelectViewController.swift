@@ -13,13 +13,22 @@ import GoogleSignIn
 class UserSelectViewController: UIViewController {
 
     @IBOutlet weak var DoctorButton: UIButton!
+    
     @IBOutlet weak var PatientButton: UIButton!
     @IBOutlet weak var SignOut: UIButton!
+    
+    @IBOutlet weak var Registerlabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         DoctorButton.layer.cornerRadius = 15
+        DoctorButton.layer.borderColor = UIColor.black.cgColor
+        DoctorButton.layer.borderWidth = 0.5
         PatientButton.layer.cornerRadius = 15
+        PatientButton.layer.borderColor = UIColor.black.cgColor
+        PatientButton.layer.borderWidth = 0.5
+        Registerlabel.layer.borderColor = UIColor.black.cgColor
+        Registerlabel.layer.borderWidth = 0.5
         // Do any additional setup after loading the view.
         SignOut.addTarget(self, action: #selector(signOutUserLoggedInWithGoogle(_sender:)), for: .touchUpInside)
     }

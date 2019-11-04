@@ -14,8 +14,17 @@ import Firebase
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
 
+    @IBOutlet weak var Background: UIImageView!
+    
+    @IBOutlet weak var Frame: UIImageView!
+    
+    @IBOutlet weak var AppIcon: UIImageView!
+    
+    
+    
+    
     @IBOutlet weak var WelcomeMessage: UILabel!
-    @IBOutlet weak var ParkinHelpIcon: UIImageView!
+   
     @IBOutlet weak var WelcomeLabel: UILabel!
     
     @IBOutlet weak var GoogleSignIn: UIButton!
@@ -30,13 +39,13 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.FacebookSignIn.layer.cornerRadius = 10
+        
+        AppIcon.layer.cornerRadius = 85
+        
         //FacebookSignIn.layer.borderColor = UIColor.blue.cgColor
         //FacebookSignIn.layer.borderWidth = 1
-        
-        ParkinHelpIcon.layer.cornerRadius = 30
-        ParkinHelpIcon.layer.borderColor = UIColor.blue.cgColor
-        ParkinHelpIcon.layer.borderWidth = 4
+        GoogleSignIn.layer.cornerRadius = 25
+     
         WelcomeLabel.layer.cornerRadius = 30
         GoogleSignIn.addTarget(self, action: #selector(signinUserUsingGoogle(_sender:)), for: .touchUpInside)
 

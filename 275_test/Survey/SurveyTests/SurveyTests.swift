@@ -2,8 +2,8 @@
 //  SurveyTests.swift
 //  SurveyTests
 //
-//  Created by Liangchen Zou on 11/1/19.
-//  Copyright © 2019 Liangchen Zou/Sachin. All rights reserved.
+//  Created by MICHAEL on 2019-11-04.
+//  Copyright © 2019 MICHAEL. All rights reserved.
 //
 
 import XCTest
