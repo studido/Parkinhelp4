@@ -51,17 +51,18 @@ class HomeController: UIViewController{
         button_Contaction.frame = CGRect(x: 320.0,y: 800.0, width:80.0,height:80.0)
         
         
-        button_Main_Page.setTitle("Home\n Page", for: .normal)
+        button_Main_Page.setTitle("Home Page", for: .normal)
         button_Main_Page.layer.borderWidth = 5.0
         button_Main_Page.layer.borderColor = UIColor.white.cgColor
-        button_Main_Page.backgroundColor = UIColor.yellow
+        button_Main_Page.backgroundColor = UIColor.lightGray
         button_Main_Page.titleLabel?.textColor = UIColor.white
+        //button_Main_Page.titleLabel?.font = UIFont(name: "Home Page",size: 20 )
         
         
         button_Physical_Condition_Test.setTitle("Physical \nCondition \nTest", for: .normal)
         button_Physical_Condition_Test.layer.borderWidth = 5.0
         button_Physical_Condition_Test.layer.borderColor = UIColor.white.cgColor
-        button_Physical_Condition_Test.backgroundColor = UIColor.yellow
+        button_Physical_Condition_Test.backgroundColor = UIColor.lightGray
         button_Physical_Condition_Test.titleLabel?.textColor = UIColor.white
         
         
@@ -69,15 +70,17 @@ class HomeController: UIViewController{
         button_Exercise.setTitle("Exercise Recommended", for: .normal)
         button_Exercise.layer.borderWidth = 5.0
         button_Exercise.layer.borderColor = UIColor.white.cgColor
-        button_Exercise.backgroundColor = UIColor.yellow
+        button_Exercise.backgroundColor = UIColor.lightGray
         button_Exercise.titleLabel?.textColor = UIColor.white
+
         
         
         
         button_Pill.setTitle("Pill Schedule", for: .normal)
         button_Pill.layer.borderWidth = 5.0
         button_Pill.layer.borderColor = UIColor.white.cgColor
-        button_Pill.backgroundColor = UIColor.yellow
+        //button_Pill.layer.cornerRadius = 10
+        button_Pill.backgroundColor = UIColor.lightGray
         button_Pill.titleLabel?.textColor = UIColor.white
         
         
@@ -85,7 +88,7 @@ class HomeController: UIViewController{
         button_Contaction.setTitle("Contact The Rapist", for: .normal)
         button_Contaction.layer.borderWidth = 5.0
         button_Contaction.layer.borderColor = UIColor.white.cgColor
-        button_Contaction.backgroundColor = UIColor.yellow
+        button_Contaction.backgroundColor = UIColor.lightGray
         button_Contaction.titleLabel?.textColor = UIColor.white
         
         
