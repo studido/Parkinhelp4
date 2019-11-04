@@ -5,6 +5,7 @@
 //  Created by Sterling Smith on 10/31/19.
 //  Copyright © 2019 Sterling Smith. All rights reserved.
 //
+// Implemented by Evan Lee and Sterling Smith
 
 import UIKit
 import GoogleSignIn
