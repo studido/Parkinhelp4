@@ -28,6 +28,9 @@ class SurveyViewController: UIViewController {
     
     
     @IBAction func Done(_ sender: Any) {
+        let surveyView: UIStoryboard = UIStoryboard(name: "MainMenu", bundle: nil)
+        let mainMenuView = surveyView.instantiateViewController(withIdentifier: "MainMenu") as! ContainerController
+        self.present(mainMenuView, animated:false, completion: nil)
     }
     
     

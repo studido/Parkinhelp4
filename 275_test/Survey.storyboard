@@ -13,7 +13,7 @@
         <!--Survey View Controller-->
         <scene sceneID="bGd-BX-Nh7">
             <objects>
-                <viewController id="4JV-wz-ZQN" customClass="SurveyViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Survey" id="4JV-wz-ZQN" customClass="SurveyViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gHe-Db-pLb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -204,7 +204,6 @@
                                 </state>
                                 <connections>
                                     <action selector="Done:" destination="4JV-wz-ZQN" eventType="touchUpInside" id="90r-H9-e4r"/>
-                                    <segue destination="1Sf-yf-dzZ" kind="show" id="UzG-Nw-6fJ"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLP-WM-ef9">
@@ -236,14 +235,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rR6-6D-TbS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1764" y="13"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="stw-lV-GKh">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="1Sf-yf-dzZ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LEy-VA-VLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2338" y="13"/>
         </scene>
     </scenes>
 </document>
