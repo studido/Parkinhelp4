@@ -147,9 +147,6 @@
                                 <rect key="frame" x="149" y="757" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go To Tremor"/>
-                                <connections>
-                                    <segue destination="emO-Dd-FdS" kind="show" id="nmJ-I8-OuW"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -175,13 +172,29 @@
             </objects>
             <point key="canvasLocation" x="1764" y="13"/>
         </scene>
-        <!--Tremor-->
-        <scene sceneID="Z1t-fq-hHg">
+        <!--Tremor View Controller-->
+        <scene sceneID="gQm-WT-NS2">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Tremor" storyboardName="Tremor" referencedIdentifier="Tremor" id="emO-Dd-FdS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YZn-ep-rhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghb-dc-aWm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="Tremor" id="jKK-WD-uOf" customClass="TremorViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yb9-qZ-Gfl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KME-zJ-sK0">
+                                <rect key="frame" x="166" y="277" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="emx-oU-A3L"/>
+                    </view>
+                </viewController>
             </objects>
-            <point key="canvasLocation" x="1661" y="173"/>
+            <point key="canvasLocation" x="1551" y="435"/>
         </scene>
     </scenes>
     <resources>
