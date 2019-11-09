@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="1549.5999999999999" y="434.93253373313348"/>
         </scene>
-        <!--View Controller-->
+        <!--Tremor Over View Controller-->
         <scene sceneID="skQ-OZ-gQv">
             <objects>
-                <viewController id="HPO-TR-9jw" sceneMemberID="viewController">
+                <viewController id="HPO-TR-9jw" customClass="TremorOverViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ec5-Qk-psm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,10 +75,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Szj-Eh-4DO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2273" y="435"/>
+            <point key="canvasLocation" x="2272.8000000000002" y="434.93253373313348"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QKE-dH-wXo"/>
+        <segue reference="G4X-7O-ARL"/>
     </inferredMetricsTieBreakers>
 </document>
