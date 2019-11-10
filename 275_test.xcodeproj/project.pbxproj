@@ -16,6 +16,13 @@
 		34BB20AF236BB846001379EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34BB20AE236BB846001379EE /* Main.storyboard */; };
 		34BB20B3236BBAD3001379EE /* unnamed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34BB20B2236BBAD3001379EE /* unnamed.jpg */; };
 		34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB20B6236BC714001379EE /* UserSelectViewController.swift */; };
+		4CB687BF2377D8C50096B57A /* Main in Resources */ = {isa = PBXBuildFile; fileRef = 4CB687BE2377D8C50096B57A /* Main */; };
+		4CB687C22377D91F0096B57A /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CB687C02377D91F0096B57A /* Menu.storyboard */; };
+		4CB687C42377D9280096B57A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB687C32377D9280096B57A /* MainViewController.swift */; };
+		4CB687C62377D92C0096B57A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB687C52377D92C0096B57A /* MenuViewController.swift */; };
+		4CB687C82377D9440096B57A /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB687C72377D9440096B57A /* SlideInTransition.swift */; };
+		4CB687CA2377DAC70096B57A /* Exercise_Zou in Resources */ = {isa = PBXBuildFile; fileRef = 4CB687C92377DAC60096B57A /* Exercise_Zou */; };
+		4CB687CD2377DC1A0096B57A /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB687CC2377DC1A0096B57A /* ExerciseViewController.swift */; };
 		624D535EB32431FB968121D5 /* libPods-275_test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 608B681416C8879F7EC1DDC3 /* libPods-275_test.a */; };
 		990530952370DCC70068FA22 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990530922370DCC60068FA22 /* MenuController.swift */; };
 		990530962370DCC70068FA22 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990530932370DCC70068FA22 /* HomeController.swift */; };
@@ -71,6 +78,15 @@
 		34BB20AE236BB846001379EE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34BB20B2236BBAD3001379EE /* unnamed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unnamed.jpg; sourceTree = "<group>"; };
 		34BB20B6236BC714001379EE /* UserSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectViewController.swift; sourceTree = "<group>"; };
+		4CB687BE2377D8C50096B57A /* Main */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Main; sourceTree = "<group>"; };
+		4CB687C12377D91F0096B57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main/Main/Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
+		4CB687C32377D9280096B57A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = Main/Main/MainViewController.swift; sourceTree = "<group>"; };
+		4CB687C52377D92C0096B57A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Main/Main/MenuViewController.swift; sourceTree = "<group>"; };
+		4CB687C72377D9440096B57A /* SlideInTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SlideInTransition.swift; path = Main/SlideInTransition.swift; sourceTree = "<group>"; };
+		4CB687C92377DAC60096B57A /* Exercise_Zou */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Exercise_Zou; sourceTree = "<group>"; };
+		4CB687CB2377DB180096B57A /* Exercise.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
+		4CB687CC2377DC1A0096B57A /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
+		4CDE810F2377DEAD00E8FBFD /* Exer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Exer.storyboard; path = /Users/michael/Desktop/Parkinhelp4/275_test/Exer.storyboard; sourceTree = "<absolute>"; };
 		608B681416C8879F7EC1DDC3 /* libPods-275_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-275_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64865A35A0C9B1E450F56DFC /* Pods-275_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-275_test.debug.xcconfig"; path = "Target Support Files/Pods-275_test/Pods-275_test.debug.xcconfig"; sourceTree = "<group>"; };
 		990530922370DCC60068FA22 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
@@ -152,23 +168,32 @@
 		348982F02368F6D200C623F2 /* 275_test */ = {
 			isa = PBXGroup;
 			children = (
+				4CDE810F2377DEAD00E8FBFD /* Exer.storyboard */,
 				9905309C2370DCDA0068FA22 /* MenuOptionCell.swift */,
 				9905309A2370DCD70068FA22 /* Protocols.swift */,
 				990530982370DCD00068FA22 /* MenuOption.swift */,
 				990530942370DCC70068FA22 /* ContainerController.swift */,
 				990530932370DCC70068FA22 /* HomeController.swift */,
 				990530922370DCC60068FA22 /* MenuController.swift */,
+				4CB687C92377DAC60096B57A /* Exercise_Zou */,
 				A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
 				348982F32368F6D200C623F2 /* ViewController.swift */,
+				4CB687CC2377DC1A0096B57A /* ExerciseViewController.swift */,
 				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
 				A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */,
 				34BB20AE236BB846001379EE /* Main.storyboard */,
+				4CB687CB2377DB180096B57A /* Exercise.storyboard */,
 				9939D4FC23750CE600F1FB1F /* Tremor.storyboard */,
+				4CB687BE2377D8C50096B57A /* Main */,
 				99D5E12123767930004DFE71 /* TremorOverViewController.swift */,
 				9939D4F723750A3D00F1FB1F /* TremorViewController.swift */,
+				4CB687C32377D9280096B57A /* MainViewController.swift */,
+				4CB687C72377D9440096B57A /* SlideInTransition.swift */,
+				4CB687C52377D92C0096B57A /* MenuViewController.swift */,
 				9939D4FE2376671E00F1FB1F /* collect.swift */,
+				4CB687C02377D91F0096B57A /* Menu.storyboard */,
 				9939D4FF2376671E00F1FB1F /* fft.swift */,
 				9905309F2370DDBA0068FA22 /* MainMenu.storyboard */,
 				A4E00E952370CDEE0070E1A4 /* Survey.storyboard */,
@@ -323,11 +348,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				348982FC2368F6D400C623F2 /* LaunchScreen.storyboard in Resources */,
+				4CB687CA2377DAC70096B57A /* Exercise_Zou in Resources */,
 				9939D4FD23750CE600F1FB1F /* Tremor.storyboard in Resources */,
 				990530A12370DDBA0068FA22 /* MainMenu.storyboard in Resources */,
 				993139D1236BBF24008802A9 /* GoogleService-Info.plist in Resources */,
 				348982F92368F6D400C623F2 /* Assets.xcassets in Resources */,
 				34BB20B3236BBAD3001379EE /* unnamed.jpg in Resources */,
+				4CB687BF2377D8C50096B57A /* Main in Resources */,
+				4CB687C22377D91F0096B57A /* Menu.storyboard in Resources */,
 				A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */,
 				A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */,
 				A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */,
@@ -402,17 +430,21 @@
 			files = (
 				990530952370DCC70068FA22 /* MenuController.swift in Sources */,
 				9939D4F823750A3D00F1FB1F /* TremorViewController.swift in Sources */,
+				4CB687C82377D9440096B57A /* SlideInTransition.swift in Sources */,
 				9905309D2370DCDA0068FA22 /* MenuOptionCell.swift in Sources */,
 				990530992370DCD00068FA22 /* MenuOption.swift in Sources */,
 				9939D5012376671E00F1FB1F /* fft.swift in Sources */,
 				99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */,
 				34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */,
+				4CB687C62377D92C0096B57A /* MenuViewController.swift in Sources */,
 				9905309B2370DCD70068FA22 /* Protocols.swift in Sources */,
 				9939D5002376671E00F1FB1F /* collect.swift in Sources */,
+				4CB687C42377D9280096B57A /* MainViewController.swift in Sources */,
 				990530962370DCC70068FA22 /* HomeController.swift in Sources */,
 				348982F42368F6D200C623F2 /* ViewController.swift in Sources */,
 				990530972370DCC70068FA22 /* ContainerController.swift in Sources */,
 				A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */,
+				4CB687CD2377DC1A0096B57A /* ExerciseViewController.swift in Sources */,
 				348982F22368F6D200C623F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +487,14 @@
 				348982FB2368F6D400C623F2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CB687C02377D91F0096B57A /* Menu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CB687C12377D91F0096B57A /* Base */,
+			);
+			name = Menu.storyboard;
 			sourceTree = "<group>";
 		};
 		9905309F2370DDBA0068FA22 /* MainMenu.storyboard */ = {
@@ -590,7 +630,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 245TDDYFNZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 275_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -610,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 245TDDYFNZ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = 275_test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
