@@ -38,7 +38,7 @@ class TremorViewController: UIViewController {
     }
     
     var timer = Timer()
-    var seconds = 15
+    var seconds = 5
     func startTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(self.updateTime)), userInfo: nil, repeats: true)
     }

@@ -191,10 +191,10 @@ class FFT {
         //let maxPhase = filteredPhase[maxFrequencyResult.1]
         
         /*
-        print("Amplitude: \(maxFrequencyResult.0)")
-        print("Frequency: \(maxFrequency)")
-        print("Phase: \(maxPhase + .pi / 2)")
-        */
+         print("Amplitude: \(maxFrequencyResult.0)")
+         print("Frequency: \(maxFrequency)")
+         print("Phase: \(maxPhase + .pi / 2)")
+         */
         
         // ----------------------------------------------------------------
         // Convert from polar coordinates back to rectangular coordinates.
@@ -237,11 +237,11 @@ class FFT {
         result = copyOfResult
         
         /*
-        // Print Result
-        for k in 0 ..< N {
-            ("\(k)   \(values[k])     \(result[k])")
-        }
-        */
+         // Print Result
+         for k in 0 ..< N {
+         ("\(k)   \(values[k])     \(result[k])")
+         }
+         */
         
         return ((freq_plus,filteredSpectrum),maxFrequency,maxFrequencyResult.0)
     }

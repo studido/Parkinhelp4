@@ -12,7 +12,7 @@ import UIKit
 
 class TremorOverViewController: UIViewController {
     fileprivate let collector:DataRun = DataRun.shared()
-    fileprivate var res : [(([Double],[Double]),Double,Double)]?
+    //fileprivate var res : [(([Double],[Double]),Double,Double)]?
     
     @IBOutlet weak var SaveButtion: UIButton!
     @IBOutlet weak var RetryButton: UIButton!
@@ -24,7 +24,9 @@ class TremorOverViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         let res = collector.processAll()
+        collector.end()
         // print processed data
+        //ScoreLabel.text = "40"
         print("Accel\nFreq: \(res[0].1), Pow: \(res[0].2)\n")
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
         
@@ -33,7 +35,6 @@ class TremorOverViewController: UIViewController {
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
         let strDate = dateFormatter.string(from: timestamp)
         print(strDate)
-        ScoreLabel.text = "\(res[1].1)"
     }
     
     

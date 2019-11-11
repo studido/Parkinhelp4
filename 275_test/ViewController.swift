@@ -13,15 +13,13 @@ import GoogleSignIn
 import Firebase
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
+    let FBManager = FirebaseManager()
 
     @IBOutlet weak var Background: UIImageView!
     
     @IBOutlet weak var Frame: UIImageView!
     
     @IBOutlet weak var AppIcon: UIImageView!
-    
-    
-    
     
     @IBOutlet weak var WelcomeMessage: UILabel!
    
@@ -39,6 +37,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        FBManager.initialze()
         
         AppIcon.layer.cornerRadius = 85
         
@@ -71,6 +71,11 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                     print("Authentication failed with firebase")
                     return
                 }
+                
+                var f = Firebase.Auth.auth().currentUser
+                if ((f) != nil) {
+                    print("The current user has an uid of :", f!.uid)
+                }
                 // User is signed in
                 UserDefaults.standard.set(true, forKey: "usersignedIn")
                 UserDefaults.standard.synchronize()
@@ -83,6 +88,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                 //        let familyName = user.profile.familyName
                 //        let email = user.profile.email
                 print("Signed in successfully with google user id", userId!)
+                self.FBManager.saveScore()
                 self.performSegue(withIdentifier: "goToPatientDoctorScreen", sender: self)
             }
             

@@ -9,6 +9,7 @@
 import UIKit
 import GoogleSignIn
 import Firebase
+import FirebaseDatabase
 
 
 @UIApplicationMain
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let userDefault = UserDefaults()
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID

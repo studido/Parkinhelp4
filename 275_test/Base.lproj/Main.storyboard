@@ -142,12 +142,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="9oo-aB-aFU" kind="show" id="p0B-BC-bLU"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1M-VM-6mk">
-                                <rect key="frame" x="149" y="757" width="93" height="30"/>
+                                <rect key="frame" x="160" y="107" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go To Tremor"/>
                                 <connections>
@@ -185,22 +182,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZn-ep-rhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1661" y="173"/>
-        </scene>
-        <!--Menu-->
-        <scene sceneID="WK5-d9-GCn">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Menu" storyboardName="Menu" referencedIdentifier="Menu" id="Y9I-vx-6z4" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aU2-Bs-NWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1362" y="253"/>
-        </scene>
-        <!--Exercise-->
-        <scene sceneID="RCr-It-4Jr">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Exercise" storyboardName="Exercise" referencedIdentifier="Exercise" id="9oo-aB-aFU" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oWf-y2-XV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1264" y="360"/>
         </scene>
     </scenes>
     <resources>
