@@ -161,6 +161,7 @@
                         <outlet property="Registerlabel" destination="8Cr-Lg-1jb" id="aZU-sY-Bu8"/>
                         <outlet property="SignOut" destination="kft-Xv-g6T" id="Lrp-d3-WCc"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="MbP-FK-aYL"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goBackToLogin" id="OEw-Sf-8XE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgj-dS-wX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -192,5 +193,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6OQ-2V-jdW"/>
+        <segue reference="MbP-FK-aYL"/>
     </inferredMetricsTieBreakers>
 </document>

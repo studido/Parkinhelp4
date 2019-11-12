@@ -11,19 +11,30 @@ import FirebaseDatabase
 
 //FBManager maintains a single connection to the same URL by default (singleton)
 class FirebaseManager {
-    var FBManager: DatabaseReference?
-    static var uid : String?
+    var FBManager: DatabaseReference!
+    
+    static var patient : String!
+    static var uid : String!
+    static var age : String!
+    static var fullName : String!
+    static var gender : String!
+    static var doctors : [(uid: String, fullName: String)]!
+    static var tremors : [(date: String, score: String)]!
+    static var survey : [(question: String, answer: String)]!
+    static var patients : [(uid: String, fullName: String)]!
+    
 
     public init() {
     }
-    
-    func initialze() {
+
+    //seperate func to initialize database reference to avoid firebase configuration error
+    public func initialze() {
         FBManager = Database.database().reference()
     }
 
     
     public func saveScore() {
-        FBManager?.child("Users").child("id3").setValue(["Full name": "oon"])
+        FBManager.child("Users").child("id3").setValue(["Full name": "oon"])
     }
 }
 
