@@ -43,10 +43,7 @@ class ExerciseViewController: UIViewController {
     }
     
     /*
-    @IBAction func upperbody(_ sender: UIButton) {
-        //skip to upperbody page
-        print("button pressed")
-        self.performSegue(withIdentifier: upper, sender: self)    }
+    
     @IBAction func arm(_ sender: UIButton) {
         //skip to arm page
         print("button pressed")
