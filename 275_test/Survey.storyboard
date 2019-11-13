@@ -213,6 +213,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrO-fr-2S9">
+                                <rect key="frame" x="135" y="796" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="goToMain"/>
+                                <connections>
+                                    <segue destination="OKh-ff-SbI" kind="show" id="7ZK-wq-Wqd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="EpL-V7-Wrr"/>
@@ -235,6 +243,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rR6-6D-TbS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1764" y="13"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="35c-BL-VC4">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="menu" storyboardName="Menu" referencedIdentifier="Menu" id="OKh-ff-SbI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lA0-lh-MIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2391" y="179"/>
         </scene>
     </scenes>
 </document>
