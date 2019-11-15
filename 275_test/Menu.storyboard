@@ -85,6 +85,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yMo-0m-ma2">
+                            <rect key="frame" x="0.0" y="453" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Sign Out"/>
+                            <connections>
+                                <action selector="signOutUserLoggedInWithGoogleWith_sender:" destination="Cos-ET-sHb" eventType="touchUpInside" id="Ti8-Co-IMf"/>
+                            </connections>
+                        </button>
                         <sections>
                             <tableViewSection id="p3h-Bl-iXF">
                                 <cells>
@@ -256,10 +264,21 @@
                             <outlet property="delegate" destination="Cos-ET-sHb" id="ZmH-5F-kYB"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="zjR-YL-ure" kind="show" identifier="goToLogin" id="aGE-ap-I8y"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l5J-Hc-Inz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1541.5999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="RQt-f6-8U5">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Login" storyboardName="Main" referencedIdentifier="Main" id="zjR-YL-ure" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Lf-hk-dqX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2291" y="-565"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y9R-Mq-Dq5">

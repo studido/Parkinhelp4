@@ -52,6 +52,8 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         WelcomeLabel.layer.cornerRadius = 30
         GoogleSignIn.addTarget(self, action: #selector(signinUserUsingGoogle(_sender:)), for: .touchUpInside)
         
+        GIDSignIn.sharedInstance()?.signInSilently()
+        
     }
     
     //Call google sign in when user clicks on google sign in button
