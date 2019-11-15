@@ -12,7 +12,8 @@ import UIKit
 class Variables: UIViewController {
   static  var age = String()
    static var weight = String()
-    
+    static  var docname = String()
+    static var docprofession = String()
     
 }
 

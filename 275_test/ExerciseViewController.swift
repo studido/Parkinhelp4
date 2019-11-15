@@ -16,6 +16,7 @@ class ExerciseViewController: UIViewController {
     @IBOutlet weak var RecommendedEx: UIButton!
     
 
+    @IBOutlet weak var Head: UIButton!
     
     @IBOutlet weak var Arms: UIButton!
     
@@ -38,7 +39,9 @@ class ExerciseViewController: UIViewController {
         Arms.layer.cornerRadius = 15
         Arms.layer.borderColor = UIColor.black.cgColor
         Arms.layer.borderWidth = 0.5
-        
+        Head.layer.cornerRadius = 15
+        Head.layer.borderColor = UIColor.black.cgColor
+        Head.layer.borderWidth = 0.5
         
         // Do any additional setup after loading the view, typically from a nib.
     }

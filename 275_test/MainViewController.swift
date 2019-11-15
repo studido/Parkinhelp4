@@ -13,7 +13,9 @@ class MainViewController: UIViewController {
     let transition = SlideInTransition()
     var topView: UIView?
     
+    @IBOutlet weak var GraphLabel: UILabel!
     
+    @IBOutlet weak var TremorMeasurement: UIButton!
     @IBOutlet weak var ExerciseList: UIButton!
     
     override func viewDidLoad() {
@@ -22,6 +24,12 @@ class MainViewController: UIViewController {
         ExerciseList.layer.cornerRadius = 15
         ExerciseList.layer.borderColor = UIColor.black.cgColor
         ExerciseList.layer.borderWidth = 0.5
+        TremorMeasurement.layer.cornerRadius = 15
+        TremorMeasurement.layer.borderColor = UIColor.black.cgColor
+        TremorMeasurement.layer.borderWidth = 0.5
+        GraphLabel.layer.cornerRadius = 15
+        GraphLabel.layer.borderColor = UIColor.black.cgColor
+        GraphLabel.layer.borderWidth = 0.5
         // Do any additional setup after loading the view, typically from a nib.
     }
 
