@@ -11,8 +11,8 @@
 import Foundation
 import CoreMotion
 
-class DataRun {
-    private static let inst = DataRun()
+class TremorManager {
+    private static let inst = TremorManager()
     fileprivate let motionManager : CMMotionManager
     fileprivate var rot_rate : ([Double], [Double], [Double]) = ([],[],[])
     fileprivate var user_accel: ([Double], [Double], [Double]) = ([],[],[])
@@ -24,11 +24,11 @@ class DataRun {
     fileprivate var data_timestamp : Date?
     fileprivate var lastSaveDir: URL?
     //fileprivate let fileMan = LocalDataManager.shared()
-    fileprivate let procFFT = FFT()
+    fileprivate let fft = FastFourierTransform()
     fileprivate var fps:Double = 100
     internal var isDebug = false
     
-    class func shared()->DataRun{
+    class func shared()->TremorManager{
         return inst
     }
     
@@ -100,7 +100,7 @@ class DataRun {
 
         isRunning = true
         data_timestamp = Date()
-        dataTimer = Timer.scheduledTimer(timeInterval: 1.0/fps, target: self, selector: #selector(DataRun.get_data), userInfo: nil, repeats: true)
+        dataTimer = Timer.scheduledTimer(timeInterval: 1.0/fps, target: self, selector: #selector(TremorManager.get_data), userInfo: nil, repeats: true)
     }
     
     // stop acquire
@@ -134,7 +134,7 @@ class DataRun {
     func processAll()->[(([Double],[Double]),Double,Double)]{
         let gaccel:[[Double]] = [rot_rate.0, rot_rate.1, rot_rate.2]
         let daccel:[[Double]] = [user_accel.0, user_accel.1, user_accel.2]
-        return [procFFT.process(daccel, _fps: fps), procFFT.process(gaccel, _fps: fps)]
+        return [fft.process(daccel, _fps: fps), fft.process(gaccel, _fps: fps)]
     }
     
     // gets acceleration buffer for saving

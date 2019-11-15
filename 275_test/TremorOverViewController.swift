@@ -11,7 +11,7 @@ import UIKit
 
 
 class TremorOverViewController: UIViewController {
-    fileprivate let collector:DataRun = DataRun.shared()
+    fileprivate let collector:TremorManager = TremorManager.shared()
     //fileprivate var res : [(([Double],[Double]),Double,Double)]?
     
     @IBOutlet weak var SaveButtion: UIButton!

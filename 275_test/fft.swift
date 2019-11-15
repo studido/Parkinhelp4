@@ -9,7 +9,7 @@
 import Foundation
 import Accelerate
 
-class FFT {
+class FastFourierTransform {
     
     fileprivate func getFrequencies(_ N: Int, fps: Double) -> [Double] {
         // Create an Array with the Frequencies

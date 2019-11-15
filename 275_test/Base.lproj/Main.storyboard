@@ -59,9 +59,6 @@
                                 <state key="normal" title="Sign in with Google">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="y7U-Lv-80C" kind="show" id="6OQ-2V-jdW"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="unnamed.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QYr-NZ-pFC">
                                 <rect key="frame" x="101" y="348" width="212" height="171"/>
@@ -81,11 +78,20 @@
                         <outlet property="WelcomeLabel" destination="Ae6-x9-aqg" id="t6l-Kd-92U"/>
                         <outlet property="WelcomeMessage" destination="wSD-Er-hxR" id="bww-rG-gEN"/>
                         <segue destination="y7U-Lv-80C" kind="show" identifier="goToPatientDoctorScreen" id="pov-f9-ej4"/>
+                        <segue destination="sVe-G9-I3b" kind="show" identifier="goToMainMenu" id="M8c-2k-ctg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.579710144927539" y="25.446428571428569"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="60y-No-lV7">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Menu" storyboardName="Menu" referencedIdentifier="Menu" id="sVe-G9-I3b" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-pp-lzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="-348"/>
         </scene>
         <!--User Select View Controller-->
         <scene sceneID="y9W-f9-aBt">
@@ -440,7 +446,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="79k-Cy-45w"/>
-        <segue reference="6OQ-2V-jdW"/>
         <segue reference="MbP-FK-aYL"/>
     </inferredMetricsTieBreakers>
 </document>

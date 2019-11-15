@@ -12,7 +12,7 @@ import CoreMotion
 
 class TremorViewController: UIViewController {
     //Variables
-    let collector:DataRun = DataRun.shared()
+    let collector:TremorManager = TremorManager.shared()
     
     
     //Outlets

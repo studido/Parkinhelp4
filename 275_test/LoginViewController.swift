@@ -11,11 +11,12 @@
 import UIKit
 import GoogleSignIn
 import Firebase
+import FirebaseDatabase
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     let FBManager = FirebaseManager()
     fileprivate var loggedIn = false
-
+    
     @IBOutlet weak var Background: UIImageView!
     
     @IBOutlet weak var Frame: UIImageView!
@@ -23,17 +24,17 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     @IBOutlet weak var AppIcon: UIImageView!
     
     @IBOutlet weak var WelcomeMessage: UILabel!
-   
+    
     @IBOutlet weak var WelcomeLabel: UILabel!
     
     @IBOutlet weak var GoogleSignIn: UIButton!
     @IBOutlet weak var TeamDancingDragon: UILabel!
     
-//    @IBOutlet weak var gSignIn: GIDSignInButton!
+    //    @IBOutlet weak var gSignIn: GIDSignInButton!
     
-//    @IBAction func googleLoginButtonPressed(_sender: Any) {
-//        GIDSignIn.sharedInstance()?.signIn()
-//    }
+    //    @IBAction func googleLoginButtonPressed(_sender: Any) {
+    //        GIDSignIn.sharedInstance()?.signIn()
+    //    }
     
     
     override func viewDidLoad() {
@@ -47,12 +48,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         //FacebookSignIn.layer.borderColor = UIColor.blue.cgColor
         //FacebookSignIn.layer.borderWidth = 1
         GoogleSignIn.layer.cornerRadius = 25
-     
+        
         WelcomeLabel.layer.cornerRadius = 30
         GoogleSignIn.addTarget(self, action: #selector(signinUserUsingGoogle(_sender:)), for: .touchUpInside)
-
+        
     }
-
+    
     //Call google sign in when user clicks on google sign in button
     @objc func signinUserUsingGoogle(_sender: UIButton) {
         // Do any additional setup after loading the view, typically from a nib.
@@ -72,12 +73,24 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                     print("Authentication failed with firebase")
                     return
                 }
+                else if error == nil {
+                    print("User successfully signed in with uid: ", Firebase.Auth.auth().currentUser!)
+                    let ref : DatabaseReference = Database.database().reference()
+                    ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                        if (snapshot.exists()) {
+                            //User exists in database, route user to main menu
+                            self.performSegue(withIdentifier: "goToMainMenu", sender: self)
+                        }
+                        else {
+                            //First time login, save users uid to firebase and route to first login questions
+                            ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).setValue(["Fullname" : user.profile.name])
+                            self.performSegue(withIdentifier: "goToPatientDoctorScreen", sender: self)
+                        }
+                    })
+                }
             }
-            
-            self.performSegue(withIdentifier: "goToPatientDoctorScreen", sender: self)
         }
         else {
-            //self.performSegue(withIdentifier: "goBackToLogin", sender: self)
         }
     }
     
