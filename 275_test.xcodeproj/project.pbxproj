@@ -40,6 +40,11 @@
 		99D19941237B8ADC00C5F2EC /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */; };
 		99D19942237B8ADC00C5F2EC /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */; };
 		99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5E12123767930004DFE71 /* TremorOverViewController.swift */; };
+		A44FCA94237E01D0000D4B8E /* surveybackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */; };
+		A44FCA96237E079A000D4B8E /* dumbbell.png in Resources */ = {isa = PBXBuildFile; fileRef = A44FCA95237E079A000D4B8E /* dumbbell.png */; };
+		A44FCA98237E19D7000D4B8E /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44FCA97237E19D7000D4B8E /* Recommend.storyboard */; };
+		A44FCA9A237E1A88000D4B8E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */; };
+		A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FCA9D237E22A8000D4B8E /* Variables.swift */; };
 		A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EE923701EE1008B4F96 /* background.jpg */; };
 		A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EEB237024B4008B4F96 /* frame.jpg */; };
 		A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EED23702B3B008B4F96 /* white.jpg */; };
@@ -109,6 +114,11 @@
 		99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		99D5E12123767930004DFE71 /* TremorOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorOverViewController.swift; sourceTree = "<group>"; };
+		A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = surveybackground.jpeg; sourceTree = "<group>"; };
+		A44FCA95237E079A000D4B8E /* dumbbell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dumbbell.png; sourceTree = "<group>"; };
+		A44FCA97237E19D7000D4B8E /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
+		A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		A44FCA9D237E22A8000D4B8E /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		A48E4EE923701EE1008B4F96 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		A48E4EEB237024B4008B4F96 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
 		A48E4EED23702B3B008B4F96 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
@@ -156,6 +166,8 @@
 				348983052368F6D400C623F2 /* 275_testTests */,
 				348983102368F6D400C623F2 /* 275_testUITests */,
 				348982EF2368F6D200C623F2 /* Products */,
+				A44FCA95237E079A000D4B8E /* dumbbell.png */,
+				A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */,
 				A48E4EED23702B3B008B4F96 /* white.jpg */,
 				A48E4EEB237024B4008B4F96 /* frame.jpg */,
 				A48E4EE923701EE1008B4F96 /* background.jpg */,
@@ -184,28 +196,31 @@
 				990530942370DCC70068FA22 /* ContainerController.swift */,
 				990530932370DCC70068FA22 /* HomeController.swift */,
 				990530922370DCC60068FA22 /* MenuController.swift */,
-				A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
 				348982F32368F6D200C623F2 /* ViewController.swift */,
+				A44FCA9D237E22A8000D4B8E /* Variables.swift */,
 				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
-				99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */,
 				99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */,
+				A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */,
 				A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */,
-				34BB20AE236BB846001379EE /* Main.storyboard */,
-				9939D4FC23750CE600F1FB1F /* Tremor.storyboard */,
 				99D5E12123767930004DFE71 /* TremorOverViewController.swift */,
 				99A5C6502378CA260027141A /* FirebaseManager.swift */,
 				9939D4F723750A3D00F1FB1F /* TremorViewController.swift */,
 				9939D4FE2376671E00F1FB1F /* collect.swift */,
 				9939D4FF2376671E00F1FB1F /* fft.swift */,
-				9905309F2370DDBA0068FA22 /* MainMenu.storyboard */,
 				992EF498237B88F5007A5573 /* MainViewController.swift */,
+				A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */,
+				99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */,
+				A44FCA97237E19D7000D4B8E /* Recommend.storyboard */,
+				34BB20AE236BB846001379EE /* Main.storyboard */,
+				9905309F2370DDBA0068FA22 /* MainMenu.storyboard */,
+				9939D4FC23750CE600F1FB1F /* Tremor.storyboard */,
+				A4E00E952370CDEE0070E1A4 /* Survey.storyboard */,
 				992EF49B237B88F5007A5573 /* Menu.storyboard */,
 				992EF49A237B88F5007A5573 /* MenuViewController.swift */,
 				992EF497237B88F5007A5573 /* PillScheduleViewController.swift */,
 				992EF499237B88F5007A5573 /* SlideInTransition.swift */,
-				A4E00E952370CDEE0070E1A4 /* Survey.storyboard */,
 				348982F82368F6D400C623F2 /* Assets.xcassets */,
 				348982FA2368F6D400C623F2 /* LaunchScreen.storyboard */,
 				993139D0236BBF24008802A9 /* GoogleService-Info.plist */,
@@ -370,6 +385,9 @@
 				992EF4A0237B88F5007A5573 /* Menu.storyboard in Resources */,
 				990530A12370DDBA0068FA22 /* MainMenu.storyboard in Resources */,
 				993139D1236BBF24008802A9 /* GoogleService-Info.plist in Resources */,
+				A44FCA98237E19D7000D4B8E /* Recommend.storyboard in Resources */,
+				A44FCA94237E01D0000D4B8E /* surveybackground.jpeg in Resources */,
+				A44FCA96237E079A000D4B8E /* dumbbell.png in Resources */,
 				348982F92368F6D400C623F2 /* Assets.xcassets in Resources */,
 				34BB20B3236BBAD3001379EE /* unnamed.jpg in Resources */,
 				A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */,
@@ -508,10 +526,12 @@
 			files = (
 				992EF49C237B88F5007A5573 /* PillScheduleViewController.swift in Sources */,
 				990530952370DCC70068FA22 /* MenuController.swift in Sources */,
+				A44FCA9A237E1A88000D4B8E /* RecommendViewController.swift in Sources */,
 				9939D4F823750A3D00F1FB1F /* TremorViewController.swift in Sources */,
 				9905309D2370DCDA0068FA22 /* MenuOptionCell.swift in Sources */,
 				990530992370DCD00068FA22 /* MenuOption.swift in Sources */,
 				9939D5012376671E00F1FB1F /* fft.swift in Sources */,
+				A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */,
 				99D19942237B8ADC00C5F2EC /* ExerciseViewController.swift in Sources */,
 				99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */,
 				992EF49D237B88F5007A5573 /* MainViewController.swift in Sources */,

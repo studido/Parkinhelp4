@@ -11,28 +11,45 @@ import UIKit
 class SurveyViewController: UIViewController {
     //reference the UIs, connect them with codes
     @IBOutlet weak var FirstName: UITextField!
+    @IBOutlet weak var LastName: UITextField!
     @IBOutlet weak var Height: UITextField!
     @IBOutlet weak var DateofBirth: UITextField!
     @IBOutlet weak var Weight: UITextField!
-    
-    
     @IBOutlet weak var Gender: UITextField!
     @IBOutlet weak var Age: UITextField!
-    @IBOutlet weak var LastName: UITextField!
     @IBOutlet weak var ContactNumber: UITextField!
-    
     @IBOutlet weak var DurationofDisease: UITextField!
-    @IBOutlet weak var ContactName: UITextField!
-    @IBOutlet weak var EmergencyCNumber: UITextField!
-    @IBOutlet weak var ContactRelation: UITextField!
+    @IBOutlet weak var Repitition: UITextField!
+
+    @IBOutlet weak var Intensity: UITextField!
+    var weight1 = ""
+    var age1 = ""
+    
     
     //reference the button, connect it with codes
     @IBAction func Done(_ sender: Any) {
+    //    self.weight1 = Weight.text!
+      //  self.age1 = Age.text!
+        Variables.weight = Weight.text!
+        Variables.age = Age.text!
+        
+        performSegue(withIdentifier: "surveyresult", sender: self)
+        //dont think we need any of this now
+        /*
         //after click the button, go to MainMenu page
         let surveyView: UIStoryboard = UIStoryboard(name: "MainMenu", bundle: nil)
         let mainMenuView = surveyView.instantiateViewController(withIdentifier: "MainMenu") as! ContainerController
         self.present(mainMenuView, animated:false, completion: nil)
+ */
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       // let sa = segue.destination as! RecommendViewController
+       // let sw = segue.destination as! RecommendViewController
+       // sw.weight = self.weight1
+       // sa.age = self.age1
+  
+    }
+    
     
     
     override func viewDidLoad() {
@@ -50,10 +67,9 @@ class SurveyViewController: UIViewController {
         ContactNumber.delegate = self as? UITextFieldDelegate
         
         DurationofDisease.delegate = self as? UITextFieldDelegate
-        ContactName.delegate = self as? UITextFieldDelegate
-        EmergencyCNumber.delegate = self as? UITextFieldDelegate
-        ContactRelation.delegate = self as? UITextFieldDelegate
-        
+        Intensity.delegate = self as? UITextFieldDelegate
+        Repitition.delegate = self as? UITextFieldDelegate
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -71,9 +87,9 @@ class SurveyViewController: UIViewController {
         ContactNumber.resignFirstResponder()
         
         DurationofDisease.resignFirstResponder()
-        ContactName.resignFirstResponder()
-        EmergencyCNumber.resignFirstResponder()
-        ContactRelation.resignFirstResponder()
+        Repitition.resignFirstResponder()
+        Intensity.resignFirstResponder()
+        
     }
 }
 

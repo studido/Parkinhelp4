@@ -12,8 +12,16 @@ class MainViewController: UIViewController {
     
     let transition = SlideInTransition()
     var topView: UIView?
+    
+    
+    @IBOutlet weak var ExerciseList: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ExerciseList.layer.cornerRadius = 15
+        ExerciseList.layer.borderColor = UIColor.black.cgColor
+        ExerciseList.layer.borderWidth = 0.5
         // Do any additional setup after loading the view, typically from a nib.
     }
 
