@@ -13,13 +13,20 @@ var weight = ""
 var age = ""
     
     @IBOutlet weak var extitle: UIButton!
-    
     @IBOutlet weak var totalex: UILabel!
-    
     @IBOutlet weak var totalrep: UILabel!
+    @IBOutlet weak var exercise1: UILabel!
+    @IBOutlet weak var exercise2: UILabel!
+    @IBOutlet weak var exercise3: UILabel!
+    @IBOutlet weak var sets1: UILabel!
+    @IBOutlet weak var reps1: UILabel!
+    @IBOutlet weak var sets2: UILabel!
+    @IBOutlet weak var reps2: UILabel!
+    @IBOutlet weak var sets3: UILabel!
+    @IBOutlet weak var reps3: UILabel!
+    @IBOutlet weak var Repititionlabel: UILabel!
     
-    
-            override func viewDidLoad() {
+                override func viewDidLoad() {
         super.viewDidLoad()
                 /*
                 let totalex1 : Int? = Int(Variables.age)
@@ -33,23 +40,68 @@ var age = ""
                 if let repitition = UserDefaults.standard.object(forKey: "Repitition") as? String
                 {
                     let totalrep1 = UserDefaults.standard.object(forKey: "Intensity") as? String
-                    let totalex1 : Int? = Int(repitition)
+                    var totalex1 : Int? = Int(repitition)
+                    //intensity
                     let totalrep2 : Int? = Int(totalrep1!)
-                    let finalexperweek = totalex1!*3
-                    let finalrepperweek = totalex1!*totalrep2!*3*3
-                    let finalexstring = String(finalexperweek)
-                    let finalrepstring = String(finalrepperweek)
+                    var sets1int = totalrep2!-3
+                    if sets1int < 2 {
+                        sets1int = 2
+                    }
+                    let reps1int = totalrep2
+                    var sets2int = totalrep2!-4
+                    if sets2int < 2 {
+                        sets2int = 2
+                    }
+                    let reps2int = totalrep2!+5
+                    var sets3int = totalrep2!-5
+                    if sets3int < 2 {
+                        sets3int = 2
+                    }
+                    let reps3int = totalrep2!+3
+                    let experweekint = totalex1!*3
+                    let repsperweekint = reps1int!*sets1int + reps2int*sets2int + reps3int*sets3int
+                    
+                    let finalsets1 = String(sets1int)
+                    let finalreps1 = String(reps1int!)
+                    let finalsets2 = String(sets2int)
+                    let finalreps2 = String(reps2int)
+                    let finalsets3 = String(sets3int)
+                    let finalreps3 = String(reps3int)
+                    let finalexstring = String(experweekint)
+                    let finalrepstring = String(repsperweekint)
+
                     totalex.text = finalexstring
                     totalrep.text = finalrepstring
+                    exercise1.text = "Dumb-bell Chest Press"
+                    exercise2.text = "Forearm lifts"
+                    exercise3.text = "Neck Twists"
+                    sets1.text = finalsets1
+                    reps1.text = finalreps1
+                    sets2.text = finalsets2
+                    reps2.text = finalreps2
+                    sets3.text = finalsets3
+                    reps3.text = finalreps3
+                    // to test repititionlabel
+                   // totalex1 = 2
+                    if totalex1 != 3 {
+                        if totalex1 == 4 {
+                            Repititionlabel.text = "Complete Monday, Tuesday, Wednesday, and Thursday"
+                        }
+                        if totalex1 == 5{
+                            Repititionlabel.text = "Monday, Tuesday, Wednesday, Thursday, and Friday"
+                        }
+                        if totalex1 == 2{
+                            Repititionlabel.text = "Complete every Monday and Wednesday"
+                        }
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
                 }
-                
-                
-                
-                
-                
-                
-                
-                
+               
         extitle.layer.cornerRadius = 25
        
         // Do any additional setup after loading the view.
