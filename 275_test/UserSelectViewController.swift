@@ -19,6 +19,17 @@ class UserSelectViewController: UIViewController {
     
     @IBOutlet weak var Registerlabel: UILabel!
     
+    @IBAction func userIsPatient(_ sender : UIButton) {
+        UserDefaults.standard.set("patient", forKey: "userType")
+        print("User is a patient")
+    }
+    
+    @IBAction func userIsDoctor(_ sender : UIButton) {
+        UserDefaults.standard.set("doctor", forKey: "userType")
+        print("User is a doctor")
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         DoctorButton.layer.cornerRadius = 15

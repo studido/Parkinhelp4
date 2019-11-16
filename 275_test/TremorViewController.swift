@@ -66,6 +66,8 @@ class TremorViewController: UIViewController {
             //shootObj()
             //playCannon()
             timeLabel.text = "\(seconds)"
+            timeLabel.textColor = UIColor.white
+            timeLabel.font = timeLabel.font.withSize(20)
         }
     }
 }

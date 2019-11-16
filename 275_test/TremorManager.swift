@@ -23,10 +23,8 @@ class TremorManager {
     fileprivate var dataTimer: Timer?
     fileprivate var data_timestamp : Date?
     fileprivate var lastSaveDir: URL?
-    //fileprivate let fileMan = LocalDataManager.shared()
     fileprivate let fft = FastFourierTransform()
     fileprivate var fps:Double = 100
-    internal var isDebug = false
     
     class func shared()->TremorManager{
         return inst
@@ -41,7 +39,7 @@ class TremorManager {
         motionManager = CMMotionManager()
         initMotionEvents()
         
-        if isDebug{
+        #if DEBUG
             // generate test data
             let n:Int = Int(pow(Double(2),Double(16)))
             
@@ -64,7 +62,7 @@ class TremorManager {
             user_accel = (sineWave1,sineWave1,sineWave1)
             rot_rate = (sineWave2,sineWave2,sineWave2)
             // test data end
-        }
+        #endif
     }
     
     // set sample rate, and possible others in future
@@ -189,10 +187,11 @@ class TremorManager {
             print("getTimer: %lf,%lf,%lf\n", data.userAcceleration.x, data.userAcceleration.y, data.userAcceleration.z)
             accel_curr = (data.userAcceleration.x, data.userAcceleration.y, data.userAcceleration.z)
             rot_curr = (data.rotationRate.x, data.rotationRate.y, data.rotationRate.z)
-            if !isDebug {
+            #if DEBUG
+            #else
                 user_accel.0.append(accel_curr.0);user_accel.1.append(accel_curr.1);user_accel.2.append(accel_curr.2);
                 rot_rate.0.append(rot_curr.0);rot_rate.1.append(rot_curr.1);rot_rate.2.append(rot_curr.2);
-            }
+            #endif
         }
     }
     

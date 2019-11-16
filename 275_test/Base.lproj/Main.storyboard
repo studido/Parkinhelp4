@@ -139,6 +139,7 @@
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="userIsPatient:" destination="y7U-Lv-80C" eventType="touchUpInside" id="WmN-JZ-xeu"/>
                                     <segue destination="3He-B5-iFT" kind="show" id="R1b-fj-ury"/>
                                 </connections>
                             </button>
@@ -164,6 +165,7 @@
                                     <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="userIsDoctor:" destination="y7U-Lv-80C" eventType="touchUpInside" id="cJm-Nk-XPC"/>
                                     <segue destination="BNA-r8-lHX" kind="show" id="IQs-1F-hY1"/>
                                 </connections>
                             </button>
