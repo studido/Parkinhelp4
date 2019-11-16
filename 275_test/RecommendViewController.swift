@@ -40,7 +40,7 @@ var age = ""
                 if let repitition = UserDefaults.standard.object(forKey: "Repitition") as? String
                 {
                     let totalrep1 = UserDefaults.standard.object(forKey: "Intensity") as? String
-                    var totalex1 : Int? = Int(repitition)
+                    let totalex1 : Int? = Int(repitition)
                     //intensity
                     let totalrep2 : Int? = Int(totalrep1!)
                     var sets1int = totalrep2!-3
@@ -72,9 +72,6 @@ var age = ""
 
                     totalex.text = finalexstring
                     totalrep.text = finalrepstring
-                    exercise1.text = "Dumb-bell Chest Press"
-                    exercise2.text = "Forearm lifts"
-                    exercise3.text = "Neck Twists"
                     sets1.text = finalsets1
                     reps1.text = finalreps1
                     sets2.text = finalsets2
@@ -93,6 +90,101 @@ var age = ""
                         if totalex1 == 2{
                             Repititionlabel.text = "Complete every Monday and Wednesday"
                         }
+                    }
+                    let armsfocus = UserDefaults.standard.object(forKey: "armsfocus") as? Int
+                    let neckfocus = UserDefaults.standard.object(forKey: "neckfocus") as? Int
+                    let backfocus = UserDefaults.standard.object(forKey: "backfocus") as? Int
+                    let handsfocus = UserDefaults.standard.object(forKey: "handsfocus") as? Int
+                    var backused = 0
+                    var armsused = 0
+                    var handsused = 0
+                    var neckused = 0
+                    var focuschoice = ""
+                    var focuscheck = 0
+                    var focuscheck2 = 0
+                    
+                    //exercise slot 1
+                    if armsfocus == 1 {
+                        exercise1.text = "Forearm lifts"
+                        armsused = 1
+                        focuschoice = "Wrist Twists"
+                    }
+                    else if backfocus == 1 {
+                        exercise1.text = "Back Stretches"
+                        backused = 1
+                        focuschoice = "Waist Stretches"
+                    }
+                    else if handsfocus == 1 {
+                        exercise1.text = "Hand Stretches"
+                        handsused = 1
+                        focuschoice = "Finger Massages"
+                    }
+                    else if neckfocus == 1 {
+                        exercise1.text = "Neck Twists"
+                        neckused = 1
+                        focuschoice = "Neck-Band Pulls"
+                    }
+                    else {
+                        exercise1.text = "Dumb-bell Chest Press"
+                        focuschoice = "No Focus"
+                        focuscheck   = 1
+                    }
+                    
+                    //exercise slot 2
+                    if focuscheck == 0 {
+                    if neckfocus == 1 && neckused == 0 {
+                        exercise2.text = "Neck Twists"
+                        focuschoice = "Second Neck thing"
+                        neckused = 1
+                    }
+                    else if handsfocus == 1 && handsused == 0 {
+                        exercise2.text = "Hand Stretches"
+                        focuschoice = "Other Hand Thing"
+                        handsused = 1
+                    }
+                    else if backfocus == 1 && backused == 0 {
+                        exercise2.text = "Back Stretches"
+                        focuschoice = "Other back thing"
+                        backused = 1
+                    }
+                    else {
+                        exercise2.text = focuschoice
+                        if focuschoice == "Wrist Twists" {
+                            armsused += 1
+                        }
+                        if focuschoice == "Waist Stretches" {
+                            backused += 1
+                        }
+                        if focuschoice == "Finger Massages" {
+                            handsused += 1
+                        }
+                        if focuschoice == "Neck-Band Pulls" {
+                            neckused += 1
+                        }
+                
+                        focuscheck2  = 1
+                        }
+                    //exercise slot 3
+                    if focuscheck2 == 1 {
+                            exercise3.text = "Neck Twists"
+                        }
+                    else if handsfocus == 1 && handsused < 2 {
+                            exercise3.text = "Finger Massages"
+                        }
+                    else if backfocus == 1 && backused < 2  {
+                        exercise3.text = "Waist Stretches"
+                        }
+                    else if armsfocus == 1 && armsused < 2 {
+                        exercise3.text = "Wrist Twists"
+                        }
+                    else {
+                        exercise3.text = "shouldnt get here"
+                        }
+                        
+                    }
+                    else {
+                    exercise2.text = "Forearm lifts"
+                    exercise3.text = "Neck Twists"
                     }
                     
                     

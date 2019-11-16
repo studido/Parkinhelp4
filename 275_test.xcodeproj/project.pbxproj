@@ -52,6 +52,7 @@
 		A4C1065D237E3C0E006ACF47 /* doctorbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C1065C237E3C0E006ACF47 /* doctorbackground.png */; };
 		A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */; };
 		A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */; };
+		A4DF0F79237FB86E006BCAB2 /* FocusAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */; };
 		A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E952370CDEE0070E1A4 /* Survey.storyboard */; };
 		A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */; };
 		DD872CC5A561966DE851E4FB /* Pods_275_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0509952793B4513A2FDDE658 /* Pods_275_testTests.framework */; };
@@ -130,6 +131,7 @@
 		A4C1065C237E3C0E006ACF47 /* doctorbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctorbackground.png; sourceTree = "<group>"; };
 		A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocProfileViewController.swift; sourceTree = "<group>"; };
 		A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocPatientListViewController.swift; sourceTree = "<group>"; };
+		A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAreaViewController.swift; sourceTree = "<group>"; };
 		A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E00E952370CDEE0070E1A4 /* Survey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
 		A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				990530922370DCC60068FA22 /* MenuController.swift */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
+				A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */,
 				A44FCA9D237E22A8000D4B8E /* Variables.swift */,
 				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
 				A45290C4237E37D5003F8D06 /* DoctorViewController.swift */,
@@ -542,6 +545,7 @@
 				992EF49C237B88F5007A5573 /* PillScheduleViewController.swift in Sources */,
 				990530952370DCC70068FA22 /* MenuController.swift in Sources */,
 				A44FCA9A237E1A88000D4B8E /* RecommendViewController.swift in Sources */,
+				A4DF0F79237FB86E006BCAB2 /* FocusAreaViewController.swift in Sources */,
 				9939D4F823750A3D00F1FB1F /* TremorViewController.swift in Sources */,
 				9905309D2370DCDA0068FA22 /* MenuOptionCell.swift in Sources */,
 				990530992370DCD00068FA22 /* MenuOption.swift in Sources */,
