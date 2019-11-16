@@ -12,20 +12,62 @@ class RecommendViewController: UIViewController {
 var weight = ""
 var age = ""
     
-    @IBOutlet weak var Label2: UILabel!
-    @IBOutlet weak var Label3: UILabel!
+    @IBOutlet weak var extitle: UIButton!
     
-    @IBOutlet weak var Experweek: UILabel!
-    @IBOutlet weak var test: UIButton!
-    override func viewDidLoad() {
+    @IBOutlet weak var totalex: UILabel!
+    
+    @IBOutlet weak var totalrep: UILabel!
+    
+    
+            override func viewDidLoad() {
         super.viewDidLoad()
-        Label2.text = Variables.age
-        Label3.text = Variables.weight
-        test.layer.cornerRadius = 15
-        test.layer.borderColor = UIColor.black.cgColor
-        test.layer.borderWidth = 0.5
+                /*
+                let totalex1 : Int? = Int(Variables.age)
+                let totalrep1 : Int? = Int(Variables.weight)
+                let totalex2 = String(totalex1!)
+                let totalrep2 = String(totalrep1!)
+                totalex.text = totalex2
+                totalrep.text = totalrep2
+                */
+                
+                if let repitition = UserDefaults.standard.object(forKey: "Repitition") as? String
+                {
+                    let totalrep1 = UserDefaults.standard.object(forKey: "Intensity") as? String
+                    let totalex1 : Int? = Int(repitition)
+                    let totalrep2 : Int? = Int(totalrep1!)
+                    let finalexperweek = totalex1!*3
+                    let finalrepperweek = totalex1!*totalrep2!*3*3
+                    let finalexstring = String(finalexperweek)
+                    let finalrepstring = String(finalrepperweek)
+                    totalex.text = finalexstring
+                    totalrep.text = finalrepstring
+                }
+                
+                
+                
+                
+                
+                
+                
+                
+        extitle.layer.cornerRadius = 25
+       
         // Do any additional setup after loading the view.
     }
+    /*
+    //safer to put in here to avoid crash, but SLOWER
+     
+     
+     
+     
+     
+     
+    override func viewDidAppear(_ animated: Bool) {
+        if let x = UserDefaults.standard.object(forKey: "Age") as? String
+        {
+            totalrep.text = x
+        }
+    }*/
     
 
     /*

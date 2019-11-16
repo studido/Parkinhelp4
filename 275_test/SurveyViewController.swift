@@ -32,6 +32,26 @@ class SurveyViewController: UIViewController {
       //  self.age1 = Age.text!
         Variables.weight = Weight.text!
         Variables.age = Age.text!
+        Variables.firstname = FirstName.text!
+        Variables.lastname = LastName.text!
+        Variables.gender = Gender.text!
+        Variables.height = Height.text!
+        Variables.dateofbirth = DateofBirth.text!
+        Variables.contactnumber = ContactNumber.text!
+        Variables.durationofdisease = DurationofDisease.text!
+        Variables.repetitions = Repitition.text!
+        Variables.intensity = Intensity.text!
+        UserDefaults.standard.set(Weight.text, forKey: "Weight")
+        UserDefaults.standard.set(Age.text, forKey: "Age")
+        UserDefaults.standard.set(FirstName.text, forKey: "FirstName")
+        UserDefaults.standard.set(LastName.text, forKey: "LastName")
+        UserDefaults.standard.set(Gender.text, forKey: "Gender")
+        UserDefaults.standard.set(Height.text, forKey: "Height")
+        UserDefaults.standard.set(DateofBirth.text, forKey: "DateofBirth")
+        UserDefaults.standard.set(ContactNumber.text, forKey: "ContactNumber")
+        UserDefaults.standard.set(DurationofDisease.text, forKey: "DurationofDisease")
+        UserDefaults.standard.set(Repitition.text, forKey: "Repitition")
+        UserDefaults.standard.set(Intensity.text, forKey: "Intensity")
         
         performSegue(withIdentifier: "surveyresult", sender: self)
         //dont think we need any of this now

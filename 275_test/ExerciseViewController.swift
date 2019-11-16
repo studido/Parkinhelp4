@@ -10,7 +10,9 @@ import UIKit
 
 class ExerciseViewController: UIViewController {
     
+    @IBOutlet weak var Weight1: UIImageView!
     
+    @IBOutlet weak var Weight2: UIImageView!
     @IBOutlet weak var UpperBody: UIButton!
   
     @IBOutlet weak var RecommendedEx: UIButton!
@@ -28,20 +30,24 @@ class ExerciseViewController: UIViewController {
         
         UpperBody.layer.cornerRadius = 15
         UpperBody.layer.borderColor = UIColor.black.cgColor
-        UpperBody.layer.borderWidth = 0.5
+        UpperBody.layer.borderWidth = 1.5
     
         LowerBody.layer.cornerRadius = 15
         LowerBody.layer.borderColor = UIColor.black.cgColor
-        LowerBody.layer.borderWidth = 0.5
+        LowerBody.layer.borderWidth = 1.5
         RecommendedEx.layer.cornerRadius = 15
         RecommendedEx.layer.borderColor = UIColor.black.cgColor
-        RecommendedEx.layer.borderWidth = 0.5
+        RecommendedEx.layer.borderWidth = 1.5
         Arms.layer.cornerRadius = 15
         Arms.layer.borderColor = UIColor.black.cgColor
-        Arms.layer.borderWidth = 0.5
+        Arms.layer.borderWidth = 1.5
         Head.layer.cornerRadius = 15
         Head.layer.borderColor = UIColor.black.cgColor
-        Head.layer.borderWidth = 0.5
+        Head.layer.borderWidth = 1.5
+        Weight1.layer.borderColor = UIColor.black.cgColor
+        Weight1.layer.borderWidth = 1.5
+        Weight2.layer.borderColor = UIColor.black.cgColor
+        Weight2.layer.borderWidth = 1.5
         
         // Do any additional setup after loading the view, typically from a nib.
     }

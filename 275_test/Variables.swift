@@ -10,10 +10,30 @@ import Foundation
 import UIKit
 
 class Variables: UIViewController {
-  static  var age = String()
-   static var weight = String()
+    //doctor variables
     static  var docname = String()
     static var docprofession = String()
+    
+    
+    //patient variables
+    static var firstname = String()
+    static var lastname = String()
+    static var age = String()
+    static var weight = String()
+    static var gender = String()
+    static var height = String()
+    static var dateofbirth = String()
+    static var contactnumber = String()
+    static var durationofdisease = String()
+    static var repetitions = String()
+    static var intensity = String()
+    
+
+    
+ 
+
+    
+    
     
 }
 
