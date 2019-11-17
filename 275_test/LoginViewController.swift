@@ -80,12 +80,33 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                     let ref : DatabaseReference = Database.database().reference()
                     ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
                         if (snapshot.exists()) {
-                            //User exists in database, route user to main menu
-                            self.performSegue(withIdentifier: "goToMainMenu", sender: self)
+                            //User exists in database
+                            let value = snapshot.value as! [String: String]
+                            
+                            //Initalize users name
+                            Variables.firstname = value["firstName"]!
+                            Variables.lastname = value["lastName"]!
+                            
+                            //Route user to appropriate main menu
+                            if (value["userType"] != "patient") {
+                                Variables.docprofession = value["doctorProfession"]!
+                                self.performSegue(withIdentifier: "goToDocMainMenu", sender: self)
+                            }
+                            else if (value["userType"] == "patient") {
+                                Variables.age = value["age"]!
+                                Variables.height = value["height"]!
+                                Variables.weight = value["weight"]!
+                                Variables.gender = value["gender"]!
+                                Variables.contactnumber = value["contactNumber"]!
+                                Variables.dateofbirth = value["dateOfBirth"]!
+                                Variables.durationofdisease = value["durationOfDisease"]!
+                                Variables.repetitions = value["repetitions"]!
+                                Variables.intensity = value["intensity"]!
+                                self.performSegue(withIdentifier: "goToMainMenu", sender: self)
+                            }
                         }
                         else {
-                            //First time login, save users uid to firebase and route to first login questions
-                            ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).setValue(["Fullname" : user.profile.name])
+                            //First time login, route to first login questions
                             self.performSegue(withIdentifier: "goToPatientDoctorScreen", sender: self)
                         }
                     })

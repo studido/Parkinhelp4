@@ -10,14 +10,17 @@ import Foundation
 import UIKit
 
 class Variables: UIViewController {
+    //shared variables
+    static var userType = String()
+    static var firstname = String()
+    static var lastname = String()
+    
     //doctor variables
-    static  var docname = String()
+    static var docname = String()
     static var docprofession = String()
     
     
     //patient variables
-    static var firstname = String()
-    static var lastname = String()
     static var age = String()
     static var weight = String()
     static var gender = String()

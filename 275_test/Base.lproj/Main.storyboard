@@ -64,14 +64,6 @@
                                 <rect key="frame" x="101" y="348" width="212" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCK-ex-TgQ">
-                                <rect key="frame" x="262" y="596" width="77" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="y7U-Lv-80C" kind="show" id="cI7-VU-Smb"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -87,6 +79,7 @@
                         <outlet property="WelcomeMessage" destination="wSD-Er-hxR" id="bww-rG-gEN"/>
                         <segue destination="y7U-Lv-80C" kind="show" identifier="goToPatientDoctorScreen" id="pov-f9-ej4"/>
                         <segue destination="sVe-G9-I3b" kind="show" identifier="goToMainMenu" id="M8c-2k-ctg"/>
+                        <segue destination="OgT-aT-gTz" kind="show" identifier="goToDocMainMenu" id="tBa-db-ftk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -99,7 +92,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Menu" storyboardName="Menu" referencedIdentifier="Menu" id="sVe-G9-I3b" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-pp-lzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="398" y="-348"/>
+            <point key="canvasLocation" x="-213" y="530"/>
         </scene>
         <!--User Select View Controller-->
         <scene sceneID="y9W-f9-aBt">
@@ -143,11 +136,6 @@
                                     <segue destination="3He-B5-iFT" kind="show" id="R1b-fj-ury"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kft-Xv-g6T">
-                                <rect key="frame" x="294" y="832" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign out"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bho-W5-JN0">
                                 <rect key="frame" x="186" y="458" width="19" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -185,14 +173,12 @@
                         <outlet property="DoctorButton" destination="cfH-Yd-8gy" id="T6T-Qc-OBs"/>
                         <outlet property="PatientButton" destination="gI0-Dv-aR0" id="mFK-z4-P4t"/>
                         <outlet property="Registerlabel" destination="8Cr-Lg-1jb" id="aZU-sY-Bu8"/>
-                        <outlet property="SignOut" destination="kft-Xv-g6T" id="Lrp-d3-WCc"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="MbP-FK-aYL"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="goBackToLogin" id="OEw-Sf-8XE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jgj-dS-wX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="805.79710144927537" y="24.776785714285712"/>
+            <point key="canvasLocation" x="1055" y="25"/>
         </scene>
         <!--Survey-->
         <scene sceneID="f4M-mw-6eq">
@@ -208,7 +194,15 @@
                 <viewControllerPlaceholder storyboardIdentifier="Tremor" storyboardName="Tremor" referencedIdentifier="Tremor" id="emO-Dd-FdS" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZn-ep-rhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1661" y="173"/>
+            <point key="canvasLocation" x="1764" y="78"/>
+        </scene>
+        <!--docMainMenu-->
+        <scene sceneID="sEq-Vq-Dse">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="docMenu" storyboardName="Main" referencedIdentifier="docMainMenu" id="OgT-aT-gTz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6QE-CX-kY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="530"/>
         </scene>
         <!--Doctor View Controller-->
         <scene sceneID="LQN-V6-0RT">
@@ -308,7 +302,7 @@
         <!--Doc Patient List View Controller-->
         <scene sceneID="t88-0e-7Ur">
             <objects>
-                <viewController id="2Qm-sw-1Fv" customClass="DocPatientListViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="docMainMenu" id="2Qm-sw-1Fv" customClass="DocPatientListViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nkE-Si-KGM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,8 +456,6 @@
         <image name="white.jpg" width="1080" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="79k-Cy-45w"/>
-        <segue reference="pov-f9-ej4"/>
-        <segue reference="MbP-FK-aYL"/>
+        <segue reference="8bF-dH-bQN"/>
     </inferredMetricsTieBreakers>
 </document>

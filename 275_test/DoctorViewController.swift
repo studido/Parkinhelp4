@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class DoctorViewController: UIViewController {
 
@@ -37,8 +39,18 @@ class DoctorViewController: UIViewController {
     }
     
     @IBAction func Done(_ sender: Any) {
-        Variables.docname = FirstName.text!
+        Variables.firstname = FirstName.text!
+        Variables.lastname = LastName.text!
         Variables.docprofession = Classification.text!
+        
+        let ref : DatabaseReference! = Database.database().reference()
+        let userData = ["firstName": Variables.firstname,
+                        "lastName":  Variables.lastname,
+                        "doctorProfession": Variables.docprofession,
+                        "userType": "healthcare professional"]
+        
+        let uid = Firebase.Auth.auth().currentUser!.uid
+        ref.updateChildValues(["/Users/\(uid)" : userData])
         performSegue(withIdentifier: "docsurveyresult", sender: self)
     }
     

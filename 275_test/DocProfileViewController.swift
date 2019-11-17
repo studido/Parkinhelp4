@@ -15,7 +15,7 @@ class DocProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        docname.text = Variables.docname
+        docname.text = Variables.firstname
         docprofession.text = Variables.docprofession
 
         // Do any additional setup after loading the view.

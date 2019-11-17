@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class SurveyViewController: UIViewController {
     //reference the UIs, connect them with codes
@@ -53,6 +55,23 @@ class SurveyViewController: UIViewController {
         UserDefaults.standard.set(Repitition.text, forKey: "Repitition")
         UserDefaults.standard.set(Intensity.text, forKey: "Intensity")
         
+        //Write patient data to firebase
+        let ref : DatabaseReference! = Database.database().reference()
+        let userData = ["firstName": Variables.firstname,
+                        "lastName":  Variables.lastname,
+                        "weight":  Variables.weight,
+                        "age":  Variables.age,
+                        "height":  Variables.height,
+                        "gender":  Variables.gender,
+                        "dateOfBirth":  Variables.dateofbirth,
+                        "contactNumber":  Variables.contactnumber,
+                        "durationOfDisease":  Variables.durationofdisease,
+                        "repetitions":  Variables.repetitions,
+                        "intensity":  Variables.intensity,
+                        "userType": "patient"]
+        
+        let uid = Firebase.Auth.auth().currentUser!.uid
+        ref.updateChildValues(["/Users/\(uid)" : userData])
         performSegue(withIdentifier: "surveyresult", sender: self)
         //dont think we need any of this now
         /*
@@ -60,6 +79,7 @@ class SurveyViewController: UIViewController {
         let surveyView: UIStoryboard = UIStoryboard(name: "MainMenu", bundle: nil)
         let mainMenuView = surveyView.instantiateViewController(withIdentifier: "MainMenu") as! ContainerController
         self.present(mainMenuView, animated:false, completion: nil)
+         
  */
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -21,12 +21,14 @@ class UserSelectViewController: UIViewController {
     
     @IBAction func userIsPatient(_ sender : UIButton) {
         UserDefaults.standard.set("patient", forKey: "userType")
+        Variables.userType = "patient"
         print("User is a patient")
     }
     
     @IBAction func userIsDoctor(_ sender : UIButton) {
-        UserDefaults.standard.set("doctor", forKey: "userType")
-        print("User is a doctor")
+        UserDefaults.standard.set("healthcare professional", forKey: "userType")
+        Variables.userType = "healthcare professional"
+        print("User is a healthcare professional")
 
     }
     
@@ -41,7 +43,6 @@ class UserSelectViewController: UIViewController {
         Registerlabel.layer.borderColor = UIColor.black.cgColor
         Registerlabel.layer.borderWidth = 0.5
         // Do any additional setup after loading the view.
-        SignOut.addTarget(self, action: #selector(signOutUserLoggedInWithGoogle(_sender:)), for: .touchUpInside)
     }
 
     @objc func signOutUserLoggedInWithGoogle(_sender: UIButton) {
