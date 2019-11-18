@@ -10,6 +10,8 @@
 
 import Foundation
 import CoreMotion
+import Firebase
+import FirebaseDatabase
 
 class TremorManager {
     private static let inst = TremorManager()
@@ -30,10 +32,6 @@ class TremorManager {
         return inst
     }
     
-    public func getDate()->Date?{
-        return data_timestamp
-    }
-    
     private init()
     {
         motionManager = CMMotionManager()
@@ -42,22 +40,14 @@ class TremorManager {
         #if DEBUG
             // generate test data
             let n:Int = Int(pow(Double(2),Double(16)))
-            
-            let frequency1:Double = 4; // Freq of test data
-            let phase1:Double = 0.0; // not used
-            let amplitude1:Double = 10; // amplitude of test data
             let sineWave1:[Double] = (0..<n).map {
-                amplitude1 * sin(2.0 * .pi / fps * Double($0) * frequency1 + phase1)
+                11 * sin(2.0 * .pi / fps * Double($0) * 4)
             }
             
-            let frequency2:Double = 7; // Freq of test data
-            let phase2:Double = 0.0; // not used
-            let amplitude2:Double = 10; // amplitude of test data
+
             let sineWave2:[Double] = (0..<n).map {
-                amplitude2 * sin(2.0 * .pi / fps * Double($0) * frequency2 + phase2)
+                10 * sin(2.0 * .pi / fps * Double($0) * 7)
             }
-            
-            //let zeros:[Double] = (0..<n).map {Double($0) - Double($0)}
             
             user_accel = (sineWave1,sineWave1,sineWave1)
             rot_rate = (sineWave2,sineWave2,sineWave2)
@@ -80,18 +70,6 @@ class TremorManager {
         }
     }
     
-    // disable recording, but acquire keeps running
-    func suspend()
-    {
-        isSuspended = true
-    }
-    
-    // enable recording
-    func resume()
-    {
-        isSuspended = false
-    }
-    
     // start acquire
     func start() //start the timer
     {
@@ -108,24 +86,30 @@ class TremorManager {
         dataTimer?.invalidate()
     }
     
-    /*
+    
     //saves current session to disk
-    func save(_ verify:Bool = true){
-        do{
-            try fileMan.saveData(accel: user_accel, rot: rot_rate, timestamp: data_timestamp)
-        } catch{
-            print("Saving Error (Non-fatal): \(error)\n")
-            return
-        }
+    func save(score : Double) {
+        let timestamp:Date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
+        let strDate = dateFormatter.string(from: timestamp)
         
-        if !verify{return;}
-        if fileMan.verifyWritten(){
-            print("Data saved successfully to \(fileMan.getLastDir()?.absoluteString ?? "nil")\n")
-        }else{
-            print("Save data failed\n")
-        }
+        let ref : DatabaseReference! = Database.database().reference()
+        let uid = Firebase.Auth.auth().currentUser!.uid
+        var dateAndTremorScore : [String: String]!
+        ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).child("TremorScores").observeSingleEvent(of: .value, with: { (snapshot) in
+            if (snapshot.exists()) {
+                dateAndTremorScore = (snapshot.value as! [String: String])
+                dateAndTremorScore[strDate] = "\(score)"
+            } else {
+                dateAndTremorScore = [strDate:"\(score)"]
+            }
+            
+            ref.updateChildValues(["/Users/\(uid)/TremorScores" : dateAndTremorScore])
+        })
+        
+        print(Date(), score)
     }
-    */
     
     // process current session
     // returns accel, gyro power spectrum and etc. refer to gdocs for format
@@ -168,8 +152,7 @@ class TremorManager {
         if motionManager.isDeviceMotionAvailable
         {
             self.motionManager.deviceMotionUpdateInterval = 1.0 / 100.0 //frequency of 100 Hz
-            self.motionManager.showsDeviceMovementDisplay = true //for now (testing purposes)
-            //not sure if we need a reference frame???
+            //self.motionManager.showsDeviceMovementDisplay = true //for now (testing purposes)
             self.motionManager.startDeviceMotionUpdates(using: .xMagneticNorthZVertical)
         }
         

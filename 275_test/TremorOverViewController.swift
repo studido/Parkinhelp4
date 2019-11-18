@@ -20,7 +20,8 @@ class TremorOverViewController: UIViewController {
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBAction func SaveButtonClicked(_ sender: Any) {
-        //save the data to db
+        collector.save(score: res![1].1)
+        self.performSegue(withIdentifier: "goToMainMenu", sender: self)
     }
 
     override func viewDidLoad() {
@@ -32,7 +33,7 @@ class TremorOverViewController: UIViewController {
         print("Accel\nFreq: \(res[0].1), Pow: \(res[0].2)\n")
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
         
-        let timestamp:Date = collector.getDate() ?? Date()
+        let timestamp:Date = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
         let strDate = dateFormatter.string(from: timestamp)

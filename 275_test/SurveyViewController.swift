@@ -68,6 +68,7 @@ class SurveyViewController: UIViewController {
                         "durationOfDisease":  Variables.durationofdisease,
                         "repetitions":  Variables.repetitions,
                         "intensity":  Variables.intensity,
+                        "email" : Variables.email,
                         "userType": "patient"]
         
         let uid = Firebase.Auth.auth().currentUser!.uid

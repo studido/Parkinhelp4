@@ -44,9 +44,7 @@ class TremorViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
         print("Start Did Appear")
-        
     }
     
     var timer = Timer()
@@ -59,12 +57,8 @@ class TremorViewController: UIViewController {
         if seconds == 0 {
             timer.invalidate()
             performSegue(withIdentifier: "TremorOverSegue", sender: self)
-            //removeAudioPlayer()
-            //gameOver()
         }else {
             seconds -= 1
-            //shootObj()
-            //playCannon()
             timeLabel.text = "\(seconds)"
             timeLabel.textColor = UIColor.white
             timeLabel.font = timeLabel.font.withSize(20)
