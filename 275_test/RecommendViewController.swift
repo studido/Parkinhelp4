@@ -26,7 +26,7 @@ var age = ""
     @IBOutlet weak var reps3: UILabel!
     @IBOutlet weak var Repititionlabel: UILabel!
     
-                override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
                 /*
                 let totalex1 : Int? = Int(Variables.age)

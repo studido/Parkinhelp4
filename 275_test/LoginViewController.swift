@@ -14,7 +14,6 @@ import Firebase
 import FirebaseDatabase
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
-    let FBManager = FirebaseManager()
     fileprivate var loggedIn = false
     
     @IBOutlet weak var Background: UIImageView!
@@ -41,7 +40,6 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance()?.delegate = self
-        FBManager.initialze()
         
         AppIcon.layer.cornerRadius = 85
         

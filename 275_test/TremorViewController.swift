@@ -12,7 +12,7 @@ import CoreMotion
 
 class TremorViewController: UIViewController {
     //Variables
-    let collector:TremorManager = TremorManager.shared()
+    let tremorManager:TremorManager = TremorManager.shared()
     
     @IBOutlet weak var Whiteback: UIImageView!
     
@@ -25,7 +25,7 @@ class TremorViewController: UIViewController {
     @IBAction func readyButton(_ sender: Any) {
         startTimer()
         readyButton.isHidden = true
-        collector.start()
+        tremorManager.start()
     }
     
     override func viewDidLoad() {

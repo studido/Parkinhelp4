@@ -1,10 +1,7 @@
-// File: fft.swift
-//
 //  Original Author: Christopher Helf
 //  From: https://github.com/christopherhelf/Swift-FFT-Example
 //  Original License: CC0-1.0
-//
-//  Modified by: Evan Lee
+
 
 import Foundation
 import Accelerate
@@ -236,12 +233,12 @@ class FastFourierTransform {
         vDSP_vsmulD(&result, 1, &scale, &copyOfResult, 1, vDSP_Length(N));
         result = copyOfResult
         
-        /*
-         // Print Result
-         for k in 0 ..< N {
-         ("\(k)   \(values[k])     \(result[k])")
-         }
-         */
+        
+        // Print Result
+//         for k in 0 ..< N {
+//         ("\(k)   \(values[k])     \(result[k])")
+//         }
+ 
         
         return ((freq_plus,filteredSpectrum),maxFrequency,maxFrequencyResult.0)
     }

@@ -11,7 +11,7 @@ import UIKit
 
 
 class TremorOverViewController: UIViewController {
-    fileprivate let collector:TremorManager = TremorManager.shared()
+    fileprivate let tremorManager:TremorManager = TremorManager.shared()
     fileprivate var res : [(([Double],[Double]),Double,Double)]!
     fileprivate var score : Double!
     
@@ -20,16 +20,14 @@ class TremorOverViewController: UIViewController {
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBAction func SaveButtonClicked(_ sender: Any) {
-        collector.save(score: res![1].1)
+        tremorManager.save(score: res![1].1)
         self.performSegue(withIdentifier: "goToMainMenu", sender: self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        res = collector.processAll()
-        collector.end()
-        // print processed data
-        //ScoreLabel.text = "40"
+        res = tremorManager.processAll()
+        //collector.end()
         print("Accel\nFreq: \(res[0].1), Pow: \(res[0].2)\n")
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
         
