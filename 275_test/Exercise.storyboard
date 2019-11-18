@@ -114,6 +114,81 @@
             </objects>
             <point key="canvasLocation" x="-666.66666666666674" y="149.33035714285714"/>
         </scene>
+        <!--Calf View Controller-->
+        <scene sceneID="Mmc-wK-Wlz">
+            <objects>
+                <viewController id="ZLo-SY-ZKi" customClass="calfViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iqC-q9-jFD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calf2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EqW-4q-8t5">
+                                <rect key="frame" x="7" y="80" width="387" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-rZ-iHf">
+                                <rect key="frame" x="7" y="354" width="387" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Jay Alberts, Ph.D. and the Center for Neurological Restoration have discovered that Parkinsons patients who rode with a trainer peddling at 80-90 RPM for an hour three times a week showed a 35% increase in motor function. Learn more about this treatment for Parkinson's Disease here -</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1s-Ff-hMB">
+                                <rect key="frame" x="123" y="632" width="128" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open from website"/>
+                                <connections>
+                                    <action selector="calfvideo:" destination="ZLo-SY-ZKi" eventType="touchUpInside" id="LGd-O5-hi7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cNR-4F-dRm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="In2-vf-Fv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2168.1159420289855" y="970.98214285714278"/>
+        </scene>
+        <!--Foot View Controller-->
+        <scene sceneID="rEs-Vn-bJA">
+            <objects>
+                <viewController id="H1Y-Yj-DRg" customClass="footViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uiu-VM-6Nh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="font2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CGN-nv-sok">
+                                <rect key="frame" x="20" y="65" width="374" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QH0-uO-24h">
+                                <rect key="frame" x="20" y="342" width="374" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Growing older means your muscles get weaker. For people with Parkinson's, this weakness in muscles is often greater. Hence, it is important to include strength training as part of your regular exercise programme. Join us in these basic exercises designed to help improve strength and balance.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99q-5W-nZA">
+                                <rect key="frame" x="142" y="579" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open from website"/>
+                                <connections>
+                                    <action selector="footvideo:" destination="H1Y-Yj-DRg" eventType="touchUpInside" id="axp-FM-u3p"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QZK-af-4cI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSk-8p-thQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1781.1594202898552" y="1678.7946428571429"/>
+        </scene>
         <!--Lower Body View Controller-->
         <scene sceneID="Cbb-wz-Asl">
             <objects>
@@ -126,15 +201,6 @@
                                 <rect key="frame" x="-1" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n0-4L-0d5" customClass="EX">
-                                <rect key="frame" x="19" y="150" width="375" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Thigh">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-mB-zoq">
                                 <rect key="frame" x="0.0" y="20" width="92" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -146,23 +212,27 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="DfT-yf-jmZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y5p-BY-MSE">
-                                <rect key="frame" x="19" y="312" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw6-0H-Msp">
+                                <rect key="frame" x="162" y="205" width="58" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Calf">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="calf">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.11998172009999999" blue="0.2889951549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="ZLo-SY-ZKi" kind="show" id="nZd-y4-2PQ"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFn-nM-L4g">
-                                <rect key="frame" x="19" y="468" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woB-TQ-vIE">
+                                <rect key="frame" x="157" y="521" width="63" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Foot">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="foot">
+                                    <color key="titleColor" red="1" green="0.13174914099999999" blue="0.096042419379999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="H1Y-Yj-DRg" kind="show" id="t4Z-IM-sCz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -172,11 +242,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZdX-pz-bGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1044" y="992"/>
+            <point key="canvasLocation" x="-1044.9275362318842" y="991.74107142857133"/>
         </scene>
         <!--Arms View Controller-->
         <scene sceneID="VZn-d0-k6K">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiC-Hz-Ozb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JYD-VF-3nM" customClass="ArmsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ARN" id="UiO-ut-UMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -198,40 +269,26 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="aZM-37-OEc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0O-oF-whY">
-                                <rect key="frame" x="19" y="302" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw9-Zc-HxH">
+                                <rect key="frame" x="176" y="225" width="79" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Lower arms">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="arms">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.11998172009999999" blue="0.2889951549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="armlowarm:" destination="JYD-VF-3nM" eventType="touchUpInside" id="kst-gE-4Y0"/>
+                                    <segue destination="Unm-jK-dRt" kind="show" id="Qea-Do-VTr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HJ-B7-zgp">
-                                <rect key="frame" x="19" y="473" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztc-Le-BaU">
+                                <rect key="frame" x="175" y="517" width="81" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Hands">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="hand">
+                                    <color key="titleColor" red="1" green="0.544866403" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="armhands:" destination="JYD-VF-3nM" eventType="touchUpInside" id="gKF-7C-d0Q"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Icz-rK-GjG">
-                                <rect key="frame" x="19" y="137" width="375" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Upper arms">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="uppertoarms:" destination="JYD-VF-3nM" eventType="touchUpInside" id="QzJ-qV-BdJ"/>
+                                    <segue destination="jfJ-4Q-Fe9" kind="show" id="1EF-E2-ZiE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,9 +297,86 @@
                         <viewLayoutGuide key="safeArea" id="AXi-b9-AaB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NiC-Hz-Ozb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="881"/>
+        </scene>
+        <!--Hand View Controller-->
+        <scene sceneID="hWh-2N-L4R">
+            <objects>
+                <viewController id="jfJ-4Q-Fe9" customClass="handViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mZN-Pr-Tnj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UZ-c7-jx9">
+                                <rect key="frame" x="66" y="655" width="292" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="open from website"/>
+                                <connections>
+                                    <action selector="handvideo:" destination="jfJ-4Q-Fe9" eventType="touchUpInside" id="hXN-d2-xoE"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0p-1e-ChZ">
+                                <rect key="frame" x="20" y="72" width="374" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cJ1-hN-Sk5">
+                                <rect key="frame" x="20" y="332" width="374" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Follow along as Madi walks you through 7 "handy" Parkinson's exercises that will help you improve your finger and hand dexterity</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NBR-Hy-Lc5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ije-v2-dv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="1519.4196428571429"/>
+        </scene>
+        <!--Arms View Controller-->
+        <scene sceneID="EGF-n8-Bfl">
+            <objects>
+                <viewController id="Unm-jK-dRt" customClass="armsViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rGd-Og-abk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib4-op-urd">
+                                <rect key="frame" x="86" y="622" width="292" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="open from website"/>
+                                <connections>
+                                    <action selector="armvideo:" destination="Unm-jK-dRt" eventType="touchUpInside" id="AgD-C7-dpN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="arm2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9kp-ac-JWo">
+                                <rect key="frame" x="20" y="81" width="374" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lPs-Vm-IPc">
+                                <rect key="frame" x="20" y="342" width="374" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Exercise can be a key part to managing Parkinson's Disease - just ask Ed McCaskey Jr. 
+We're checking out how it's making a difference in his life and in the lives of many other patients.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ITv-34-WIq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6i-dk-ghE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="1384.8214285714284"/>
         </scene>
         <!--Neck View Controller-->
         <scene sceneID="bY5-98-d27">
@@ -603,16 +737,20 @@ Here's many of them</string>
         </scene>
     </scenes>
     <resources>
+        <image name="arm2.jpg" width="799" height="625"/>
         <image name="back2.jpg" width="1047" height="373"/>
+        <image name="calf2.jpg" width="731" height="676"/>
         <image name="chest2.jpg" width="1189" height="629"/>
         <image name="doctorbackground.png" width="640" height="1136"/>
         <image name="dumbbell.png" width="920" height="540"/>
         <image name="face2.jpg" width="900" height="630"/>
+        <image name="font2.jpg" width="995" height="484"/>
+        <image name="hand2.jpg" width="755" height="505"/>
         <image name="neck2.jpg" width="860" height="620"/>
         <image name="reccommended.jpg" width="1125" height="2436"/>
         <image name="shoulder2.jpg" width="773" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="wNa-4t-IB2"/>
+        <segue reference="DfT-yf-jmZ"/>
     </inferredMetricsTieBreakers>
 </document>
