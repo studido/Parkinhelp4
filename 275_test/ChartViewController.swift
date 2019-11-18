@@ -1,10 +1,4 @@
-//
-//  ViewController.swift
-//  BarChart
-//
-//  Created by Nguyen Vu Nhat Minh on 19/8/17.
-//  Copyright © 2017 Nguyen Vu Nhat Minh. All rights reserved.
-//
+/* https://medium.com/@leonardnguyen/build-your-own-chart-in-ios-part-1-bar-chart-e1b7f4789d70 */
 
 import UIKit
 

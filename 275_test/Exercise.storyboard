@@ -468,7 +468,7 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <rect key="frame" x="135" y="560" width="143" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="Shoudler">
+                                <state key="normal" title="Shoulder">
                                     <color key="titleColor" red="0.95686274510000002" green="0.11998172010790531" blue="0.28899515487831839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -751,6 +751,6 @@ Here's many of them</string>
         <image name="shoulder2.jpg" width="773" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DfT-yf-jmZ"/>
+        <segue reference="QPJ-Be-0RG"/>
     </inferredMetricsTieBreakers>
 </document>
