@@ -4,82 +4,162 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Firebase.xcscheme</key>
+		<key>Firebase-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseAnalytics.xcscheme</key>
+		<key>Firebase-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseAuth.xcscheme</key>
+		<key>FirebaseAnalytics-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseAuthInterop.xcscheme</key>
+		<key>FirebaseAnalytics-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseCore.xcscheme</key>
+		<key>FirebaseAuth-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseCoreDiagnostics.xcscheme</key>
+		<key>FirebaseAuth-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseCoreDiagnosticsInterop.xcscheme</key>
+		<key>FirebaseAuthInterop-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseDatabase.xcscheme</key>
+		<key>FirebaseAuthInterop-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>FirebaseInstanceID.xcscheme</key>
+		<key>FirebaseCore-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GTMSessionFetcher.xcscheme</key>
+		<key>FirebaseCore-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleAppMeasurement.xcscheme</key>
+		<key>FirebaseCoreDiagnostics-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleDataTransport.xcscheme</key>
+		<key>FirebaseCoreDiagnostics-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleDataTransportCCTSupport.xcscheme</key>
+		<key>FirebaseCoreDiagnosticsInterop-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleSignIn.xcscheme</key>
+		<key>FirebaseCoreDiagnosticsInterop-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
+		<key>FirebaseDatabase-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>GoogleUtilities.xcscheme</key>
+		<key>FirebaseDatabase-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseInstanceID-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FirebaseInstanceID-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GTMSessionFetcher-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAppMeasurement-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleAppMeasurement-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleDataTransport-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleDataTransport-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleDataTransportCCTSupport-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleDataTransportCCTSupport-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleSignIn-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleSignIn-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleToolboxForMac-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUtilities-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>GoogleUtilities-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -99,12 +179,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>leveldb-library.xcscheme</key>
+		<key>leveldb-library-iOS10.3.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>nanopb.xcscheme</key>
+		<key>leveldb-library-iOS12.1.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>nanopb-iOS10.3.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>nanopb-iOS12.1.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
