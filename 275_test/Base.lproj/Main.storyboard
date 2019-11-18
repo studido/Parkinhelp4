@@ -157,14 +157,6 @@
                                     <segue destination="BNA-r8-lHX" kind="show" id="IQs-1F-hY1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1M-VM-6mk">
-                                <rect key="frame" x="160" y="107" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go To Tremor"/>
-                                <connections>
-                                    <segue destination="emO-Dd-FdS" kind="show" id="nmJ-I8-OuW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="Ico-ha-3Du"/>
@@ -187,14 +179,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruH-av-Sb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1764" y="13"/>
-        </scene>
-        <!--Tremor-->
-        <scene sceneID="Z1t-fq-hHg">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Tremor" storyboardName="Tremor" referencedIdentifier="Tremor" id="emO-Dd-FdS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YZn-ep-rhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1764" y="78"/>
         </scene>
         <!--docMainMenu-->
         <scene sceneID="sEq-Vq-Dse">
@@ -469,6 +453,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="8bF-dH-bQN"/>
-        <segue reference="nn0-2B-aHI"/>
+        <segue reference="MbP-FK-aYL"/>
     </inferredMetricsTieBreakers>
 </document>

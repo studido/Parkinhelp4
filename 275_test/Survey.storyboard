@@ -193,14 +193,6 @@
                                     <action selector="Done:" destination="4JV-wz-ZQN" eventType="touchUpInside" id="90r-H9-e4r"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrO-fr-2S9">
-                                <rect key="frame" x="56" y="730" width="128" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="goToMain shortcut"/>
-                                <connections>
-                                    <segue destination="OKh-ff-SbI" kind="show" id="7ZK-wq-Wqd"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tX4-0I-s47">
                                 <rect key="frame" x="223" y="579" width="151" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -238,14 +230,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rR6-6D-TbS" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1763.7681159420292" y="12.723214285714285"/>
-        </scene>
-        <!--Menu-->
-        <scene sceneID="35c-BL-VC4">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="menu" storyboardName="Menu" referencedIdentifier="Menu" id="OKh-ff-SbI" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lA0-lh-MIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2391" y="179"/>
         </scene>
         <!--Focus Area View Controller-->
         <scene sceneID="MfM-nQ-x7z">
