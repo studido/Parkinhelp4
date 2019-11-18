@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="-2168.1159420289855" y="970.98214285714278"/>
         </scene>
-        <!--Foot View Controller-->
+        <!--Newfoot View Controller-->
         <scene sceneID="rEs-Vn-bJA">
             <objects>
-                <viewController id="H1Y-Yj-DRg" customClass="footViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="H1Y-Yj-DRg" customClass="newfootViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uiu-VM-6Nh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -172,12 +172,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99q-5W-nZA">
-                                <rect key="frame" x="142" y="579" width="130" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-E9-mkf">
+                                <rect key="frame" x="172" y="606" width="135" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Open from website"/>
+                                <state key="normal" title="open from websites"/>
                                 <connections>
-                                    <action selector="footvideo:" destination="H1Y-Yj-DRg" eventType="touchUpInside" id="axp-FM-u3p"/>
+                                    <action selector="footvideo:" destination="H1Y-Yj-DRg" eventType="touchUpInside" id="cLj-cn-2Nc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,7 +231,7 @@
                                     <color key="titleColor" red="1" green="0.13174914099999999" blue="0.096042419379999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="H1Y-Yj-DRg" kind="show" id="t4Z-IM-sCz"/>
+                                    <segue destination="H1Y-Yj-DRg" kind="show" id="yw8-sd-Nk5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -242,12 +242,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZdX-pz-bGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1044.9275362318842" y="991.74107142857133"/>
+            <point key="canvasLocation" x="-1046.376811594203" y="991.74107142857133"/>
         </scene>
         <!--Arms View Controller-->
         <scene sceneID="VZn-d0-k6K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NiC-Hz-Ozb" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="JYD-VF-3nM" customClass="ArmsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ARN" id="UiO-ut-UMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -297,6 +296,7 @@
                         <viewLayoutGuide key="safeArea" id="AXi-b9-AaB"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NiC-Hz-Ozb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="881"/>
         </scene>

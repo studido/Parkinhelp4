@@ -9,16 +9,18 @@
 import UIKit
 
 class footViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func footvideo(_ sender: UIButton) {
+    @IBAction func calfvideo(_ sender: UIButton) {
         
-         UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=MsXlZ_phGNY")! as URL,options:[:],completionHandler: nil)    }
+        UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=MsXlZ_phGNY")! as URL,options:[:],completionHandler: nil)
+        
+    }
     
     /*
     // MARK: - Navigation
