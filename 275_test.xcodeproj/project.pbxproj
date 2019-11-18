@@ -17,18 +17,18 @@
 		34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB20B6236BC714001379EE /* UserSelectViewController.swift */; };
 		4C20C27A2380F62900211694 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20C2792380F62900211694 /* ChartViewController.swift */; };
 		4C8BCBCA2380F25300A3D285 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BCBC92380F25300A3D285 /* EX.swift */; };
-		4CE8B36023820F20007D7D77 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B35F23820F20007D7D77 /* DataEntry.swift */; };
-		4CE8B36223820F25007D7D77 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36123820F25007D7D77 /* CustomSegments.swift */; };
-		4CE8B36423820F28007D7D77 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36323820F28007D7D77 /* UIBezierPathExtension.swift */; };
-		4CE8B36623820F2B007D7D77 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36523820F2B007D7D77 /* CALayerExtension.swift */; };
-		4CE8B36823820F2F007D7D77 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36723820F2F007D7D77 /* ArrayExtension.swift */; };
-		4CE8B36A23820F33007D7D77 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36923820F33007D7D77 /* BasicBarChart.swift */; };
-		4CE8B36C23820F3A007D7D77 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36B23820F3A007D7D77 /* BasicBarChartPresenter.swift */; };
-		4CE8B36E23820F3D007D7D77 /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36D23820F3D007D7D77 /* BasicBarEntry.swift */; };
 		4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B373238220B7007D7D77 /* ChestViewController.swift */; };
 		4CE8B376238228DD007D7D77 /* backViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B375238228DD007D7D77 /* backViewController.swift */; };
 		4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */; };
 		4CE8B37A23822EBB007D7D77 /* upperbody in Resources */ = {isa = PBXBuildFile; fileRef = 4CE8B37923822EBB007D7D77 /* upperbody */; };
+		4CE8B37C23823182007D7D77 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B37B23823182007D7D77 /* DataEntry.swift */; };
+		4CE8B37E238231AD007D7D77 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B37D238231AD007D7D77 /* CustomSegments.swift */; };
+		4CE8B380238231E1007D7D77 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */; };
+		4CE8B382238231FE007D7D77 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B381238231FE007D7D77 /* ArrayExtension.swift */; };
+		4CE8B38423823210007D7D77 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B38323823210007D7D77 /* BasicBarChart.swift */; };
+		4CE8B38623823229007D7D77 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B38523823229007D7D77 /* BasicBarChartPresenter.swift */; };
+		4CE8B38823823236007D7D77 /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B38723823236007D7D77 /* BasicBarEntry.swift */; };
+		4CE8B38A2382331B007D7D77 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */; };
 		540A7D31D058CB292B1FD907 /* Pods_275_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869DE1CB743AF7E1B501B67C /* Pods_275_testUITests.framework */; };
 		708AE7F289555A4AA6BA2D04 /* Pods_275_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87625B67460843F85C90F8ED /* Pods_275_test.framework */; };
 		990530952370DCC70068FA22 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990530922370DCC60068FA22 /* MenuController.swift */; };
@@ -108,18 +108,18 @@
 		34BB20B6236BC714001379EE /* UserSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectViewController.swift; sourceTree = "<group>"; };
 		4C20C2792380F62900211694 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		4C8BCBC92380F25300A3D285 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
-		4CE8B35F23820F20007D7D77 /* DataEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataEntry.swift; path = "../../../Downloads/BarChart-master/BarChart/DataEntry.swift"; sourceTree = "<group>"; };
-		4CE8B36123820F25007D7D77 /* CustomSegments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomSegments.swift; path = "../../../Downloads/BarChart-master/BarChart/CustomSegments.swift"; sourceTree = "<group>"; };
-		4CE8B36323820F28007D7D77 /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIBezierPathExtension.swift; path = "../../../Downloads/BarChart-master/BarChart/UIBezierPathExtension.swift"; sourceTree = "<group>"; };
-		4CE8B36523820F2B007D7D77 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CALayerExtension.swift; path = "../../../Downloads/BarChart-master/BarChart/CALayerExtension.swift"; sourceTree = "<group>"; };
-		4CE8B36723820F2F007D7D77 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = "../../../Downloads/BarChart-master/BarChart/ArrayExtension.swift"; sourceTree = "<group>"; };
-		4CE8B36923820F33007D7D77 /* BasicBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicBarChart.swift; path = "../../../Downloads/BarChart-master/BarChart/BasicBarChart.swift"; sourceTree = "<group>"; };
-		4CE8B36B23820F3A007D7D77 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicBarChartPresenter.swift; path = "../../../Downloads/BarChart-master/BarChart/BasicBarChartPresenter.swift"; sourceTree = "<group>"; };
-		4CE8B36D23820F3D007D7D77 /* BasicBarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicBarEntry.swift; path = "../../../Downloads/BarChart-master/BarChart/BasicBarEntry.swift"; sourceTree = "<group>"; };
 		4CE8B373238220B7007D7D77 /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
 		4CE8B375238228DD007D7D77 /* backViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backViewController.swift; sourceTree = "<group>"; };
 		4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoudlerViewController.swift; sourceTree = "<group>"; };
 		4CE8B37923822EBB007D7D77 /* upperbody */ = {isa = PBXFileReference; lastKnownFileType = folder; name = upperbody; path = ../../Downloads/Parkinson/upperbody; sourceTree = "<group>"; };
+		4CE8B37B23823182007D7D77 /* DataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
+		4CE8B37D238231AD007D7D77 /* CustomSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
+		4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		4CE8B381238231FE007D7D77 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		4CE8B38323823210007D7D77 /* BasicBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		4CE8B38523823229007D7D77 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarChartPresenter.swift; sourceTree = "<group>"; };
+		4CE8B38723823236007D7D77 /* BasicBarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarEntry.swift; sourceTree = "<group>"; };
+		4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
 		64865A35A0C9B1E450F56DFC /* Pods-275_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-275_test.debug.xcconfig"; path = "Target Support Files/Pods-275_test/Pods-275_test.debug.xcconfig"; sourceTree = "<group>"; };
 		869DE1CB743AF7E1B501B67C /* Pods_275_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87625B67460843F85C90F8ED /* Pods_275_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -232,14 +232,14 @@
 		348982F02368F6D200C623F2 /* 275_test */ = {
 			isa = PBXGroup;
 			children = (
-				4CE8B35F23820F20007D7D77 /* DataEntry.swift */,
-				4CE8B36123820F25007D7D77 /* CustomSegments.swift */,
-				4CE8B36323820F28007D7D77 /* UIBezierPathExtension.swift */,
-				4CE8B36523820F2B007D7D77 /* CALayerExtension.swift */,
-				4CE8B36723820F2F007D7D77 /* ArrayExtension.swift */,
-				4CE8B36923820F33007D7D77 /* BasicBarChart.swift */,
-				4CE8B36B23820F3A007D7D77 /* BasicBarChartPresenter.swift */,
-				4CE8B36D23820F3D007D7D77 /* BasicBarEntry.swift */,
+				4CE8B37B23823182007D7D77 /* DataEntry.swift */,
+				4CE8B37D238231AD007D7D77 /* CustomSegments.swift */,
+				4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */,
+				4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */,
+				4CE8B381238231FE007D7D77 /* ArrayExtension.swift */,
+				4CE8B38323823210007D7D77 /* BasicBarChart.swift */,
+				4CE8B38523823229007D7D77 /* BasicBarChartPresenter.swift */,
+				4CE8B38723823236007D7D77 /* BasicBarEntry.swift */,
 				4C20C2792380F62900211694 /* ChartViewController.swift */,
 				9905309C2370DCDA0068FA22 /* MenuOptionCell.swift */,
 				9905309A2370DCD70068FA22 /* Protocols.swift */,
@@ -587,40 +587,40 @@
 				A4124C6E237F5D0A00D1CEDA /* TremorManager.swift in Sources */,
 				992EF49C237B88F5007A5573 /* PillScheduleViewController.swift in Sources */,
 				990530952370DCC70068FA22 /* MenuController.swift in Sources */,
-				4CE8B36023820F20007D7D77 /* DataEntry.swift in Sources */,
 				A44FCA9A237E1A88000D4B8E /* RecommendViewController.swift in Sources */,
 				4C8BCBCA2380F25300A3D285 /* EX.swift in Sources */,
-				4CE8B36E23820F3D007D7D77 /* BasicBarEntry.swift in Sources */,
+				4CE8B38623823229007D7D77 /* BasicBarChartPresenter.swift in Sources */,
 				4C20C27A2380F62900211694 /* ChartViewController.swift in Sources */,
 				A4DF0F79237FB86E006BCAB2 /* FocusAreaViewController.swift in Sources */,
 				9939D4F823750A3D00F1FB1F /* TremorViewController.swift in Sources */,
 				9905309D2370DCDA0068FA22 /* MenuOptionCell.swift in Sources */,
 				990530992370DCD00068FA22 /* MenuOption.swift in Sources */,
+				4CE8B382238231FE007D7D77 /* ArrayExtension.swift in Sources */,
 				4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */,
+				4CE8B38423823210007D7D77 /* BasicBarChart.swift in Sources */,
 				9939D5012376671E00F1FB1F /* fft.swift in Sources */,
 				A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */,
 				4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */,
+				4CE8B380238231E1007D7D77 /* CALayerExtension.swift in Sources */,
 				A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */,
-				4CE8B36A23820F33007D7D77 /* BasicBarChart.swift in Sources */,
-				4CE8B36623820F2B007D7D77 /* CALayerExtension.swift in Sources */,
 				99D19942237B8ADC00C5F2EC /* ExerciseViewController.swift in Sources */,
+				4CE8B37E238231AD007D7D77 /* CustomSegments.swift in Sources */,
 				99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */,
+				4CE8B37C23823182007D7D77 /* DataEntry.swift in Sources */,
 				A436108D237F5EA400F12714 /* LoginViewController.swift in Sources */,
 				A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */,
 				992EF49D237B88F5007A5573 /* MainViewController.swift in Sources */,
-				4CE8B36823820F2F007D7D77 /* ArrayExtension.swift in Sources */,
 				34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */,
-				4CE8B36423820F28007D7D77 /* UIBezierPathExtension.swift in Sources */,
 				4CE8B376238228DD007D7D77 /* backViewController.swift in Sources */,
 				A45290C5237E37D5003F8D06 /* DoctorViewController.swift in Sources */,
-				4CE8B36223820F25007D7D77 /* CustomSegments.swift in Sources */,
+				4CE8B38A2382331B007D7D77 /* UIBezierPathExtension.swift in Sources */,
+				4CE8B38823823236007D7D77 /* BasicBarEntry.swift in Sources */,
 				992EF49E237B88F5007A5573 /* SlideInTransition.swift in Sources */,
 				9905309B2370DCD70068FA22 /* Protocols.swift in Sources */,
 				990530962370DCC70068FA22 /* HomeController.swift in Sources */,
 				992EF49F237B88F5007A5573 /* MenuViewController.swift in Sources */,
 				99A5C6512378CA260027141A /* FirebaseManager.swift in Sources */,
 				A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */,
-				4CE8B36C23820F3A007D7D77 /* BasicBarChartPresenter.swift in Sources */,
 				348982F22368F6D200C623F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
