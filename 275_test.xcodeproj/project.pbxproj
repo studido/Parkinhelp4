@@ -28,6 +28,7 @@
 		4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B373238220B7007D7D77 /* ChestViewController.swift */; };
 		4CE8B376238228DD007D7D77 /* backViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B375238228DD007D7D77 /* backViewController.swift */; };
 		4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */; };
+		4CE8B37A23822EBB007D7D77 /* upperbody in Resources */ = {isa = PBXBuildFile; fileRef = 4CE8B37923822EBB007D7D77 /* upperbody */; };
 		540A7D31D058CB292B1FD907 /* Pods_275_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869DE1CB743AF7E1B501B67C /* Pods_275_testUITests.framework */; };
 		708AE7F289555A4AA6BA2D04 /* Pods_275_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87625B67460843F85C90F8ED /* Pods_275_test.framework */; };
 		990530952370DCC70068FA22 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990530922370DCC60068FA22 /* MenuController.swift */; };
@@ -118,6 +119,7 @@
 		4CE8B373238220B7007D7D77 /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
 		4CE8B375238228DD007D7D77 /* backViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backViewController.swift; sourceTree = "<group>"; };
 		4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoudlerViewController.swift; sourceTree = "<group>"; };
+		4CE8B37923822EBB007D7D77 /* upperbody */ = {isa = PBXFileReference; lastKnownFileType = folder; name = upperbody; path = ../../Downloads/Parkinson/upperbody; sourceTree = "<group>"; };
 		64865A35A0C9B1E450F56DFC /* Pods-275_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-275_test.debug.xcconfig"; path = "Target Support Files/Pods-275_test/Pods-275_test.debug.xcconfig"; sourceTree = "<group>"; };
 		869DE1CB743AF7E1B501B67C /* Pods_275_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87625B67460843F85C90F8ED /* Pods_275_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +204,7 @@
 				348983052368F6D400C623F2 /* 275_testTests */,
 				348983102368F6D400C623F2 /* 275_testUITests */,
 				348982EF2368F6D200C623F2 /* Products */,
+				4CE8B37923822EBB007D7D77 /* upperbody */,
 				A4361092237F901600F12714 /* reccommended.jpg */,
 				A4361090237F878000F12714 /* tremors.jpg */,
 				A4C1065C237E3C0E006ACF47 /* doctorbackground.png */,
@@ -449,6 +452,7 @@
 				A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */,
 				A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */,
 				A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */,
+				4CE8B37A23822EBB007D7D77 /* upperbody in Resources */,
 				99D19941237B8ADC00C5F2EC /* Exercise.storyboard in Resources */,
 				A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */,
 				34BB20AF236BB846001379EE /* Main.storyboard in Resources */,

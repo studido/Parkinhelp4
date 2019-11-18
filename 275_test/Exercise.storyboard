@@ -317,7 +317,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-x3-5UB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-x3-5UB">
                                 <rect key="frame" x="20" y="80" width="374" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -360,7 +360,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoulder" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-TF-lUI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoulder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-TF-lUI">
                                 <rect key="frame" x="20" y="79" width="374" height="230"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mT5-11-Ga9">
@@ -405,7 +405,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="OcQ-jZ-jr5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chest.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OcQ-jZ-jr5">
                                 <rect key="frame" x="20" y="79" width="374" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -502,12 +502,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back" width="785.25" height="279.75"/>
-        <image name="chest" width="891.75" height="471.75"/>
+        <image name="back.jpg" width="1047" height="373"/>
+        <image name="chest.jpg" width="1189" height="629"/>
         <image name="doctorbackground.png" width="640" height="1136"/>
         <image name="dumbbell.png" width="920" height="540"/>
         <image name="reccommended.jpg" width="1125" height="2436"/>
-        <image name="shoulder" width="579.75" height="450"/>
+        <image name="shoulder.jpg" width="773" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QPJ-Be-0RG"/>
