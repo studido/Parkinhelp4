@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class DocPatientListViewController: UIViewController {
 
     @IBOutlet weak var DocAcc: UIButton!
     
+    @IBAction func signOutUserLoggedInWithGoogle(_sender: UIButton) {
+        GIDSignIn.sharedInstance()?.signOut()
+        UserDefaults.standard.set(false, forKey: "usersignedIn")
+        UserDefaults.standard.synchronize()
+        print("Signed out via google")
+        performSegue(withIdentifier: "goToLogin", sender: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -40,17 +40,12 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
         super.viewDidLoad()
         GIDSignIn.sharedInstance()?.uiDelegate = self
         GIDSignIn.sharedInstance()?.delegate = self
-        
-        AppIcon.layer.cornerRadius = 85
-        
-        //FacebookSignIn.layer.borderColor = UIColor.blue.cgColor
-        //FacebookSignIn.layer.borderWidth = 1
-        GoogleSignIn.layer.cornerRadius = 25
-        
-        WelcomeLabel.layer.cornerRadius = 30
+        GIDSignIn.sharedInstance()?.signInSilently()
         GoogleSignIn.addTarget(self, action: #selector(signinUserUsingGoogle(_sender:)), for: .touchUpInside)
         
-        GIDSignIn.sharedInstance()?.signInSilently()
+        GoogleSignIn.layer.cornerRadius = 25
+        AppIcon.layer.cornerRadius = 85
+        WelcomeLabel.layer.cornerRadius = 30
         
     }
     
