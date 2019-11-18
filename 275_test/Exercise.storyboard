@@ -317,7 +317,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-x3-5UB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-x3-5UB">
                                 <rect key="frame" x="20" y="80" width="374" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -360,7 +360,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoulder.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-TF-lUI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoulder2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-TF-lUI">
                                 <rect key="frame" x="20" y="79" width="374" height="230"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mT5-11-Ga9">
@@ -405,7 +405,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chest.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OcQ-jZ-jr5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chest2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="OcQ-jZ-jr5">
                                 <rect key="frame" x="20" y="79" width="374" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -421,7 +421,7 @@
                                 <rect key="frame" x="20" y="339" width="374" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">The perfect chest workout should consist of exercises for your upper chest, middle chest and lower chest.  That said, even that doesn’t make the chest workout complete.  In order to round out your pecs with a well rounded workout you need to fill in the gaps of what is lacking on those popular chest exercises.  That is what we do in this video.</mutableString>
+                                <string key="text">The perfect chest workout should consist of exercises for your upper chest, middle chest and lower chest.  That said, even that doesn’t make the chest workout complete.  In order to round out your pecs with a well rounded workout you need to fill in the gaps of what is lacking on those popular chest exercises.  That is what we do in this video.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -502,12 +502,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.jpg" width="1047" height="373"/>
-        <image name="chest.jpg" width="1189" height="629"/>
+        <image name="back2.jpg" width="1047" height="373"/>
+        <image name="chest2.jpg" width="1189" height="629"/>
         <image name="doctorbackground.png" width="640" height="1136"/>
         <image name="dumbbell.png" width="920" height="540"/>
         <image name="reccommended.jpg" width="1125" height="2436"/>
-        <image name="shoulder.jpg" width="773" height="600"/>
+        <image name="shoulder2.jpg" width="773" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="QPJ-Be-0RG"/>

@@ -17,10 +17,18 @@
 		34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB20B6236BC714001379EE /* UserSelectViewController.swift */; };
 		4C20C27A2380F62900211694 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20C2792380F62900211694 /* ChartViewController.swift */; };
 		4C8BCBCA2380F25300A3D285 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BCBC92380F25300A3D285 /* EX.swift */; };
+		4CB3A5E423824272002824C8 /* back2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DB23824271002824C8 /* back2.jpg */; };
+		4CB3A5E523824272002824C8 /* neck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DC23824271002824C8 /* neck2.jpg */; };
+		4CB3A5E623824272002824C8 /* hand2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DD23824271002824C8 /* hand2.jpg */; };
+		4CB3A5E723824272002824C8 /* font2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DE23824271002824C8 /* font2.jpg */; };
+		4CB3A5E823824272002824C8 /* arm2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DF23824271002824C8 /* arm2.jpg */; };
+		4CB3A5E923824272002824C8 /* chest2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5E023824271002824C8 /* chest2.jpg */; };
+		4CB3A5EA23824272002824C8 /* shoulder2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5E123824271002824C8 /* shoulder2.jpg */; };
+		4CB3A5EB23824272002824C8 /* face2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5E223824271002824C8 /* face2.jpg */; };
+		4CB3A5EC23824272002824C8 /* calf2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5E323824272002824C8 /* calf2.jpg */; };
 		4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B373238220B7007D7D77 /* ChestViewController.swift */; };
 		4CE8B376238228DD007D7D77 /* backViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B375238228DD007D7D77 /* backViewController.swift */; };
 		4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */; };
-		4CE8B37A23822EBB007D7D77 /* upperbody in Resources */ = {isa = PBXBuildFile; fileRef = 4CE8B37923822EBB007D7D77 /* upperbody */; };
 		4CE8B37C23823182007D7D77 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B37B23823182007D7D77 /* DataEntry.swift */; };
 		4CE8B37E238231AD007D7D77 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B37D238231AD007D7D77 /* CustomSegments.swift */; };
 		4CE8B380238231E1007D7D77 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */; };
@@ -108,10 +116,18 @@
 		34BB20B6236BC714001379EE /* UserSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectViewController.swift; sourceTree = "<group>"; };
 		4C20C2792380F62900211694 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		4C8BCBC92380F25300A3D285 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
+		4CB3A5DB23824271002824C8 /* back2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back2.jpg; sourceTree = "<group>"; };
+		4CB3A5DC23824271002824C8 /* neck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neck2.jpg; sourceTree = "<group>"; };
+		4CB3A5DD23824271002824C8 /* hand2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hand2.jpg; sourceTree = "<group>"; };
+		4CB3A5DE23824271002824C8 /* font2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = font2.jpg; sourceTree = "<group>"; };
+		4CB3A5DF23824271002824C8 /* arm2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arm2.jpg; sourceTree = "<group>"; };
+		4CB3A5E023824271002824C8 /* chest2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chest2.jpg; sourceTree = "<group>"; };
+		4CB3A5E123824271002824C8 /* shoulder2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoulder2.jpg; sourceTree = "<group>"; };
+		4CB3A5E223824271002824C8 /* face2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = face2.jpg; sourceTree = "<group>"; };
+		4CB3A5E323824272002824C8 /* calf2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = calf2.jpg; sourceTree = "<group>"; };
 		4CE8B373238220B7007D7D77 /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
 		4CE8B375238228DD007D7D77 /* backViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backViewController.swift; sourceTree = "<group>"; };
 		4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoudlerViewController.swift; sourceTree = "<group>"; };
-		4CE8B37923822EBB007D7D77 /* upperbody */ = {isa = PBXFileReference; lastKnownFileType = folder; name = upperbody; path = ../../Downloads/Parkinson/upperbody; sourceTree = "<group>"; };
 		4CE8B37B23823182007D7D77 /* DataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
 		4CE8B37D238231AD007D7D77 /* CustomSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
 		4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
@@ -204,7 +220,15 @@
 				348983052368F6D400C623F2 /* 275_testTests */,
 				348983102368F6D400C623F2 /* 275_testUITests */,
 				348982EF2368F6D200C623F2 /* Products */,
-				4CE8B37923822EBB007D7D77 /* upperbody */,
+				4CB3A5DF23824271002824C8 /* arm2.jpg */,
+				4CB3A5DB23824271002824C8 /* back2.jpg */,
+				4CB3A5E323824272002824C8 /* calf2.jpg */,
+				4CB3A5E023824271002824C8 /* chest2.jpg */,
+				4CB3A5E223824271002824C8 /* face2.jpg */,
+				4CB3A5DE23824271002824C8 /* font2.jpg */,
+				4CB3A5DD23824271002824C8 /* hand2.jpg */,
+				4CB3A5DC23824271002824C8 /* neck2.jpg */,
+				4CB3A5E123824271002824C8 /* shoulder2.jpg */,
 				A4361092237F901600F12714 /* reccommended.jpg */,
 				A4361090237F878000F12714 /* tremors.jpg */,
 				A4C1065C237E3C0E006ACF47 /* doctorbackground.png */,
@@ -438,8 +462,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				348982FC2368F6D400C623F2 /* LaunchScreen.storyboard in Resources */,
+				4CB3A5E823824272002824C8 /* arm2.jpg in Resources */,
 				9939D4FD23750CE600F1FB1F /* Tremor.storyboard in Resources */,
 				A4361091237F878000F12714 /* tremors.jpg in Resources */,
+				4CB3A5E523824272002824C8 /* neck2.jpg in Resources */,
+				4CB3A5E723824272002824C8 /* font2.jpg in Resources */,
 				A4361093237F901600F12714 /* reccommended.jpg in Resources */,
 				992EF4A0237B88F5007A5573 /* Menu.storyboard in Resources */,
 				993139D1236BBF24008802A9 /* GoogleService-Info.plist in Resources */,
@@ -452,11 +479,16 @@
 				A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */,
 				A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */,
 				A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */,
-				4CE8B37A23822EBB007D7D77 /* upperbody in Resources */,
 				99D19941237B8ADC00C5F2EC /* Exercise.storyboard in Resources */,
 				A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */,
+				4CB3A5EA23824272002824C8 /* shoulder2.jpg in Resources */,
+				4CB3A5EB23824272002824C8 /* face2.jpg in Resources */,
 				34BB20AF236BB846001379EE /* Main.storyboard in Resources */,
+				4CB3A5E623824272002824C8 /* hand2.jpg in Resources */,
+				4CB3A5EC23824272002824C8 /* calf2.jpg in Resources */,
 				99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */,
+				4CB3A5E423824272002824C8 /* back2.jpg in Resources */,
+				4CB3A5E923824272002824C8 /* chest2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
