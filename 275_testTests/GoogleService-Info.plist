@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>228191905124-n8psl601eduhiigpu5j3hva61agtjr1t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.228191905124-n8psl601eduhiigpu5j3hva61agtjr1t</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBJCx8mBFBWW2J6xQxFRWL4l_Bhr1Gatts</string>
+	<key>GCM_SENDER_ID</key>
+	<string>228191905124</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.group4.parkinhelp</string>
+	<key>PROJECT_ID</key>
+	<string>phelplogin-1572570215796</string>
+	<key>STORAGE_BUCKET</key>
+	<string>phelplogin-1572570215796.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:228191905124:ios:0719e258b65a742eff8671</string>
+	<key>DATABASE_URL</key>
+	<string>https://phelplogin-1572570215796.firebaseio.com</string>
+</dict>
+</plist>

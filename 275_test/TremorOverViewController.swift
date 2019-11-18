@@ -26,6 +26,7 @@ class TremorOverViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
         res = tremorManager.processAll()
         print("Accel\nFreq: \(res[0].1), Pow: \(res[0].2)\n")
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
