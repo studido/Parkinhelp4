@@ -60,6 +60,7 @@
 		9939D4FD23750CE600F1FB1F /* Tremor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9939D4FC23750CE600F1FB1F /* Tremor.storyboard */; };
 		9939D5012376671E00F1FB1F /* fft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9939D4FF2376671E00F1FB1F /* fft.swift */; };
 		99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 99767344236FC49900C544C5 /* 275_test.xcworkspace */; };
+		997CAD5323835D1E008A96F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 997CAD5223835D1D008A96F4 /* GoogleService-Info.plist */; };
 		99D19941237B8ADC00C5F2EC /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */; };
 		99D19942237B8ADC00C5F2EC /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */; };
 		99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5E12123767930004DFE71 /* TremorOverViewController.swift */; };
@@ -165,6 +166,7 @@
 		9939D4FC23750CE600F1FB1F /* Tremor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tremor.storyboard; sourceTree = "<group>"; };
 		9939D4FF2376671E00F1FB1F /* fft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fft.swift; sourceTree = "<group>"; };
 		99767344236FC49900C544C5 /* 275_test.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = 275_test.xcworkspace; sourceTree = SOURCE_ROOT; };
+		997CAD5223835D1D008A96F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		99D5E12123767930004DFE71 /* TremorOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorOverViewController.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				348983062368F6D400C623F2 /* _75_testTests.swift */,
+				997CAD5223835D1D008A96F4 /* GoogleService-Info.plist */,
 				348983082368F6D400C623F2 /* Info.plist */,
 			);
 			path = 275_testTests;
@@ -513,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997CAD5323835D1E008A96F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
