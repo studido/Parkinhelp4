@@ -37,7 +37,10 @@ var age = ""
                 totalex.text = totalex2
                 totalrep.text = totalrep2
                 */
-                
+        
+        
+        
+        
                 if let repitition = UserDefaults.standard.object(forKey: "Repitition") as? String
                 {
                     let totalrep1 = UserDefaults.standard.object(forKey: "Intensity") as? String

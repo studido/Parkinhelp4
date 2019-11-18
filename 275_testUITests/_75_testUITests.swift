@@ -8,6 +8,9 @@
 
 import XCTest
 
+//*** all UI tests must be performed after patient/doctor account is logged in and have landed at their respective main menus
+//*** testing of creating a new user account and filling out inital survey data was done manually. This can be tested by signing in a brand new google account
+
 class _75_testUITests: XCTestCase {
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,7 +29,13 @@ class _75_testUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         
     }
+    //ALL TESTS MUST BE PERFORMED AFTER ACCOUNT IS ALREADY LOGGED IN AT PATIENT MAIN MENU
+    //PATIENT TEST ACCOUNT:
+    //Email: testParkinHelpPatient@gmail.com
+    //Password: Group4Password
+
     func testMenuSlider() {
+        
         let app = XCUIApplication()
         app.navigationBars["Home"].buttons["Menu"].tap()
         XCTAssert(app.buttons["Home"].exists)
@@ -131,7 +140,21 @@ class _75_testUITests: XCTestCase {
         app.navigationBars["_75_test.RecommendView"].buttons["Back"].tap()
         app.navigationBars["_75_test.ExerciseView"].buttons["Home"].tap()
     }
-    
+    //THE FOLLOWING DOCTOR ACCOUNT TEST MUST BE PERFORMED FROM THE DOCTOR ACCOUNT MAIN MENU
+    //Doctor test account: usertesting275.04@gmail.com
+    //Email: Group4Password
+    func testDoctorAccount() {
+        
+        let app = XCUIApplication()
+        app.buttons["My Account"].tap()
+        XCTAssert(app.staticTexts["Name:"].exists)
+        XCTAssert(app.staticTexts["Profession:"].exists)
+        XCTAssert(app.staticTexts["Number of Patients:"].exists)
+        app.buttons["Back"].tap()
+        XCTAssert(app.staticTexts["Patient 1"].exists)
+        XCTAssert(app.staticTexts["Patient 2"].exists)
+        XCTAssert(app.staticTexts["Patient 3"].exists)
+    }
     
     
 
