@@ -268,40 +268,35 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="QPJ-Be-0RG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhq-fp-KMt">
-                                <rect key="frame" x="19" y="453" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-gJ-Xqk">
+                                <rect key="frame" x="162" y="159" width="88" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Shoulder">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="chest">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="uppershoulder:" destination="DKW-sl-isA" eventType="touchUpInside" id="juA-hO-syt"/>
+                                    <segue destination="ESo-tm-9QB" kind="show" id="BWj-13-2nD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wg-Os-ZM0">
-                                <rect key="frame" x="20" y="290" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxN-tb-cIl">
+                                <rect key="frame" x="176" y="359" width="78" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="back"/>
                                 <connections>
-                                    <action selector="upperback:" destination="DKW-sl-isA" eventType="touchUpInside" id="VMN-bq-FJz"/>
+                                    <segue destination="hJr-af-cAg" kind="show" id="BXU-4i-kfr"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRs-Iu-XFX">
-                                <rect key="frame" x="19" y="112" width="375" height="130"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U0-mn-VVD">
+                                <rect key="frame" x="135" y="560" width="143" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Chest">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Shoudler">
+                                    <color key="titleColor" red="0.95686274510000002" green="0.11998172010790531" blue="0.28899515487831839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="upperchest:" destination="DKW-sl-isA" eventType="touchUpInside" id="EHu-75-A4V"/>
+                                    <segue destination="sPC-eF-POH" kind="show" id="FM2-Eq-kgj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -312,7 +307,132 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8e-ex-CYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.59999999999999" y="-750.67466266866575"/>
+            <point key="canvasLocation" x="101.44927536231884" y="-751.33928571428567"/>
+        </scene>
+        <!--Back View Controller-->
+        <scene sceneID="Eb9-bD-1jf">
+            <objects>
+                <viewController id="sPC-eF-POH" customClass="backViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jf9-eG-K6I">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="xKb-x3-5UB">
+                                <rect key="frame" x="20" y="80" width="374" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4T2-qa-iN8">
+                                <rect key="frame" x="20" y="336" width="374" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Our therapist demonstrates how physical therapy can help Parkinson's Disease patients
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEa-3o-nSG">
+                                <rect key="frame" x="67" y="564" width="298" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="open from youtube"/>
+                                <connections>
+                                    <action selector="backvideo:" destination="sPC-eF-POH" eventType="touchUpInside" id="PM3-4T-hNN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="370-tB-Yga"/>
+                    </view>
+                    <connections>
+                        <outlet property="backimage" destination="xKb-x3-5UB" id="N1a-ec-SR5"/>
+                        <outlet property="backtext" destination="4T2-qa-iN8" id="PJB-gU-QxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mft-3V-K22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94.20289855072464" y="-1421.6517857142856"/>
+        </scene>
+        <!--Shoudler View Controller-->
+        <scene sceneID="gLw-ss-nti">
+            <objects>
+                <viewController id="hJr-af-cAg" customClass="shoudlerViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tGC-h1-JEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoulder" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-TF-lUI">
+                                <rect key="frame" x="20" y="79" width="374" height="230"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mT5-11-Ga9">
+                                <rect key="frame" x="20" y="367" width="374" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">For additional resources on Parkinson's Disease including books, trigger point tools, foam rollers 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axJ-cb-e77">
+                                <rect key="frame" x="142" y="671" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open from youtube"/>
+                                <connections>
+                                    <action selector="shoulder:" destination="hJr-af-cAg" eventType="touchUpInside" id="8QH-Y4-E88"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hUa-TF-lUI" firstAttribute="leading" secondItem="jqF-OD-2Kk" secondAttribute="leading" constant="20" id="5xZ-vO-YGR"/>
+                            <constraint firstItem="jqF-OD-2Kk" firstAttribute="trailing" secondItem="hUa-TF-lUI" secondAttribute="trailing" constant="20" id="O3Q-SL-EXL"/>
+                            <constraint firstItem="jqF-OD-2Kk" firstAttribute="bottom" secondItem="hUa-TF-lUI" secondAttribute="bottom" constant="553" id="QEx-gO-0HU"/>
+                            <constraint firstItem="jqF-OD-2Kk" firstAttribute="bottom" secondItem="hUa-TF-lUI" secondAttribute="bottom" constant="553" id="f5i-XY-EUL"/>
+                            <constraint firstItem="hUa-TF-lUI" firstAttribute="top" secondItem="jqF-OD-2Kk" secondAttribute="top" constant="35" id="nuW-MM-Fhf"/>
+                            <constraint firstItem="jqF-OD-2Kk" firstAttribute="bottom" secondItem="hUa-TF-lUI" secondAttribute="bottom" constant="400" id="yBZ-ez-CaK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jqF-OD-2Kk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kik-9N-7g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102.8985507246377" y="-1067.4107142857142"/>
+        </scene>
+        <!--Chest View Controller-->
+        <scene sceneID="KIE-Rf-I7r">
+            <objects>
+                <viewController id="ESo-tm-9QB" customClass="ChestViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fJE-xu-exw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chest" translatesAutoresizingMaskIntoConstraints="NO" id="OcQ-jZ-jr5">
+                                <rect key="frame" x="20" y="79" width="374" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-ee-9Or">
+                                <rect key="frame" x="142" y="620" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="open from youtube"/>
+                                <connections>
+                                    <action selector="chestVi:" destination="ESo-tm-9QB" eventType="touchUpInside" id="1Kz-nX-ggY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bRb-kS-vdA">
+                                <rect key="frame" x="20" y="339" width="374" height="214"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">The perfect chest workout should consist of exercises for your upper chest, middle chest and lower chest.  That said, even that doesn’t make the chest workout complete.  In order to round out your pecs with a well rounded workout you need to fill in the gaps of what is lacking on those popular chest exercises.  That is what we do in this video.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bTz-l7-GUY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MfT-gb-ThX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346.376811594203" y="-201.5625"/>
         </scene>
         <!--Recommend-->
         <scene sceneID="xOA-U4-dl6">
@@ -330,10 +450,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reccommended.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U79-zu-0d8">
-                                <rect key="frame" x="-1" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fi3-yF-ub1">
                                 <rect key="frame" x="0.0" y="20" width="92" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -370,6 +486,10 @@
                                     <action selector="upperchest:" destination="b2h-iz-hLj" eventType="touchUpInside" id="dLk-fX-sLe"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reccommended.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U79-zu-0d8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="UPPER"/>
@@ -382,11 +502,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="785.25" height="279.75"/>
+        <image name="chest" width="891.75" height="471.75"/>
         <image name="doctorbackground.png" width="640" height="1136"/>
         <image name="dumbbell.png" width="920" height="540"/>
         <image name="reccommended.jpg" width="1125" height="2436"/>
+        <image name="shoulder" width="579.75" height="450"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DfT-yf-jmZ"/>
+        <segue reference="QPJ-Be-0RG"/>
     </inferredMetricsTieBreakers>
 </document>

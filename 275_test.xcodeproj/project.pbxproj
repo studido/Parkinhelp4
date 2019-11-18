@@ -25,6 +25,9 @@
 		4CE8B36A23820F33007D7D77 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36923820F33007D7D77 /* BasicBarChart.swift */; };
 		4CE8B36C23820F3A007D7D77 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36B23820F3A007D7D77 /* BasicBarChartPresenter.swift */; };
 		4CE8B36E23820F3D007D7D77 /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B36D23820F3D007D7D77 /* BasicBarEntry.swift */; };
+		4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B373238220B7007D7D77 /* ChestViewController.swift */; };
+		4CE8B376238228DD007D7D77 /* backViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B375238228DD007D7D77 /* backViewController.swift */; };
+		4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */; };
 		540A7D31D058CB292B1FD907 /* Pods_275_testUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869DE1CB743AF7E1B501B67C /* Pods_275_testUITests.framework */; };
 		708AE7F289555A4AA6BA2D04 /* Pods_275_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87625B67460843F85C90F8ED /* Pods_275_test.framework */; };
 		990530952370DCC70068FA22 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990530922370DCC60068FA22 /* MenuController.swift */; };
@@ -112,6 +115,9 @@
 		4CE8B36923820F33007D7D77 /* BasicBarChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicBarChart.swift; path = "../../../Downloads/BarChart-master/BarChart/BasicBarChart.swift"; sourceTree = "<group>"; };
 		4CE8B36B23820F3A007D7D77 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicBarChartPresenter.swift; path = "../../../Downloads/BarChart-master/BarChart/BasicBarChartPresenter.swift"; sourceTree = "<group>"; };
 		4CE8B36D23820F3D007D7D77 /* BasicBarEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BasicBarEntry.swift; path = "../../../Downloads/BarChart-master/BarChart/BasicBarEntry.swift"; sourceTree = "<group>"; };
+		4CE8B373238220B7007D7D77 /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
+		4CE8B375238228DD007D7D77 /* backViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backViewController.swift; sourceTree = "<group>"; };
+		4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shoudlerViewController.swift; sourceTree = "<group>"; };
 		64865A35A0C9B1E450F56DFC /* Pods-275_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-275_test.debug.xcconfig"; path = "Target Support Files/Pods-275_test/Pods-275_test.debug.xcconfig"; sourceTree = "<group>"; };
 		869DE1CB743AF7E1B501B67C /* Pods_275_testUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_testUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87625B67460843F85C90F8ED /* Pods_275_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +276,9 @@
 				348982FA2368F6D400C623F2 /* LaunchScreen.storyboard */,
 				993139D0236BBF24008802A9 /* GoogleService-Info.plist */,
 				348982FD2368F6D400C623F2 /* Info.plist */,
+				4CE8B373238220B7007D7D77 /* ChestViewController.swift */,
+				4CE8B375238228DD007D7D77 /* backViewController.swift */,
+				4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */,
 			);
 			path = 275_test;
 			sourceTree = "<group>";
@@ -583,8 +592,10 @@
 				9939D4F823750A3D00F1FB1F /* TremorViewController.swift in Sources */,
 				9905309D2370DCDA0068FA22 /* MenuOptionCell.swift in Sources */,
 				990530992370DCD00068FA22 /* MenuOption.swift in Sources */,
+				4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */,
 				9939D5012376671E00F1FB1F /* fft.swift in Sources */,
 				A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */,
+				4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */,
 				A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */,
 				4CE8B36A23820F33007D7D77 /* BasicBarChart.swift in Sources */,
 				4CE8B36623820F2B007D7D77 /* CALayerExtension.swift in Sources */,
@@ -596,6 +607,7 @@
 				4CE8B36823820F2F007D7D77 /* ArrayExtension.swift in Sources */,
 				34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */,
 				4CE8B36423820F28007D7D77 /* UIBezierPathExtension.swift in Sources */,
+				4CE8B376238228DD007D7D77 /* backViewController.swift in Sources */,
 				A45290C5237E37D5003F8D06 /* DoctorViewController.swift in Sources */,
 				4CE8B36223820F25007D7D77 /* CustomSegments.swift in Sources */,
 				992EF49E237B88F5007A5573 /* SlideInTransition.swift in Sources */,
