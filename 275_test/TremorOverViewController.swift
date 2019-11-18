@@ -27,7 +27,6 @@ class TremorOverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         res = tremorManager.processAll()
-        //collector.end()
         print("Accel\nFreq: \(res[0].1), Pow: \(res[0].2)\n")
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
         
