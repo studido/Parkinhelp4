@@ -47,6 +47,7 @@ class DoctorViewController: UIViewController {
         let userData = ["firstName": Variables.firstname,
                         "lastName":  Variables.lastname,
                         "doctorProfession": Variables.docprofession,
+                        "email": Variables.email,
                         "userType": "healthcare professional"]
         
         let uid = Firebase.Auth.auth().currentUser!.uid

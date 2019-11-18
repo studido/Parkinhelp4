@@ -77,31 +77,32 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                 }
                 else if error == nil {
                     print("User successfully signed in with uid: ", Firebase.Auth.auth().currentUser!)
+                    Variables.email = user.profile.email
                     let ref : DatabaseReference = Database.database().reference()
                     ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
                         if (snapshot.exists()) {
                             //User exists in database
-                            let value = snapshot.value as! [String: String]
+                            let value = snapshot.value as! [String: Any]
                             
-                            //Initalize users name
-                            Variables.firstname = value["firstName"]!
-                            Variables.lastname = value["lastName"]!
+                            //Initalize common user data
+                            Variables.firstname = value["firstName"] as? String ?? ""
+                            Variables.lastname = value["lastName"] as? String ?? ""
                             
                             //Route user to appropriate main menu
-                            if (value["userType"] != "patient") {
-                                Variables.docprofession = value["doctorProfession"]!
+                            if (value["userType"]  as? String ?? "" != "patient") {
+                                Variables.docprofession = value["doctorProfession"] as? String ?? ""
                                 self.performSegue(withIdentifier: "goToDocMainMenu", sender: self)
                             }
-                            else if (value["userType"] == "patient") {
-                                Variables.age = value["age"]!
-                                Variables.height = value["height"]!
-                                Variables.weight = value["weight"]!
-                                Variables.gender = value["gender"]!
-                                Variables.contactnumber = value["contactNumber"]!
-                                Variables.dateofbirth = value["dateOfBirth"]!
-                                Variables.durationofdisease = value["durationOfDisease"]!
-                                Variables.repetitions = value["repetitions"]!
-                                Variables.intensity = value["intensity"]!
+                            else if (value["userType"]  as? String ?? "" == "patient") {
+                                Variables.age = value["age"] as? String ?? ""
+                                Variables.height = value["height"] as? String ?? ""
+                                Variables.weight = value["weight"] as? String ?? ""
+                                Variables.gender = value["gender"] as? String ?? ""
+                                Variables.contactnumber = value["contactNumber"] as? String ?? ""
+                                Variables.dateofbirth = value["dateOfBirth"] as? String ?? ""
+                                Variables.durationofdisease = value["durationOfDisease"] as? String ?? ""
+                                Variables.repetitions = value["repetitions"] as? String ?? ""
+                                Variables.intensity = value["intensity"] as? String ?? ""
                                 self.performSegue(withIdentifier: "goToMainMenu", sender: self)
                             }
                         }
