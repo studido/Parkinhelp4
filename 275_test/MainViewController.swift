@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var GraphLabel: UILabel!
     
+    @IBOutlet weak var whiteback: UIImageView!
+    @IBOutlet weak var TremorGraph: UIButton!
     @IBOutlet weak var TremorMeasurement: UIButton!
     @IBOutlet weak var ExerciseList: UIButton!
     
@@ -30,6 +32,12 @@ class MainViewController: UIViewController {
         GraphLabel.layer.cornerRadius = 15
         GraphLabel.layer.borderColor = UIColor.black.cgColor
         GraphLabel.layer.borderWidth = 0.5
+        TremorGraph.layer.cornerRadius = 15
+        TremorGraph.layer.borderColor = UIColor.black.cgColor
+        TremorGraph.layer.borderWidth = 0.5
+        whiteback.layer.cornerRadius = 25
+        whiteback.layer.borderColor = UIColor.black.cgColor
+        whiteback.layer.borderWidth = 3
         // Do any additional setup after loading the view, typically from a nib.
     }
 

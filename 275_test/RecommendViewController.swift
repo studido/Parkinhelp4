@@ -12,7 +12,8 @@ class RecommendViewController: UIViewController {
 var weight = ""
 var age = ""
     
-    @IBOutlet weak var extitle: UIButton!
+
+    @IBOutlet weak var extitle: UILabel!
     @IBOutlet weak var totalex: UILabel!
     @IBOutlet weak var totalrep: UILabel!
     @IBOutlet weak var exercise1: UILabel!
@@ -195,6 +196,9 @@ var age = ""
                 }
                
         extitle.layer.cornerRadius = 25
+        exercise1.layer.cornerRadius = 15
+        exercise2.layer.cornerRadius = 15
+        exercise3.layer.cornerRadius = 15
        
         // Do any additional setup after loading the view.
     }
