@@ -1,6 +1,8 @@
 /* https://medium.com/@leonardnguyen/build-your-own-chart-in-ios-part-1-bar-chart-e1b7f4789d70 */
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 
 class ChartViewController: UIViewController {
@@ -38,6 +40,16 @@ class ChartViewController: UIViewController {
     }
     
     
+    func getTremorScores() -> [String:String] {
+        let ref : DatabaseReference! = Database.database().reference()
+        var dateAndTremorScore : [String: String]!
+ ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).child("TremorScores").observeSingleEvent(of: .value, with: { (snapshot) in
+        if (snapshot.exists()) {
+            dateAndTremorScore = (snapshot.value as! [String: String])
+    }})
+        
+        return dateAndTremorScore
 
+    }
 }
 

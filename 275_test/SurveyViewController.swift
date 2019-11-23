@@ -72,9 +72,7 @@ class SurveyViewController: UIViewController {
                         "userType": "patient"]
         
         let uid = Firebase.Auth.auth().currentUser!.uid
-        let shad256 = sha256(data: Variables.email.data(using: String.Encoding.utf8)!)
-        let hashedEmail = shad256.compactMap { String(format: "%02x", $0) }.joined()
-        
+        let hashedEmail = getSha256(string: Variables.email)
         ref.updateChildValues(["/Emails/\(hashedEmail)" : ["uid" : "\(uid)"]])
         ref.updateChildValues(["/Users/\(uid)" : userData])
         

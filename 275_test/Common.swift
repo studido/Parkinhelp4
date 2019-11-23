@@ -15,3 +15,8 @@ func sha256(data : Data) -> Data {
     }
     return Data(bytes: hash)
 }
+
+func getSha256(string : String) -> String {
+    let shad256 = sha256(data: string.data(using: String.Encoding.utf8)!)
+    return shad256.compactMap { String(format: "%02x", $0) }.joined()
+}
