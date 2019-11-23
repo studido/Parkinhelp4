@@ -72,7 +72,12 @@ class SurveyViewController: UIViewController {
                         "userType": "patient"]
         
         let uid = Firebase.Auth.auth().currentUser!.uid
+        let shad256 = sha256(data: Variables.email.data(using: String.Encoding.utf8)!)
+        let hashedEmail = shad256.compactMap { String(format: "%02x", $0) }.joined()
+        
+        ref.updateChildValues(["/Emails/\(hashedEmail)" : ["uid" : "\(uid)"]])
         ref.updateChildValues(["/Users/\(uid)" : userData])
+        
         performSegue(withIdentifier: "surveyresult", sender: self)
         //dont think we need any of this now
         /*
@@ -82,7 +87,19 @@ class SurveyViewController: UIViewController {
         self.present(mainMenuView, animated:false, completion: nil)
          
  */
+        
     }
+    
+//    func sha256(data : Data) -> Data {
+//        var hash = [UInt8](repeating: 0,  count: Int(CC_SHA256_DIGEST_LENGTH))
+//        data.withUnsafeBytes {
+//            _ = CC_SHA256($0, CC_LONG(data.count), &hash)
+//        }
+//        return Data(bytes: hash)
+//    }
+
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        // let sa = segue.destination as! RecommendViewController
        // let sw = segue.destination as! RecommendViewController

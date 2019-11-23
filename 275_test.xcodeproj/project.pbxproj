@@ -64,6 +64,7 @@
 		99D19941237B8ADC00C5F2EC /* Exercise.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */; };
 		99D19942237B8ADC00C5F2EC /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */; };
 		99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5E12123767930004DFE71 /* TremorOverViewController.swift */; };
+		99D968192388CD4700D793F2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D968182388CD4700D793F2 /* Common.swift */; };
 		A4124C6E237F5D0A00D1CEDA /* TremorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4124C6D237F5D0A00D1CEDA /* TremorManager.swift */; };
 		A436108D237F5EA400F12714 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436108C237F5EA400F12714 /* LoginViewController.swift */; };
 		A4361091237F878000F12714 /* tremors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4361090237F878000F12714 /* tremors.jpg */; };
@@ -170,6 +171,8 @@
 		99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Exercise.storyboard; sourceTree = "<group>"; };
 		99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		99D5E12123767930004DFE71 /* TremorOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TremorOverViewController.swift; sourceTree = "<group>"; };
+		99D968132388C53C00D793F2 /* SHA256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHA256.h; sourceTree = "<group>"; };
+		99D968182388CD4700D793F2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		A4124C6D237F5D0A00D1CEDA /* TremorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TremorManager.swift; sourceTree = "<group>"; };
 		A436108C237F5EA400F12714 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A4361090237F878000F12714 /* tremors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tremors.jpg; sourceTree = "<group>"; };
@@ -267,6 +270,7 @@
 		348982F02368F6D200C623F2 /* 275_test */ = {
 			isa = PBXGroup;
 			children = (
+				99D968132388C53C00D793F2 /* SHA256.h */,
 				993139D0236BBF24008802A9 /* GoogleService-Info.plist */,
 				348982FD2368F6D400C623F2 /* Info.plist */,
 				99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */,
@@ -287,6 +291,7 @@
 				4CB3A5F523824B45002824C8 /* calfViewController.swift */,
 				4C20C2792380F62900211694 /* ChartViewController.swift */,
 				4CE8B373238220B7007D7D77 /* ChestViewController.swift */,
+				99D968182388CD4700D793F2 /* Common.swift */,
 				4CE8B37D238231AD007D7D77 /* CustomSegments.swift */,
 				4CE8B37B23823182007D7D77 /* DataEntry.swift */,
 				A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */,
@@ -709,6 +714,7 @@
 				992EF49C237B88F5007A5573 /* PillScheduleViewController.swift in Sources */,
 				990530952370DCC70068FA22 /* MenuController.swift in Sources */,
 				A44FCA9A237E1A88000D4B8E /* RecommendViewController.swift in Sources */,
+				99D968192388CD4700D793F2 /* Common.swift in Sources */,
 				4C8BCBCA2380F25300A3D285 /* EX.swift in Sources */,
 				4CE8B38623823229007D7D77 /* BasicBarChartPresenter.swift in Sources */,
 				4C20C27A2380F62900211694 /* ChartViewController.swift in Sources */,
@@ -926,6 +932,7 @@
 				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.group4.parkinhelp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = 275_test/SHA256.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -946,6 +953,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.group4.parkinhelp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = 275_test/SHA256.h;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
