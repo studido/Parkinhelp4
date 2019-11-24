@@ -234,7 +234,7 @@
         <!--Focus Area View Controller-->
         <scene sceneID="MfM-nQ-x7z">
             <objects>
-                <viewController id="23i-Yl-ZjS" customClass="FocusAreaViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FocusAreaViewController" id="23i-Yl-ZjS" customClass="FocusAreaViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v8F-Po-Gup">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

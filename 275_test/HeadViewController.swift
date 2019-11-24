@@ -1,29 +1,32 @@
 //
-//  shoudlerViewController.swift
+//  HeadViewController.swift
 //  275_test
 //
-//  Created by MICHAEL on 2019-11-17.
+//  Created by Sterling Smith on 2019-11-24.
 //  Copyright © 2019 Sterling Smith. All rights reserved.
 //
 
 import UIKit
 
-class shoudlerViewController: UIViewController {
+class HeadViewController: UIViewController {
 
-    @IBOutlet weak var open: UIButton!
     override func viewDidLoad() {
+    
         super.viewDidLoad()
-        open.layer.cornerRadius = 15
-        open.layer.borderColor = UIColor.black.cgColor
-        open.layer.borderWidth = 0.5
+        /*
+         neck.layer.cornerRadius = 15
+         neck.layer.borderColor = UIColor.black.cgColor
+         neck.layer.borderWidth = 0.5
+         face.layer.cornerRadius = 15
+         face.layer.borderColor = UIColor.black.cgColor
+         face.layer.borderWidth = 0.5
+         
+         */
         // Do any additional setup after loading the view.
     }
-    @IBAction func shoulder(_ sender: UIButton) {
-        
-        UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=effXAxgxXb0"
-            )! as URL,options:[:],completionHandler: nil)
-    }
-       /*
+    
+
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation

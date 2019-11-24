@@ -69,6 +69,7 @@
 		A436108D237F5EA400F12714 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436108C237F5EA400F12714 /* LoginViewController.swift */; };
 		A4361091237F878000F12714 /* tremors.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4361090237F878000F12714 /* tremors.jpg */; };
 		A4361093237F901600F12714 /* reccommended.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4361092237F901600F12714 /* reccommended.jpg */; };
+		A441A9F3238A659D0061828A /* WeeklySurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */; };
 		A44FCA94237E01D0000D4B8E /* surveybackground.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */; };
 		A44FCA96237E079A000D4B8E /* dumbbell.png in Resources */ = {isa = PBXBuildFile; fileRef = A44FCA95237E079A000D4B8E /* dumbbell.png */; };
 		A44FCA98237E19D7000D4B8E /* Recommend.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A44FCA97237E19D7000D4B8E /* Recommend.storyboard */; };
@@ -81,6 +82,11 @@
 		A4C1065D237E3C0E006ACF47 /* doctorbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C1065C237E3C0E006ACF47 /* doctorbackground.png */; };
 		A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */; };
 		A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */; };
+		A4CCDC02238A77F500164D0E /* WeeklySurvey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */; };
+		A4CCDC04238A872100164D0E /* UpperBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */; };
+		A4CCDC06238A8C7100164D0E /* HeadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCDC05238A8C7100164D0E /* HeadViewController.swift */; };
+		A4CCDC08238A8C8200164D0E /* LowerBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCDC07238A8C8200164D0E /* LowerBodyViewController.swift */; };
+		A4CCDC0A238A8CDA00164D0E /* HandAndArmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCDC09238A8CDA00164D0E /* HandAndArmViewController.swift */; };
 		A4DF0F79237FB86E006BCAB2 /* FocusAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */; };
 		A4E00E962370CDEE0070E1A4 /* Survey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E00E952370CDEE0070E1A4 /* Survey.storyboard */; };
 		A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */; };
@@ -177,6 +183,7 @@
 		A436108C237F5EA400F12714 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A4361090237F878000F12714 /* tremors.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tremors.jpg; sourceTree = "<group>"; };
 		A4361092237F901600F12714 /* reccommended.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reccommended.jpg; sourceTree = "<group>"; };
+		A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklySurveyViewController.swift; sourceTree = "<group>"; };
 		A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = surveybackground.jpeg; sourceTree = "<group>"; };
 		A44FCA95237E079A000D4B8E /* dumbbell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dumbbell.png; sourceTree = "<group>"; };
 		A44FCA97237E19D7000D4B8E /* Recommend.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Recommend.storyboard; sourceTree = "<group>"; };
@@ -189,6 +196,11 @@
 		A4C1065C237E3C0E006ACF47 /* doctorbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctorbackground.png; sourceTree = "<group>"; };
 		A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocProfileViewController.swift; sourceTree = "<group>"; };
 		A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocPatientListViewController.swift; sourceTree = "<group>"; };
+		A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeeklySurvey.storyboard; sourceTree = "<group>"; };
+		A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperBodyViewController.swift; sourceTree = "<group>"; };
+		A4CCDC05238A8C7100164D0E /* HeadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadViewController.swift; sourceTree = "<group>"; };
+		A4CCDC07238A8C8200164D0E /* LowerBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerBodyViewController.swift; sourceTree = "<group>"; };
+		A4CCDC09238A8CDA00164D0E /* HandAndArmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandAndArmViewController.swift; sourceTree = "<group>"; };
 		A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusAreaViewController.swift; sourceTree = "<group>"; };
 		A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4E00E952370CDEE0070E1A4 /* Survey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Survey.storyboard; sourceTree = "<group>"; };
@@ -279,14 +291,17 @@
 				992EF49B237B88F5007A5573 /* Menu.storyboard */,
 				A44FCA97237E19D7000D4B8E /* Recommend.storyboard */,
 				A4E00E952370CDEE0070E1A4 /* Survey.storyboard */,
+				A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */,
 				9939D4FC23750CE600F1FB1F /* Tremor.storyboard */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
 				4CB3A5F1238248F2002824C8 /* armsViewController.swift */,
 				4CE8B381238231FE007D7D77 /* ArrayExtension.swift */,
+				A4CCDC07238A8C8200164D0E /* LowerBodyViewController.swift */,
 				4CE8B375238228DD007D7D77 /* backViewController.swift */,
 				4CE8B38323823210007D7D77 /* BasicBarChart.swift */,
 				4CE8B38523823229007D7D77 /* BasicBarChartPresenter.swift */,
 				4CE8B38723823236007D7D77 /* BasicBarEntry.swift */,
+				A4CCDC09238A8CDA00164D0E /* HandAndArmViewController.swift */,
 				4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */,
 				4CB3A5F523824B45002824C8 /* calfViewController.swift */,
 				4C20C2792380F62900211694 /* ChartViewController.swift */,
@@ -299,11 +314,13 @@
 				A45290C4237E37D5003F8D06 /* DoctorViewController.swift */,
 				4C8BCBC92380F25300A3D285 /* EX.swift */,
 				99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */,
+				A4CCDC05238A8C7100164D0E /* HeadViewController.swift */,
 				4CB3A5ED23824448002824C8 /* faceViewController.swift */,
 				9939D4FF2376671E00F1FB1F /* fft.swift */,
 				A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */,
 				4CB3A5F323824903002824C8 /* handViewController.swift */,
 				990530932370DCC70068FA22 /* HomeController.swift */,
+				A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */,
 				A436108C237F5EA400F12714 /* LoginViewController.swift */,
 				992EF498237B88F5007A5573 /* MainViewController.swift */,
 				990530922370DCC60068FA22 /* MenuController.swift */,
@@ -323,6 +340,7 @@
 				9939D4F723750A3D00F1FB1F /* TremorViewController.swift */,
 				4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */,
 				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
+				A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */,
 				A44FCA9D237E22A8000D4B8E /* Variables.swift */,
 				348982F82368F6D400C623F2 /* Assets.xcassets */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
@@ -514,6 +532,7 @@
 				99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */,
 				4CB3A5E423824272002824C8 /* back2.jpg in Resources */,
 				4CB3A5E923824272002824C8 /* chest2.jpg in Resources */,
+				A4CCDC02238A77F500164D0E /* WeeklySurvey.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,16 +745,19 @@
 				4CE8B378238228F2007D7D77 /* shoudlerViewController.swift in Sources */,
 				4CE8B38423823210007D7D77 /* BasicBarChart.swift in Sources */,
 				9939D5012376671E00F1FB1F /* fft.swift in Sources */,
+				A4CCDC0A238A8CDA00164D0E /* HandAndArmViewController.swift in Sources */,
 				4CB3A5FA23824FC4002824C8 /* newfootViewController.swift in Sources */,
 				A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */,
 				4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */,
 				4CB3A5EE23824448002824C8 /* faceViewController.swift in Sources */,
 				4CB3A5F2238248F2002824C8 /* armsViewController.swift in Sources */,
+				A4CCDC06238A8C7100164D0E /* HeadViewController.swift in Sources */,
 				4CE8B380238231E1007D7D77 /* CALayerExtension.swift in Sources */,
 				4CB3A5F623824B45002824C8 /* calfViewController.swift in Sources */,
 				A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */,
 				99D19942237B8ADC00C5F2EC /* ExerciseViewController.swift in Sources */,
 				4CE8B37E238231AD007D7D77 /* CustomSegments.swift in Sources */,
+				A441A9F3238A659D0061828A /* WeeklySurveyViewController.swift in Sources */,
 				99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */,
 				4CE8B37C23823182007D7D77 /* DataEntry.swift in Sources */,
 				A436108D237F5EA400F12714 /* LoginViewController.swift in Sources */,
@@ -750,9 +772,11 @@
 				4CE8B38823823236007D7D77 /* BasicBarEntry.swift in Sources */,
 				992EF49E237B88F5007A5573 /* SlideInTransition.swift in Sources */,
 				9905309B2370DCD70068FA22 /* Protocols.swift in Sources */,
+				A4CCDC04238A872100164D0E /* UpperBodyViewController.swift in Sources */,
 				990530962370DCC70068FA22 /* HomeController.swift in Sources */,
 				992EF49F237B88F5007A5573 /* MenuViewController.swift in Sources */,
 				A4E00E982370CEB20070E1A4 /* SurveyViewController.swift in Sources */,
+				A4CCDC08238A8C8200164D0E /* LowerBodyViewController.swift in Sources */,
 				348982F22368F6D200C623F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

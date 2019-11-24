@@ -135,9 +135,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1s-Ff-hMB">
-                                <rect key="frame" x="123" y="632" width="128" height="30"/>
+                                <rect key="frame" x="63" y="586" width="289" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="open from website"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Open Website">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="calfvideo:" destination="ZLo-SY-ZKi" eventType="touchUpInside" id="LGd-O5-hi7"/>
                                 </connections>
@@ -146,6 +150,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cNR-4F-dRm"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="S1s-Ff-hMB" id="WHZ-Oi-D7x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="In2-vf-Fv7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,9 +180,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytb-E9-mkf">
-                                <rect key="frame" x="172" y="606" width="135" height="30"/>
+                                <rect key="frame" x="74" y="569" width="266" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="open from websites"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Open Website">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="footvideo:" destination="H1Y-Yj-DRg" eventType="touchUpInside" id="cLj-cn-2Nc"/>
                                 </connections>
@@ -184,6 +195,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QZK-af-4cI"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="ytb-E9-mkf" id="VsK-3D-Ba9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSk-8p-thQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -192,7 +206,7 @@
         <!--Lower Body View Controller-->
         <scene sceneID="Cbb-wz-Asl">
             <objects>
-                <viewController id="gjP-1J-vMd" customClass="LowerBodyViewController" sceneMemberID="viewController">
+                <viewController id="gjP-1J-vMd" customClass="LowerBodyViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="LOWER" id="mZJ-k6-sIE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,6 +215,18 @@
                                 <rect key="frame" x="-1" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeV-8B-kkI">
+                                <rect key="frame" x="92" y="148" width="228" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225349999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Calf">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZLo-SY-ZKi" kind="show" id="Hjg-me-d53"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWb-mB-zoq">
                                 <rect key="frame" x="0.0" y="20" width="92" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -212,26 +238,16 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="DfT-yf-jmZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kw6-0H-Msp">
-                                <rect key="frame" x="162" y="205" width="58" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mk5-eP-jp2">
+                                <rect key="frame" x="92" y="333" width="228" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="calf">
-                                    <color key="titleColor" red="0.95686274510000002" green="0.11998172009999999" blue="0.2889951549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225349999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Foot">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZLo-SY-ZKi" kind="show" id="nZd-y4-2PQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woB-TQ-vIE">
-                                <rect key="frame" x="157" y="521" width="63" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="foot">
-                                    <color key="titleColor" red="1" green="0.13174914099999999" blue="0.096042419379999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="H1Y-Yj-DRg" kind="show" id="yw8-sd-Nk5"/>
+                                    <segue destination="H1Y-Yj-DRg" kind="show" id="oKi-H6-3y5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -239,15 +255,19 @@
                         <accessibility key="accessibilityConfiguration" identifier="LOWER"/>
                         <viewLayoutGuide key="safeArea" id="O9L-yu-a01"/>
                     </view>
+                    <connections>
+                        <outlet property="calf" destination="jeV-8B-kkI" id="4bT-Go-62Z"/>
+                        <outlet property="foot" destination="mk5-eP-jp2" id="OXX-Hj-DpO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZdX-pz-bGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1046.376811594203" y="991.74107142857133"/>
         </scene>
-        <!--Arms View Controller-->
+        <!--Hand And Arm View Controller-->
         <scene sceneID="VZn-d0-k6K">
             <objects>
-                <viewController id="JYD-VF-3nM" customClass="ArmsViewController" sceneMemberID="viewController">
+                <viewController id="JYD-VF-3nM" customClass="HandAndArmViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="ARN" id="UiO-ut-UMk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,6 +276,18 @@
                                 <rect key="frame" x="-1" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWE-y3-0zS">
+                                <rect key="frame" x="92" y="437" width="228" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225349999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Hands">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jfJ-4Q-Fe9" kind="show" id="tTg-hN-hAL"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXX-Xe-n2A">
                                 <rect key="frame" x="0.0" y="20" width="92" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -268,26 +300,16 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="aZM-37-OEc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw9-Zc-HxH">
-                                <rect key="frame" x="176" y="225" width="79" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVN-6c-3vp">
+                                <rect key="frame" x="93" y="222" width="228" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="arms">
-                                    <color key="titleColor" red="0.95686274510000002" green="0.11998172009999999" blue="0.2889951549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225349999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Arms">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Unm-jK-dRt" kind="show" id="Qea-Do-VTr"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztc-Le-BaU">
-                                <rect key="frame" x="175" y="517" width="81" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="hand">
-                                    <color key="titleColor" red="1" green="0.544866403" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jfJ-4Q-Fe9" kind="show" id="1EF-E2-ZiE"/>
+                                    <segue destination="Unm-jK-dRt" kind="show" id="Miu-bi-XtF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -295,6 +317,10 @@
                         <accessibility key="accessibilityConfiguration" identifier="ARN"/>
                         <viewLayoutGuide key="safeArea" id="AXi-b9-AaB"/>
                     </view>
+                    <connections>
+                        <outlet property="arms" destination="tVN-6c-3vp" id="QuR-U6-lsd"/>
+                        <outlet property="hands" destination="HWE-y3-0zS" id="u6a-fc-sZm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NiC-Hz-Ozb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,15 +334,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UZ-c7-jx9">
-                                <rect key="frame" x="66" y="655" width="292" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="open from website"/>
-                                <connections>
-                                    <action selector="handvideo:" destination="jfJ-4Q-Fe9" eventType="touchUpInside" id="hXN-d2-xoE"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="e0p-1e-ChZ">
                                 <rect key="frame" x="20" y="72" width="374" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -329,10 +346,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UZ-c7-jx9">
+                                <rect key="frame" x="60" y="542" width="295" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="handvideo:" destination="jfJ-4Q-Fe9" eventType="touchUpInside" id="hXN-d2-xoE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NBR-Hy-Lc5"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="9UZ-c7-jx9" id="Lmc-gd-fq3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ije-v2-dv9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -347,10 +379,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ib4-op-urd">
-                                <rect key="frame" x="86" y="622" width="292" height="57"/>
+                                <rect key="frame" x="44" y="565" width="301" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="open from website"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="armvideo:" destination="Unm-jK-dRt" eventType="touchUpInside" id="AgD-C7-dpN"/>
                                 </connections>
@@ -373,6 +408,9 @@ We're checking out how it's making a difference in his life and in the lives of 
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ITv-34-WIq"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="ib4-op-urd" id="j8b-fn-iQ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6i-dk-ghE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -403,10 +441,13 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmu-A7-fV8">
-                                <rect key="frame" x="61" y="627" width="298" height="57"/>
+                                <rect key="frame" x="56" y="606" width="303" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="open from youtube"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="neckvideo:" destination="V8G-vz-Cfr" eventType="touchUpInside" id="fcn-SE-3p9"/>
                                 </connections>
@@ -415,6 +456,9 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tNI-TP-zlM"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="mmu-A7-fV8" id="spX-Jd-kRm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fQS-F1-Kl9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -423,7 +467,7 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
         <!--Upper Body View Controller-->
         <scene sceneID="eo4-7Y-81q">
             <objects>
-                <viewController id="DKW-sl-isA" customClass="UpperBodyViewController" sceneMemberID="viewController">
+                <viewController id="DKW-sl-isA" customClass="UpperBodyViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="UPPER" id="pP6-sy-JJA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -445,31 +489,36 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwe-gJ-Xqk">
-                                <rect key="frame" x="162" y="159" width="88" height="57"/>
+                                <rect key="frame" x="101" y="184" width="228" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="chest">
-                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.59663842429577463" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Chest">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="ESo-tm-9QB" kind="show" id="BWj-13-2nD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxN-tb-cIl">
-                                <rect key="frame" x="176" y="359" width="78" height="57"/>
+                                <rect key="frame" x="101" y="350" width="228" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="back"/>
+                                <color key="backgroundColor" white="1" alpha="0.6036531690140845" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="hJr-af-cAg" kind="show" id="BXU-4i-kfr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3U0-mn-VVD">
-                                <rect key="frame" x="135" y="560" width="143" height="57"/>
+                                <rect key="frame" x="101" y="504" width="228" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225352112675" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
                                 <state key="normal" title="Shoulder">
-                                    <color key="titleColor" red="0.95686274510000002" green="0.11998172010790531" blue="0.28899515487831839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="sPC-eF-POH" kind="show" id="FM2-Eq-kgj"/>
@@ -480,6 +529,11 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                         <accessibility key="accessibilityConfiguration" identifier="UPPER"/>
                         <viewLayoutGuide key="safeArea" id="Ybv-sT-AZV"/>
                     </view>
+                    <connections>
+                        <outlet property="Back" destination="hxN-tb-cIl" id="sTI-Jg-IyP"/>
+                        <outlet property="Chest" destination="bwe-gJ-Xqk" id="mEm-tf-YPU"/>
+                        <outlet property="Shoulder" destination="3U0-mn-VVD" id="MMq-EA-ETj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z8e-ex-CYv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -507,10 +561,13 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEa-3o-nSG">
-                                <rect key="frame" x="67" y="564" width="298" height="57"/>
+                                <rect key="frame" x="53" y="519" width="309" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="open from youtube"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="backvideo:" destination="sPC-eF-POH" eventType="touchUpInside" id="PM3-4T-hNN"/>
                                 </connections>
@@ -522,6 +579,7 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                     <connections>
                         <outlet property="backimage" destination="xKb-x3-5UB" id="N1a-ec-SR5"/>
                         <outlet property="backtext" destination="4T2-qa-iN8" id="PJB-gU-QxG"/>
+                        <outlet property="watch" destination="lEa-3o-nSG" id="q03-yx-Aog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mft-3V-K22" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -549,9 +607,13 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axJ-cb-e77">
-                                <rect key="frame" x="142" y="671" width="131" height="30"/>
+                                <rect key="frame" x="61" y="549" width="281" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="open from youtube"/>
+                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="shoulder:" destination="hJr-af-cAg" eventType="touchUpInside" id="8QH-Y4-E88"/>
                                 </connections>
@@ -568,6 +630,9 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jqF-OD-2Kk"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="axJ-cb-e77" id="ig5-2Q-0gO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kik-9N-7g5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -585,14 +650,6 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <rect key="frame" x="20" y="79" width="374" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-ee-9Or">
-                                <rect key="frame" x="142" y="620" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="open from youtube"/>
-                                <connections>
-                                    <action selector="chestVi:" destination="ESo-tm-9QB" eventType="touchUpInside" id="1Kz-nX-ggY"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bRb-kS-vdA">
                                 <rect key="frame" x="20" y="339" width="374" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -601,10 +658,25 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5g-ee-9Or">
+                                <rect key="frame" x="50" y="646" width="294" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="chestVi:" destination="ESo-tm-9QB" eventType="touchUpInside" id="1Kz-nX-ggY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bTz-l7-GUY"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="E5g-ee-9Or" id="Jxu-nD-Tqv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MfT-gb-ThX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -632,10 +704,13 @@ Here's many of them</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-K4-7tY">
-                                <rect key="frame" x="67" y="646" width="298" height="57"/>
+                                <rect key="frame" x="69" y="596" width="277" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.91139240509999997" green="1" blue="1" alpha="0.99268265850000004" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="open from youtube"/>
+                                <state key="normal" title="Watch Tutorial">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="facevideo:" destination="6b2-yj-AVZ" eventType="touchUpInside" id="hxL-gN-RIN"/>
                                 </connections>
@@ -644,6 +719,9 @@ Here's many of them</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fpl-pG-eZO"/>
                     </view>
+                    <connections>
+                        <outlet property="open" destination="6oJ-K4-7tY" id="QpW-3o-T0z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mTK-he-WDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -677,52 +755,32 @@ Here's many of them</string>
                                     <segue destination="BYZ-38-t0r" kind="show" id="wNa-4t-IB2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVu-Nj-2dc">
-                                <rect key="frame" x="20" y="290" width="375" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Neck">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="upperback:" destination="b2h-iz-hLj" eventType="touchUpInside" id="PT2-Jg-YBI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOJ-dv-7Oq">
-                                <rect key="frame" x="19" y="112" width="375" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Face">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="upperchest:" destination="b2h-iz-hLj" eventType="touchUpInside" id="dLk-fX-sLe"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reccommended.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="U79-zu-0d8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoS-WV-jMZ">
-                                <rect key="frame" x="186" y="213" width="68" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZG-EH-Xk8">
+                                <rect key="frame" x="93" y="260" width="228" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="face">
-                                    <color key="titleColor" red="0.1284949289" green="1" blue="0.0009618469683" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225349999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Neck">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="6b2-yj-AVZ" kind="show" id="H7k-qw-3PQ"/>
+                                    <segue destination="V8G-vz-Cfr" kind="show" id="AgK-et-M0c"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhK-5t-hg7">
-                                <rect key="frame" x="182" y="489" width="77" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4uR-LQ-jKZ">
+                                <rect key="frame" x="93" y="446" width="228" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="neck"/>
+                                <color key="backgroundColor" white="1" alpha="0.60079225349999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="33"/>
+                                <state key="normal" title="Face">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="V8G-vz-Cfr" kind="show" id="yq9-BL-Rot"/>
+                                    <segue destination="6b2-yj-AVZ" kind="show" id="k3b-NV-TCA"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -10,9 +10,12 @@ import UIKit
 
 class neckViewController: UIViewController {
 
+    @IBOutlet weak var open: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        open.layer.cornerRadius = 15
+        open.layer.borderColor = UIColor.black.cgColor
+        open.layer.borderWidth = 0.5
         // Do any additional setup after loading the view.
     }
     

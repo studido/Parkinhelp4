@@ -1,28 +1,31 @@
 //
-//  armsViewController.swift
+//  HandAndArmViewController.swift
 //  275_test
 //
-//  Created by MICHAEL on 2019-11-17.
+//  Created by Sterling Smith on 2019-11-24.
 //  Copyright © 2019 Sterling Smith. All rights reserved.
 //
 
 import UIKit
 
-class armsViewController: UIViewController {
-    @IBOutlet weak var open: UIButton!
+class HandAndArmViewController: UIViewController {
+    @IBOutlet weak var arms: UIButton!
     
+    @IBOutlet weak var hands: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        open.layer.cornerRadius = 15
-        open.layer.borderColor = UIColor.black.cgColor
-        open.layer.borderWidth = 0.5
+        
+        arms.layer.cornerRadius = 15
+        arms.layer.borderColor = UIColor.black.cgColor
+        arms.layer.borderWidth = 0.5
+        hands.layer.cornerRadius = 15
+        hands.layer.borderColor = UIColor.black.cgColor
+        hands.layer.borderWidth = 0.5
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func armvideo(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=ikY9WpmekRY&t=9s")! as URL,options:[:],completionHandler: nil)    }
-    
+
     /*
     // MARK: - Navigation
 

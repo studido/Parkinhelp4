@@ -12,8 +12,12 @@ class backViewController: UIViewController {
 
     @IBOutlet weak var backimage: UIImageView!
     @IBOutlet weak var backtext: UITextView!
-   
+    @IBOutlet weak var watch: UIButton!
+    
     override func viewDidLoad() {
+        watch.layer.cornerRadius = 15
+        watch.layer.borderColor = UIColor.black.cgColor
+        watch.layer.borderWidth = 0.5
         super.viewDidLoad()
              // Do any additional setup after loading the view.
     }
