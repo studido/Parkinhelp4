@@ -20,3 +20,19 @@ func getSha256(string : String) -> String {
     let shad256 = sha256(data: string.data(using: String.Encoding.utf8)!)
     return shad256.compactMap { String(format: "%02x", $0) }.joined()
 }
+
+func getStrDate() -> String {
+    let timestamp:Date = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MM-dd-yyyy HH:mm:ss"
+    return dateFormatter.string(from: timestamp)
+}
+
+func getDateObject(strDate : String) -> Date {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MM-dd-yyyy HH:mm:ss"
+    dateFormatter.timeZone = TimeZone.current
+    dateFormatter.locale = Locale.current
+    return dateFormatter.date(from: strDate) ?? Date()
+    
+}

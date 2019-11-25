@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class WeeklySurveyViewController: UIViewController {
     
@@ -88,6 +90,10 @@ class WeeklySurveyViewController: UIViewController {
             intensity = String(intensityint!)
             UserDefaults.standard.set(intensity, forKey: "Intensity")
         }
+        let strDate = getStrDate()
+        let ref : DatabaseReference! = Database.database().reference()
+        let uid = Firebase.Auth.auth().currentUser!.uid
+            ref.child("/Users/\(uid)/lastDateFilledSurvey").setValue(strDate)
         performSegue(withIdentifier: "repeatsurveysegue", sender: self)
             
             

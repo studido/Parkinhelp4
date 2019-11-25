@@ -50,11 +50,7 @@ class TremorManager {
     
     //writes gyroscope data to firebase
     func save(score : Double) {
-        let timestamp:Date = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm"
-        let strDate = dateFormatter.string(from: timestamp)
-        
+        let strDate = getStrDate()
         let ref : DatabaseReference! = Database.database().reference()
         let uid = Firebase.Auth.auth().currentUser!.uid
         var dateAndTremorScore : [String: String]!

@@ -80,6 +80,7 @@
                         <segue destination="y7U-Lv-80C" kind="show" identifier="goToPatientDoctorScreen" id="pov-f9-ej4"/>
                         <segue destination="sVe-G9-I3b" kind="show" identifier="goToMainMenu" id="M8c-2k-ctg"/>
                         <segue destination="OgT-aT-gTz" kind="show" identifier="goToDocMainMenu" id="tBa-db-ftk"/>
+                        <segue destination="lAw-AY-EAf" kind="show" identifier="goToWeeklySurvey" id="HiZ-WB-9im"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -179,6 +180,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruH-av-Sb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1764" y="13"/>
+        </scene>
+        <!--WeeklySurvey-->
+        <scene sceneID="o46-71-OFG">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WeeklySurvey" storyboardName="WeeklySurvey" referencedIdentifier="WeeklySurvey" id="lAw-AY-EAf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfx-0c-e7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="530"/>
         </scene>
         <!--docMainMenu-->
         <scene sceneID="sEq-Vq-Dse">

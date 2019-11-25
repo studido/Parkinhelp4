@@ -15,6 +15,7 @@ import FirebaseDatabase
 
 class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
     fileprivate var loggedIn = false
+    fileprivate let elapsed : Int = 30// 86400 * 7 //24 hours in seconds times 7 (1 week)
     
     @IBOutlet weak var Background: UIImageView!
     
@@ -89,7 +90,17 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                                 Variables.durationofdisease = value["durationOfDisease"] as? String ?? ""
                                 Variables.repetitions = value["repetitions"] as? String ?? ""
                                 Variables.intensity = value["intensity"] as? String ?? ""
-                                self.performSegue(withIdentifier: "goToMainMenu", sender: self)
+                                let lastDateFilledSurvey = value["lastDateFilledSurvey"] as? String ?? ""
+                                
+                                let date = getDateObject(strDate: lastDateFilledSurvey)
+                                
+                                if (abs(Int((date.timeIntervalSinceNow))) > self.elapsed) {
+                                    //perform segue to repeating surveys
+                                    self.performSegue(withIdentifier: "goToWeeklySurvey", sender: self)
+                                }
+                                else {
+                                    self.performSegue(withIdentifier: "goToMainMenu", sender: self)
+                                }
                             }
                         }
                         else {

@@ -55,6 +55,12 @@ class SurveyViewController: UIViewController {
         UserDefaults.standard.set(Repitition.text, forKey: "Repitition")
         UserDefaults.standard.set(Intensity.text, forKey: "Intensity")
         
+        
+        let timestamp:Date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd-yyyy HH:mm:ss"
+        let strDate = dateFormatter.string(from: timestamp)
+        
         //Write patient data to firebase
         let ref : DatabaseReference! = Database.database().reference()
         let userData = ["firstName": Variables.firstname,
@@ -69,6 +75,7 @@ class SurveyViewController: UIViewController {
                         "repetitions":  Variables.repetitions,
                         "intensity":  Variables.intensity,
                         "email" : Variables.email,
+                        "lastDateFilledSurvey": strDate,
                         "userType": "patient"]
         
         let uid = Firebase.Auth.auth().currentUser!.uid
