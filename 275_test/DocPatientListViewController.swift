@@ -19,6 +19,7 @@ class DocPatientListViewController: UIViewController {
     @IBOutlet weak var patientlist: UILabel!
     @IBOutlet weak var patient1: UILabel!
     @IBOutlet weak var AddPatient: UIButton!
+    @IBOutlet weak var signout: UIButton!
     
     @IBAction func addPatient(_sender: UIButton) {
         let alertController = UIAlertController(title: "Add Patient", message: "", preferredStyle: .alert)
@@ -34,7 +35,7 @@ class DocPatientListViewController: UIViewController {
             var emailsList : [String: String]!
             if email != "" && email! != Variables.email {
                 let hashedEmail = getSha256(string: email!)
-                print("here")
+                print("here3")
                 print(hashedEmail)
                 
                 let ref : DatabaseReference = Database.database().reference()
@@ -136,6 +137,9 @@ class DocPatientListViewController: UIViewController {
         patientlist.layer.cornerRadius = 15
         patientlist.layer.borderColor = UIColor.black.cgColor
         patientlist.layer.borderWidth = 0.5
+        signout.layer.cornerRadius = 15
+        signout.layer.borderColor = UIColor.black.cgColor
+        signout.layer.borderWidth = 0.5
         let hashedDoc = getSha256(string: Variables.email)
          let ref : DatabaseReference = Database.database().reference()
         print(Variables.email)
