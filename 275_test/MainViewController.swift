@@ -19,6 +19,33 @@ class MainViewController: UIViewController {
     @IBOutlet weak var TremorGraph: UIButton!
     @IBOutlet weak var TremorMeasurement: UIButton!
     @IBOutlet weak var ExerciseList: UIButton!
+    @IBAction func facetimeButton(_ sender: UIButton) {
+        print("facetime button clicked")
+        facetime(phoneNumber:"+12062350208") // have to somehow connect doctor's number here.
+        print ("end of facetime button")
+    }
+    
+    private func facetime(phoneNumber:String) {
+        if let facetimeURL:NSURL = NSURL(string: "facetime:+12062350208") {
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(facetimeURL as URL)) {
+                //application.openURL(facetimeURL as URL);
+                application.open(facetimeURL as URL, options: [:], completionHandler: nil)
+               
+                // this works for opening a website in safari
+                // UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=89e518dl4I8")! as URL,options:[:],completionHandler: nil)
+            }
+        }
+
+    }
+    
+  //  private func facetime(phoneNumber:String) {
+      
+        
+        
+    //    UIApplication.shared.openURL(NSURL(string: "facetime:2062350208") as! URL)
+
+    //}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,3 +121,5 @@ extension MainViewController: UIViewControllerTransitioningDelegate{
         return transition
     }
 }
+
+
