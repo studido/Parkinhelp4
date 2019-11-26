@@ -16,6 +16,7 @@ class DocPatientListViewController: UIViewController {
     var wait = 0
     @IBOutlet weak var DocAcc: UIButton!
     
+    @IBOutlet weak var patientlist: UILabel!
     @IBOutlet weak var patient1: UILabel!
     @IBOutlet weak var AddPatient: UIButton!
     
@@ -126,7 +127,15 @@ class DocPatientListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        DocAcc.layer.cornerRadius = 15
+        DocAcc.layer.borderColor = UIColor.black.cgColor
+        DocAcc.layer.borderWidth = 0.5
+        AddPatient.layer.cornerRadius = 15
+        AddPatient.layer.borderColor = UIColor.black.cgColor
+        AddPatient.layer.borderWidth = 0.5
+        patientlist.layer.cornerRadius = 15
+        patientlist.layer.borderColor = UIColor.black.cgColor
+        patientlist.layer.borderWidth = 0.5
         let hashedDoc = getSha256(string: Variables.email)
          let ref : DatabaseReference = Database.database().reference()
         print(Variables.email)
