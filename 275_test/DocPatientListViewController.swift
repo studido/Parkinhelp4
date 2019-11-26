@@ -12,9 +12,11 @@ import Firebase
 import FirebaseDatabase
 
 class DocPatientListViewController: UIViewController {
-
+    var patients = [String()]
+    var wait = 0
     @IBOutlet weak var DocAcc: UIButton!
     
+    @IBOutlet weak var patient1: UILabel!
     @IBOutlet weak var AddPatient: UIButton!
     
     @IBAction func addPatient(_sender: UIButton) {
@@ -31,13 +33,22 @@ class DocPatientListViewController: UIViewController {
             var emailsList : [String: String]!
             if email != "" && email! != Variables.email {
                 let hashedEmail = getSha256(string: email!)
+                print("here")
+                print(hashedEmail)
+                
                 let ref : DatabaseReference = Database.database().reference()
                 //Check if the provided email exists in databse
+                
                 ref.child("Emails").child(hashedEmail).observeSingleEvent(of: .value, with: { (snapshot) in
+                    
+                    
+                print("here")
+                  print(  snapshot.key, snapshot.exists() )
                     if (snapshot.exists()) {
                         let val = snapshot.value as! [String: String]
                         let patientUID = val["uid"]!
                         //Get the list of patients linked with doctor
+                        print("here1")
                         ref.child("Users").child(uid).child("patients").observeSingleEvent(of: .value, with: { (dataSnapshot) in
                             if (dataSnapshot.exists()) {
                                 emailsList = (dataSnapshot.value as! [String: String])
@@ -52,6 +63,7 @@ class DocPatientListViewController: UIViewController {
                                 else {
                                     //Add new patient to doctors patient list
                                     emailsList[patientUID] = email!
+                                 //   self.patient1.text = email!
                                 }
 
                             }
@@ -113,14 +125,58 @@ class DocPatientListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        let hashedDoc = getSha256(string: Variables.email)
+         let ref : DatabaseReference = Database.database().reference()
+        print(Variables.email)
+        print(hashedDoc)
+       // ref.child("Users").child("GargMAib3EOFGgRYreH6wHAJGH53").child("patients").observeSingleEvent(of: .value, with:
+           ref.child("Emails").child(hashedDoc).observeSingleEvent(of: .value, with:
+            { (datashot) in
+            
+                let docuid = datashot.value as! [String: String]
+                let docid = docuid["uid"]
+                
+                ref.child("Users").child(docid!).child("patients").observeSingleEvent(of: .value, with:
+                    {   (snapshot) in
+                        
+                        var patientlist : [String: String]
+                        patientlist = snapshot.value as! [String: String]
+                        print(patientlist.values)
+                        let patientemail = Array(patientlist.values)
+                        let numpatients = patientemail.count
+                        var i = 0
+                        while (i < numpatients){
+                            self.getPatientData(email: patientemail[i], patientnum: i)
+                            while(self.wait != 0){}
+                           self.patient1.text = self.patients[i]
+                            //self.patient1.text = "sdf"
+                            print("here5", i)
+                            
+    
+                            i += 1
+                        }
+                })
+            
+        })
+ 
+        
+        
+    //    getPatientData(email: Variables.email)
+        
+        
+       
 
-
+        
+        
+        
     }
     
+    
 
-    func getPatientData(email : String) {
+
+    func getPatientData(email : String, patientnum: Int) {
         let hashedEmail = getSha256(string: email)
         let ref : DatabaseReference = Database.database().reference()
         ref.child("Emails").child(hashedEmail).observeSingleEvent(of: .value, with: { (snapshot) in
@@ -129,12 +185,17 @@ class DocPatientListViewController: UIViewController {
                 let patientUID = value["uid"] as? String ?? ""
                 ref.child("Users").child(patientUID).observeSingleEvent(of: .value, with: { (datashot) in
                     if datashot.exists()  {
-                        let patientData = datashot.value as! [String: Any]
+                        let patientData = datashot.value as! [String: String]
+                        self.patients[patientnum] = patientData["firstName"]!
+                        print(self.patients[patientnum], patientnum)
+                        self.patient1.text = self.patients[patientnum]
+                     //   self.patientfirst[patientnum] = patientData["firstName"]!
                         // *** Can create a Patient class to store patients info, examples on how to get specific attributes are shown below
                         //Patient.firstName = ["firstName"] as? String ?? ""
                         //Patient.lasName = ["lastName"] as? String ?? ""
                         //Patient.age = ["age"] as? String ?? ""
-
+                        print(patientData)
+                        self.wait = 1
                     }
                     else {
                         //Error - User does not exist in our database

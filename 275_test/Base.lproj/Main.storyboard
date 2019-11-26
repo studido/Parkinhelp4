@@ -378,6 +378,7 @@
                     <connections>
                         <outlet property="AddPatient" destination="nGn-B5-18r" id="bt6-Fc-AvR"/>
                         <outlet property="DocAcc" destination="NVN-BY-cLX" id="NIS-hP-Wad"/>
+                        <outlet property="patient1" destination="UUs-PZ-Zsg" id="9Vy-v3-cQd"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="nn0-2B-aHI"/>
                     </connections>
                 </viewController>
