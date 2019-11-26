@@ -361,11 +361,22 @@
                                     <action selector="signOutUserLoggedInWithGoogleWith_sender:" destination="2Qm-sw-1Fv" eventType="touchUpInside" id="OLc-LC-mTr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGn-B5-18r">
+                                <rect key="frame" x="167" y="803" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Patient">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addPatientWith_sender:" destination="2Qm-sw-1Fv" eventType="touchUpInside" id="qiw-E2-c0C"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7fG-VS-707"/>
                     </view>
                     <connections>
+                        <outlet property="AddPatient" destination="nGn-B5-18r" id="bt6-Fc-AvR"/>
                         <outlet property="DocAcc" destination="NVN-BY-cLX" id="NIS-hP-Wad"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToLogin" id="nn0-2B-aHI"/>
                     </connections>

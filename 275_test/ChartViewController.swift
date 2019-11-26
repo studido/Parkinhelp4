@@ -49,7 +49,6 @@ class ChartViewController: UIViewController {
     }})
         
         return dateAndTremorScore
-
     }
 }
 
