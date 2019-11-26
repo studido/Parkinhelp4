@@ -59,9 +59,8 @@ class DocPatientListViewController: UIViewController {
                             emailsList = [patientUID : email!]
                              ref.updateChildValues(["/Users/\(uid)/patients" : emailsList])
                             
-                            //update patients doctor info
-                            //HERE
-                            
+                            //Update patients info with doctors email
+                            ref.child("Users").child(patientUID).child("doctor").setValue(Variables.email)
                             
                             let successAlert = UIAlertController(title: "Successfully added patient", message: "", preferredStyle: .alert)
                             let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
