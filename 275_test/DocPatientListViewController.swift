@@ -222,7 +222,7 @@ class DocPatientListViewController: UIViewController {
                         print(patientData)
                         Variables.patientfirstname[patientnum] = patientData["firstName"]!
                         Variables.patientlastname[patientnum] = patientData["lastName"]!
-                        Variables.patientfirstname[patientnum] = patientData["email"]!
+                        Variables.patientemail[patientnum] = patientData["email"]!
                         
                         self.wait = 1
                     }
