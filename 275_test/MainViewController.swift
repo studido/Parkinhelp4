@@ -19,6 +19,8 @@ class MainViewController: UIViewController {
     @IBOutlet weak var TremorGraph: UIButton!
     @IBOutlet weak var TremorMeasurement: UIButton!
     @IBOutlet weak var ExerciseList: UIButton!
+    
+    
     @IBAction func facetimeButton(_ sender: UIButton) {
         print("facetime button clicked")
         facetime(phoneNumber:"+12062350208") // have to somehow connect doctor's number here.
