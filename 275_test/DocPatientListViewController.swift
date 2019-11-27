@@ -16,10 +16,13 @@ class DocPatientListViewController: UIViewController {
     var wait = 0
     var numpatients = Int()
     
+    @IBOutlet weak var patient1button: UIButton!
     @IBOutlet weak var DocAcc: UIButton!
     
-    @IBOutlet weak var patientlist: UILabel!
     @IBOutlet weak var patient1: UILabel!
+    @IBOutlet weak var patientlist: UILabel!
+    
+    
     @IBOutlet weak var AddPatient: UIButton!
     @IBOutlet weak var signout: UIButton!
     
@@ -168,6 +171,7 @@ class DocPatientListViewController: UIViewController {
                         while (i < self.numpatients){
                             self.getPatientData(email: patientemail[i], patientnum: i)
                             while(self.wait != 0){}
+                            
                            self.patient1.text = self.patients[i]
                             //self.patient1.text = "sdf"
                             print("here5", i, self.numpatients)

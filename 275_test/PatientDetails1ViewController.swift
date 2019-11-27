@@ -9,18 +9,22 @@
 import UIKit
 
 class PatientDetails1ViewController: UIViewController {
+
+    @IBOutlet weak var firstname: UILabel!
+    @IBOutlet weak var lastname: UILabel!
+    @IBOutlet weak var email: UILabel!
     @IBOutlet weak var patientdetails: UILabel!
     
-    @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var lastname: UILabel!
-    @IBOutlet weak var firstname: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
+        
 firstname.text = Variables.patientfirstname[0]
+        
     lastname.text = Variables.patientlastname[0]
         email.text = Variables.patientemail[0]
-        */
+        patientdetails.layer.borderWidth = 1.5
+        patientdetails.layer.cornerRadius = 15
+        
         // Do any additional setup after loading the view.
     }
     
