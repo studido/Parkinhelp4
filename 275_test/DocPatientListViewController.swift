@@ -14,10 +14,15 @@ import FirebaseDatabase
 class DocPatientListViewController: UIViewController {
     var patients = [String()]
     var wait = 0
+    var numpatients = Int()
+    
+    @IBOutlet weak var patient1button: UIButton!
     @IBOutlet weak var DocAcc: UIButton!
     
-    @IBOutlet weak var patientlist: UILabel!
     @IBOutlet weak var patient1: UILabel!
+    @IBOutlet weak var patientlist: UILabel!
+    
+    
     @IBOutlet weak var AddPatient: UIButton!
     @IBOutlet weak var signout: UIButton!
     
@@ -143,9 +148,11 @@ class DocPatientListViewController: UIViewController {
         let hashedDoc = getSha256(string: Variables.email)
          let ref : DatabaseReference = Database.database().reference()
         print(Variables.email)
+    
         print(hashedDoc)
        // ref.child("Users").child("GargMAib3EOFGgRYreH6wHAJGH53").child("patients").observeSingleEvent(of: .value, with:
-           ref.child("Emails").child(hashedDoc).observeSingleEvent(of: .value, with:
+       // /* start of my useless function
+        ref.child("Emails").child(hashedDoc).observeSingleEvent(of: .value, with:
             { (datashot) in
             
                 let docuid = datashot.value as! [String: String]
@@ -158,21 +165,23 @@ class DocPatientListViewController: UIViewController {
                         patientlist = snapshot.value as! [String: String]
                         print(patientlist.values)
                         let patientemail = Array(patientlist.values)
-                        let numpatients = patientemail.count
+                         self.numpatients = patientemail.count
+                        Variables.numpatient = String(self.numpatients)
                         var i = 0
-                        while (i < numpatients){
+                        while (i < self.numpatients){
                             self.getPatientData(email: patientemail[i], patientnum: i)
                             while(self.wait != 0){}
+                            
                            self.patient1.text = self.patients[i]
                             //self.patient1.text = "sdf"
-                            print("here5", i)
+                            print("here5", i, self.numpatients)
                             
     
                             i += 1
                         }
                 })
             
-        })
+        }) // end of my useless function*/
  
         
         
@@ -200,14 +209,21 @@ class DocPatientListViewController: UIViewController {
                     if datashot.exists()  {
                         let patientData = datashot.value as! [String: String]
                         self.patients[patientnum] = patientData["firstName"]!
+                        
                         print(self.patients[patientnum], patientnum)
                         self.patient1.text = self.patients[patientnum]
+                        
+                        
                      //   self.patientfirst[patientnum] = patientData["firstName"]!
                         // *** Can create a Patient class to store patients info, examples on how to get specific attributes are shown below
                         //Patient.firstName = ["firstName"] as? String ?? ""
                         //Patient.lasName = ["lastName"] as? String ?? ""
                         //Patient.age = ["age"] as? String ?? ""
                         print(patientData)
+                        Variables.patientfirstname[patientnum] = patientData["firstName"]!
+                        Variables.patientlastname[patientnum] = patientData["lastName"]!
+                        Variables.patientfirstname[patientnum] = patientData["email"]!
+                        
                         self.wait = 1
                     }
                     else {

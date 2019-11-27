@@ -79,6 +79,7 @@
 		A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EE923701EE1008B4F96 /* background.jpg */; };
 		A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EEB237024B4008B4F96 /* frame.jpg */; };
 		A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EED23702B3B008B4F96 /* white.jpg */; };
+		A4951A8F238DED300062817D /* PatientDetails1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4951A8E238DED300062817D /* PatientDetails1ViewController.swift */; };
 		A4C1065D237E3C0E006ACF47 /* doctorbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C1065C237E3C0E006ACF47 /* doctorbackground.png */; };
 		A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */; };
 		A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */; };
@@ -193,6 +194,7 @@
 		A48E4EE923701EE1008B4F96 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		A48E4EEB237024B4008B4F96 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
 		A48E4EED23702B3B008B4F96 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
+		A4951A8E238DED300062817D /* PatientDetails1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientDetails1ViewController.swift; sourceTree = "<group>"; };
 		A4C1065C237E3C0E006ACF47 /* doctorbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctorbackground.png; sourceTree = "<group>"; };
 		A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocProfileViewController.swift; sourceTree = "<group>"; };
 		A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocPatientListViewController.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 				9905309C2370DCDA0068FA22 /* MenuOptionCell.swift */,
 				992EF49A237B88F5007A5573 /* MenuViewController.swift */,
 				4CB3A5EF2382445A002824C8 /* neckViewController.swift */,
+				A4951A8E238DED300062817D /* PatientDetails1ViewController.swift */,
 				4CB3A5F923824FC4002824C8 /* newfootViewController.swift */,
 				992EF497237B88F5007A5573 /* PillScheduleViewController.swift */,
 				9905309A2370DCD70068FA22 /* Protocols.swift */,
@@ -752,6 +755,7 @@
 				4CB3A5EE23824448002824C8 /* faceViewController.swift in Sources */,
 				4CB3A5F2238248F2002824C8 /* armsViewController.swift in Sources */,
 				A4CCDC06238A8C7100164D0E /* HeadViewController.swift in Sources */,
+				A4951A8F238DED300062817D /* PatientDetails1ViewController.swift in Sources */,
 				4CE8B380238231E1007D7D77 /* CALayerExtension.swift in Sources */,
 				4CB3A5F623824B45002824C8 /* calfViewController.swift in Sources */,
 				A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */,

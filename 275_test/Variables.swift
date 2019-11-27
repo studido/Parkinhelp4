@@ -19,7 +19,10 @@ class Variables: UIViewController {
     //doctor variables
     static var docname = String()
     static var docprofession = String()
-    
+    static var numpatient = String()
+    static var patientfirstname = [String()]
+    static var patientlastname = [String()]
+    static var patientemail = [String()]
     
     //patient variables
     static var age = String()
