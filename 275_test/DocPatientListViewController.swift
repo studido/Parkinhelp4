@@ -34,28 +34,24 @@ class DocPatientListViewController: UIViewController {
         }
         
         let addButton = UIAlertAction(title: "Add", style: .destructive, handler: {(alert: UIAlertAction!) in
+            self.showSpinner(onView: self.view)
             let textField = alertController.textFields![0]
             let email = textField.text
             let uid = Firebase.Auth.auth().currentUser!.uid
             var emailsList : [String: String]!
             if email != "" && email! != Variables.email {
                 let hashedEmail = getSha256(string: email!)
-                print("here3")
-                print(hashedEmail)
                 
                 let ref : DatabaseReference = Database.database().reference()
                 //Check if the provided email exists in databse
                 
                 ref.child("Emails").child(hashedEmail).observeSingleEvent(of: .value, with: { (snapshot) in
                     
-                    
-                print("here")
                   print(  snapshot.key, snapshot.exists() )
                     if (snapshot.exists()) {
                         let val = snapshot.value as! [String: String]
                         let patientUID = val["uid"]!
                         //Get the list of patients linked with doctor
-                        print("here1")
                         ref.child("Users").child(uid).child("patients").observeSingleEvent(of: .value, with: { (dataSnapshot) in
                             if (dataSnapshot.exists()) {
                                 emailsList = (dataSnapshot.value as! [String: String])
@@ -64,17 +60,16 @@ class DocPatientListViewController: UIViewController {
                                     let existsAlert = UIAlertController(title: "Patient already added", message: "", preferredStyle: .alert)
                                     let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
                                     existsAlert.addAction(okButton)
+                                    self.removeSpinner()
                                     self.present(existsAlert, animated: true, completion: nil)
                                     return
                                 }
                                 else {
                                     //Add new patient to doctors patient list
                                     emailsList[patientUID] = email!
-                                 //   self.patient1.text = email!
                                 }
 
                             }
-                            print("email entered is ", email!)
                             emailsList = [patientUID : email!]
                              ref.updateChildValues(["/Users/\(uid)/patients" : emailsList])
                             
@@ -84,6 +79,7 @@ class DocPatientListViewController: UIViewController {
                             let successAlert = UIAlertController(title: "Successfully added patient", message: "", preferredStyle: .alert)
                             let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
                             successAlert.addAction(okButton)
+                            self.removeSpinner()
                             self.present(successAlert, animated: true, completion: nil)
                             
                         })
@@ -94,6 +90,7 @@ class DocPatientListViewController: UIViewController {
                          let unregisteredEmailAlert = UIAlertController(title: "Unregistered email", message: "", preferredStyle: .alert)
                         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
                         unregisteredEmailAlert.addAction(okButton)
+                        self.removeSpinner()
                         self.present(unregisteredEmailAlert, animated: true, completion: nil)
                         
                     }
@@ -105,6 +102,7 @@ class DocPatientListViewController: UIViewController {
                 let emptyEmailAlert = UIAlertController(title: "Please enter a valid email address", message: "", preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 emptyEmailAlert.addAction(okButton)
+                self.removeSpinner()
                 self.present(emptyEmailAlert, animated: true, completion: nil)
             }
             

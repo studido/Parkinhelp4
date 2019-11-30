@@ -20,8 +20,18 @@ class TremorOverViewController: UIViewController {
     @IBOutlet weak var ScoreLabel: UILabel!
     
     @IBAction func SaveButtonClicked(_ sender: Any) {
-        tremorManager.save(score: res![1].1)
-        self.performSegue(withIdentifier: "goToMainMenu", sender: self)
+        self.showSpinner(onView: self.view)
+        UserDefaults.standard.set(res![1].1, forKey: "tremorScore")
+        UserDefaults.standard.synchronize()
+        tremorManager.save()
+        self.removeSpinner()
+        
+        //present saved alert to notify user that data has been successfully saved
+        let successAlert = UIAlertController(title: "Data saved", message: "", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
+            self.performSegue(withIdentifier: "goToMainMenu", sender: self)})
+        successAlert.addAction(okButton)
+        self.present(successAlert, animated: true, completion: nil)
     }
 
     override func viewDidLoad() {
@@ -31,13 +41,10 @@ class TremorOverViewController: UIViewController {
         print("Accel\nFreq: \(res[0].1), Pow: \(res[0].2)\n")
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
         
-        let timestamp:Date = Date()
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
-        let strDate = dateFormatter.string(from: timestamp)
-        print(strDate)
-        score = res[1].1
-        self.ScoreLabel.text = "\(score!)"
-        print("setting score label to value ", score!)
+        score = res![1].1
+        let doubleStr = String(format: "%.1f", score)
+        self.ScoreLabel.text = doubleStr
+        self.ScoreLabel.textColor = UIColor.black
+        self.ScoreLabel.font = self.ScoreLabel.font.withSize(50)
     }
 }

@@ -61,8 +61,8 @@ class TremorViewController: UIViewController {
         }else {
             seconds -= 1
             timeLabel.text = "\(seconds)"
-            timeLabel.textColor = UIColor.white
-            timeLabel.font = timeLabel.font.withSize(20)
+            timeLabel.textColor = UIColor.black
+            timeLabel.font = timeLabel.font.withSize(50)
         }
     }
 }

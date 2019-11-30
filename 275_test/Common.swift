@@ -36,3 +36,4 @@ func getDateObject(strDate : String) -> Date {
     return dateFormatter.date(from: strDate) ?? Date()
     
 }
+

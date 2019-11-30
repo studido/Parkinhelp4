@@ -49,7 +49,8 @@ class TremorManager {
     }
     
     //writes gyroscope data to firebase
-    func save(score : Double) {
+    func save() {
+        let score = UserDefaults.standard.double(forKey: "tremorScore")
         let strDate = getStrDate()
         let ref : DatabaseReference! = Database.database().reference()
         let uid = Firebase.Auth.auth().currentUser!.uid
