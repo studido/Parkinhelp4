@@ -16,18 +16,27 @@ class PatientDetails1ViewController: UIViewController {
     @IBOutlet weak var email: UILabel!
     @IBOutlet weak var patientdetails: UILabel!
     
+    //Added
+    @IBOutlet weak var patientFirstName: UILabel!
+    @IBOutlet weak var patientLastName: UILabel!
+    @IBOutlet weak var patientEmail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-firstname.text = Variables.patientfirstname[0]
+        patientFirstName.text = patientFName[myIndex]
+        patientLastName.text = patientLName[myIndex]
+        patientEmail.text = patientDescription[myIndex]
         
-    lastname.text = Variables.patientlastname[0]
+        /*Commented
+        firstname.text = Variables.patientfirstname[0]
+        lastname.text = Variables.patientlastname[0]
         email.text = Variables.patientemail[0]
         patientdetails.layer.borderWidth = 1.5
         patientdetails.layer.cornerRadius = 15
         whiteback.layer.borderWidth = 1.5
         whiteback.layer.cornerRadius = 15
-        
+        */
         
         // Do any additional setup after loading the view.
     }

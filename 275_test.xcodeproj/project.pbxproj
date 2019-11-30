@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B9D2892393025800F89B54 /* PTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B9D2882393025800F89B54 /* PTableViewController.swift */; };
 		348982F22368F6D200C623F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348982F12368F6D200C623F2 /* AppDelegate.swift */; };
 		348982F92368F6D400C623F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348982F82368F6D400C623F2 /* Assets.xcassets */; };
 		348982FC2368F6D400C623F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348982FA2368F6D400C623F2 /* LaunchScreen.storyboard */; };
@@ -16,7 +17,6 @@
 		34BB20B3236BBAD3001379EE /* unnamed.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 34BB20B2236BBAD3001379EE /* unnamed.jpg */; };
 		34BB20B7236BC714001379EE /* UserSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BB20B6236BC714001379EE /* UserSelectViewController.swift */; };
 		4C20C27A2380F62900211694 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C20C2792380F62900211694 /* ChartViewController.swift */; };
-		4C5032602391EA7900CC1DF0 /* mediaction.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C50325F2391EA7900CC1DF0 /* mediaction.storyboard */; };
 		4C5032622391EB6600CC1DF0 /* MondayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032612391EB6600CC1DF0 /* MondayViewController.swift */; };
 		4C5032642391EB7D00CC1DF0 /* tuesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */; };
 		4C5032662391F18300CC1DF0 /* WednesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */; };
@@ -116,6 +116,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03B9D2882393025800F89B54 /* PTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTableViewController.swift; sourceTree = "<group>"; };
 		0509952793B4513A2FDDE658 /* Pods_275_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_275_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC2B48285A2C8A574E103E3 /* Pods-275_testUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-275_testUITests.release.xcconfig"; path = "Target Support Files/Pods-275_testUITests/Pods-275_testUITests.release.xcconfig"; sourceTree = "<group>"; };
 		348982EE2368F6D200C623F2 /* 275_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 275_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +134,6 @@
 		34BB20B2236BBAD3001379EE /* unnamed.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unnamed.jpg; sourceTree = "<group>"; };
 		34BB20B6236BC714001379EE /* UserSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectViewController.swift; sourceTree = "<group>"; };
 		4C20C2792380F62900211694 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
-		4C50325F2391EA7900CC1DF0 /* mediaction.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mediaction.storyboard; sourceTree = "<group>"; };
 		4C5032612391EB6600CC1DF0 /* MondayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MondayViewController.swift; sourceTree = "<group>"; };
 		4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuesdayViewController.swift; sourceTree = "<group>"; };
 		4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayViewController.swift; sourceTree = "<group>"; };
@@ -293,25 +293,25 @@
 			isa = PBXGroup;
 			children = (
 				99D968132388C53C00D793F2 /* SHA256.h */,
+				03B9D2882393025800F89B54 /* PTableViewController.swift */,
+				A4951A8E238DED300062817D /* PatientDetails1ViewController.swift */,
+				34BB20AE236BB846001379EE /* Main.storyboard */,
 				993139D0236BBF24008802A9 /* GoogleService-Info.plist */,
 				348982FD2368F6D400C623F2 /* Info.plist */,
 				99D1993F237B8ADB00C5F2EC /* Exercise.storyboard */,
 				A4E00E942370CB800070E1A4 /* LaunchScreen.storyboard */,
-				34BB20AE236BB846001379EE /* Main.storyboard */,
 				992EF49B237B88F5007A5573 /* Menu.storyboard */,
 				A44FCA97237E19D7000D4B8E /* Recommend.storyboard */,
 				A4E00E952370CDEE0070E1A4 /* Survey.storyboard */,
-				A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */,
 				9939D4FC23750CE600F1FB1F /* Tremor.storyboard */,
+				A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
 				4CB3A5F1238248F2002824C8 /* armsViewController.swift */,
 				4CE8B381238231FE007D7D77 /* ArrayExtension.swift */,
-				A4CCDC07238A8C8200164D0E /* LowerBodyViewController.swift */,
 				4CE8B375238228DD007D7D77 /* backViewController.swift */,
 				4CE8B38323823210007D7D77 /* BasicBarChart.swift */,
 				4CE8B38523823229007D7D77 /* BasicBarChartPresenter.swift */,
 				4CE8B38723823236007D7D77 /* BasicBarEntry.swift */,
-				A4CCDC09238A8CDA00164D0E /* HandAndArmViewController.swift */,
 				4CE8B37F238231E1007D7D77 /* CALayerExtension.swift */,
 				4CB3A5F523824B45002824C8 /* calfViewController.swift */,
 				4C20C2792380F62900211694 /* ChartViewController.swift */,
@@ -324,39 +324,39 @@
 				A45290C4237E37D5003F8D06 /* DoctorViewController.swift */,
 				4C8BCBC92380F25300A3D285 /* EX.swift */,
 				99D19940237B8ADB00C5F2EC /* ExerciseViewController.swift */,
-				A4CCDC05238A8C7100164D0E /* HeadViewController.swift */,
 				4CB3A5ED23824448002824C8 /* faceViewController.swift */,
 				9939D4FF2376671E00F1FB1F /* fft.swift */,
 				A4DF0F78237FB86E006BCAB2 /* FocusAreaViewController.swift */,
+				A4CCDC09238A8CDA00164D0E /* HandAndArmViewController.swift */,
 				4CB3A5F323824903002824C8 /* handViewController.swift */,
+				A4CCDC05238A8C7100164D0E /* HeadViewController.swift */,
 				990530932370DCC70068FA22 /* HomeController.swift */,
-				A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */,
 				A436108C237F5EA400F12714 /* LoginViewController.swift */,
+				A4CCDC07238A8C8200164D0E /* LowerBodyViewController.swift */,
 				992EF498237B88F5007A5573 /* MainViewController.swift */,
 				990530922370DCC60068FA22 /* MenuController.swift */,
 				990530982370DCD00068FA22 /* MenuOption.swift */,
 				9905309C2370DCDA0068FA22 /* MenuOptionCell.swift */,
 				992EF49A237B88F5007A5573 /* MenuViewController.swift */,
+				4C5032612391EB6600CC1DF0 /* MondayViewController.swift */,
 				4CB3A5EF2382445A002824C8 /* neckViewController.swift */,
-				A4951A8E238DED300062817D /* PatientDetails1ViewController.swift */,
 				4CB3A5F923824FC4002824C8 /* newfootViewController.swift */,
 				992EF497237B88F5007A5573 /* PillScheduleViewController.swift */,
 				9905309A2370DCD70068FA22 /* Protocols.swift */,
 				A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */,
 				4CE8B377238228F2007D7D77 /* shoudlerViewController.swift */,
-				A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */,
 				992EF499237B88F5007A5573 /* SlideInTransition.swift */,
+				A4E00E972370CEB20070E1A4 /* SurveyViewController.swift */,
 				A4124C6D237F5D0A00D1CEDA /* TremorManager.swift */,
 				99D5E12123767930004DFE71 /* TremorOverViewController.swift */,
 				9939D4F723750A3D00F1FB1F /* TremorViewController.swift */,
-				4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */,
-				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
-				4C5032612391EB6600CC1DF0 /* MondayViewController.swift */,
-				A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */,
 				4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */,
-				4C50325F2391EA7900CC1DF0 /* mediaction.storyboard */,
-				4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */,
+				4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */,
+				A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */,
+				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
 				A44FCA9D237E22A8000D4B8E /* Variables.swift */,
+				4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */,
+				A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */,
 				348982F82368F6D400C623F2 /* Assets.xcassets */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
 				348982FA2368F6D400C623F2 /* LaunchScreen.storyboard */,
@@ -546,7 +546,6 @@
 				4CB3A5EC23824272002824C8 /* calf2.jpg in Resources */,
 				99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */,
 				4CB3A5E423824272002824C8 /* back2.jpg in Resources */,
-				4C5032602391EA7900CC1DF0 /* mediaction.storyboard in Resources */,
 				4CB3A5E923824272002824C8 /* chest2.jpg in Resources */,
 				A4CCDC02238A77F500164D0E /* WeeklySurvey.storyboard in Resources */,
 			);
@@ -789,6 +788,7 @@
 				4C5032622391EB6600CC1DF0 /* MondayViewController.swift in Sources */,
 				4CE8B38A2382331B007D7D77 /* UIBezierPathExtension.swift in Sources */,
 				4CB3A5F423824903002824C8 /* handViewController.swift in Sources */,
+				03B9D2892393025800F89B54 /* PTableViewController.swift in Sources */,
 				4CE8B38823823236007D7D77 /* BasicBarEntry.swift in Sources */,
 				992EF49E237B88F5007A5573 /* SlideInTransition.swift in Sources */,
 				9905309B2370DCD70068FA22 /* Protocols.swift in Sources */,

@@ -146,7 +146,8 @@ class DocPatientListViewController: UIViewController {
         let hashedDoc = getSha256(string: Variables.email)
         let ref : DatabaseReference = Database.database().reference()
        // ref.child("Users").child("GargMAib3EOFGgRYreH6wHAJGH53").child("patients").observeSingleEvent(of: .value, with:
-       // /* start of my useless function
+       //
+        /* start of my useless function
         ref.child("Emails").child(hashedDoc).observeSingleEvent(of: .value, with:
             { (datashot) in
             

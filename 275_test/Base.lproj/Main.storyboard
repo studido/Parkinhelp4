@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="G0v-gX-lDq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="G0v-gX-lDq">
+                                <rect key="frame" x="0.0" y="-69" width="414" height="965"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
@@ -69,6 +67,7 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XUb-cv-0vj"/>
                     <connections>
                         <outlet property="AppIcon" destination="QYr-NZ-pFC" id="ajn-er-ROy"/>
                         <outlet property="Background" destination="G0v-gX-lDq" id="YgV-9L-gmX"/>
@@ -90,7 +89,9 @@
         <!--Menu-->
         <scene sceneID="60y-No-lV7">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Menu" storyboardName="Menu" referencedIdentifier="Menu" id="sVe-G9-I3b" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Menu" storyboardName="Menu" referencedIdentifier="Menu" id="sVe-G9-I3b" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jop-eg-B4H"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r1U-pp-lzk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-213" y="530"/>
@@ -100,7 +101,7 @@
             <objects>
                 <viewController id="y7U-Lv-80C" customClass="UserSelectViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kgQ-y0-xJV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surveybackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="jVZ-ZR-88L">
@@ -155,13 +156,14 @@
                                 </state>
                                 <connections>
                                     <action selector="userIsDoctor:" destination="y7U-Lv-80C" eventType="touchUpInside" id="cJm-Nk-XPC"/>
-                                    <segue destination="BNA-r8-lHX" kind="show" id="IQs-1F-hY1"/>
+                                    <segue destination="BNA-r8-lHX" kind="show" id="ril-6P-bOS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="Ico-ha-3Du"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ldO-U2-Cmf"/>
                     <connections>
                         <outlet property="DoctorButton" destination="cfH-Yd-8gy" id="T6T-Qc-OBs"/>
                         <outlet property="PatientButton" destination="gI0-Dv-aR0" id="mFK-z4-P4t"/>
@@ -176,15 +178,51 @@
         <!--Survey-->
         <scene sceneID="f4M-mw-6eq">
             <objects>
-                <viewControllerPlaceholder storyboardName="Survey" id="3He-B5-iFT" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Survey" id="3He-B5-iFT" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sF9-Yb-961"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ruH-av-Sb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1764" y="13"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="9sf-5y-7Kt">
+            <objects>
+                <tableViewController id="W0i-CW-7B5" customClass="PTableViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Rk-W2-Yfc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="48Y-Qt-2Gd">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="48Y-Qt-2Gd" id="gUH-5L-6Cq">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="W0i-CW-7B5" id="fi1-ec-aHZ"/>
+                            <outlet property="delegate" destination="W0i-CW-7B5" id="ajz-jQ-ZQu"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lxz-Ig-CC8"/>
+                    <connections>
+                        <segue destination="idB-Jp-j4c" kind="show" identifier="segue" id="Mti-1P-Pzz"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9I-1Z-RMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2901" y="-1199"/>
+        </scene>
         <!--WeeklySurvey-->
         <scene sceneID="o46-71-OFG">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="WeeklySurvey" storyboardName="WeeklySurvey" referencedIdentifier="WeeklySurvey" id="lAw-AY-EAf" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="WeeklySurvey" storyboardName="WeeklySurvey" referencedIdentifier="WeeklySurvey" id="lAw-AY-EAf" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dPi-Wl-zR7"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfx-0c-e7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41" y="530"/>
@@ -192,7 +230,9 @@
         <!--docMainMenu-->
         <scene sceneID="sEq-Vq-Dse">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="docMenu" storyboardName="Main" referencedIdentifier="docMainMenu" id="OgT-aT-gTz" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="docMenu" storyboardName="Main" referencedIdentifier="docMainMenu" id="OgT-aT-gTz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="CHe-4d-bkv"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6QE-CX-kY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="257" y="530"/>
@@ -202,7 +242,7 @@
             <objects>
                 <viewController id="BNA-r8-lHX" customClass="DoctorViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cvQ-nU-Ok0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="surveybackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-ne-Db5">
@@ -238,7 +278,6 @@
                                 <rect key="frame" x="174" y="132" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -246,7 +285,6 @@
                                 <rect key="frame" x="174" y="181" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -273,7 +311,6 @@
                                 <rect key="frame" x="174" y="232" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -281,6 +318,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mmp-GD-NBS"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6ff-Wq-EkA"/>
                     <connections>
                         <outlet property="Classification" destination="oJT-gc-zJF" id="a5f-6e-kMA"/>
                         <outlet property="FirstName" destination="w5b-Iw-sqY" id="Ayo-si-0hP"/>
@@ -297,7 +335,7 @@
             <objects>
                 <viewController storyboardIdentifier="docMainMenu" id="2Qm-sw-1Fv" customClass="DocPatientListViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nkE-Si-KGM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctorbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="VC7-0H-Qmo">
@@ -389,10 +427,22 @@
                                     <segue destination="idB-Jp-j4c" kind="show" id="Nf9-yS-Ew3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J6D-CR-VhZ">
+                                <rect key="frame" x="253" y="11" width="122" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="PatientList">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="W0i-CW-7B5" kind="show" id="cX9-i0-kCD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7fG-VS-707"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jWa-eo-Hce"/>
                     <connections>
                         <outlet property="AddPatient" destination="nGn-B5-18r" id="bt6-Fc-AvR"/>
                         <outlet property="DocAcc" destination="NVN-BY-cLX" id="NIS-hP-Wad"/>
@@ -412,7 +462,7 @@
             <objects>
                 <viewController id="5SY-GI-mvZ" customClass="DocProfileViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YC1-tj-7KP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctorbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="RQC-hC-TxD">
@@ -527,6 +577,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8W7-MW-zjx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="UPs-cF-ecd"/>
                     <connections>
                         <outlet property="docname" destination="ZZl-BH-z6o" id="MfY-sx-fh4"/>
                         <outlet property="docprofession" destination="LoX-Me-ywr" id="sUQ-pl-aQ4"/>
@@ -544,7 +595,7 @@
             <objects>
                 <viewController storyboardIdentifier="PatientDetails" id="idB-Jp-j4c" customClass="PatientDetails1ViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qlo-QC-7Yo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="doctorbackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="hIM-7w-UZz">
@@ -563,7 +614,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2Qm-sw-1Fv" kind="show" id="hv9-Od-l5f"/>
+                                    <segue destination="W0i-CW-7B5" kind="show" id="KMf-FW-Uzr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Call Patient (placeholder)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsI-Al-zYZ">
@@ -604,7 +655,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dm6-9q-gyG">
@@ -612,8 +663,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7k-kw-mQM">
@@ -622,7 +673,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.90728789560000001" green="1" blue="0.99971669360000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YWa-LQ-FGg">
@@ -646,9 +697,6 @@
                                 <state key="normal" title="View patient medication">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="o92-Aq-63E" kind="show" id="aFx-LZ-7VD"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZP-KR-cvK">
                                 <rect key="frame" x="287" y="832" width="63" height="30"/>
@@ -661,25 +709,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fEa-fC-6Cb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dib-aR-lBc"/>
                     <connections>
                         <outlet property="email" destination="i7k-kw-mQM" id="soY-of-5T5"/>
                         <outlet property="firstname" destination="dm6-9q-gyG" id="kur-lw-omW"/>
                         <outlet property="lastname" destination="d3Z-gE-LyN" id="gVv-BX-eXH"/>
+                        <outlet property="patientEmail" destination="i7k-kw-mQM" id="gZK-eH-pPx"/>
+                        <outlet property="patientFirstName" destination="dm6-9q-gyG" id="0ij-Pr-Kfj"/>
+                        <outlet property="patientLastName" destination="d3Z-gE-LyN" id="fbD-qN-3k0"/>
                         <outlet property="patientdetails" destination="YWa-LQ-FGg" id="h1b-pY-L5m"/>
                         <outlet property="whiteback" destination="8q8-BC-Qed" id="JXp-hj-yN4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJ8-Ea-stR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3237.68115942029" y="271.875"/>
-        </scene>
-        <!--medication-->
-        <scene sceneID="fBI-Kr-akO">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="medication" storyboardName="medication" referencedIdentifier="medication" id="o92-Aq-63E" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5h-fK-hq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3238" y="752"/>
+            <point key="canvasLocation" x="3840.579710144928" y="-1169.1964285714284"/>
         </scene>
     </scenes>
     <resources>
@@ -691,7 +735,9 @@
         <image name="white.jpg" width="1080" height="1920"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hv9-Od-l5f"/>
-        <segue reference="nn0-2B-aHI"/>
+        <segue reference="Nf9-yS-Ew3"/>
+        <segue reference="8bF-dH-bQN"/>
+        <segue reference="cX9-i0-kCD"/>
+        <segue reference="MbP-FK-aYL"/>
     </inferredMetricsTieBreakers>
 </document>
