@@ -42,8 +42,7 @@ class TremorOverViewController: UIViewController {
         print("Gyro\nFreq: \(res[1].1), Pow: \(res[1].2)\n")
         
         score = res![1].1
-        let doubleStr = String(format: "%.1f", score)
-        self.ScoreLabel.text = doubleStr
+        self.ScoreLabel.text = String(format: "%.1f", score)
         self.ScoreLabel.textColor = UIColor.black
         self.ScoreLabel.font = self.ScoreLabel.font.withSize(50)
     }

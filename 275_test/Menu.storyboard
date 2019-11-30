@@ -140,10 +140,10 @@
             </objects>
             <point key="canvasLocation" x="-904" y="-408"/>
         </scene>
-        <!--mediaction-->
+        <!--medication-->
         <scene sceneID="8Jy-R7-wKW">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="mediaction" storyboardName="mediaction" referencedIdentifier="mediaction" id="5tA-LG-pEQ" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="mediaction" storyboardName="medication" referencedIdentifier="medication" id="5tA-LG-pEQ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cF7-nc-6bA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="418" y="-149"/>

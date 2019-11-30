@@ -208,7 +208,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="EOm-8H-JwI">
             <objects>
-                <tabBarController storyboardIdentifier="mediaction" id="9Dh-Ck-Aru" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="medication" id="9Dh-Ck-Aru" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pdy-gV-H0R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
