@@ -44,6 +44,7 @@ class MondayViewController: UIViewController, UITableViewDelegate,UITableViewDat
     override func viewDidAppear(_ animated: Bool) {
         
         mondayble.reloadData()
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,8 +53,10 @@ class MondayViewController: UIViewController, UITableViewDelegate,UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
+        //self.navigationController?.isNavigationBarHidden = true
+
+
     }
     
     

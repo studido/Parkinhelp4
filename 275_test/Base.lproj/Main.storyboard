@@ -542,7 +542,7 @@
         <!--Patient Details1 View Controller-->
         <scene sceneID="O9Y-W1-NiL">
             <objects>
-                <viewController id="idB-Jp-j4c" customClass="PatientDetails1ViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PatientDetails" id="idB-Jp-j4c" customClass="PatientDetails1ViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qlo-QC-7Yo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -640,6 +640,23 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmG-oa-CZ9">
+                                <rect key="frame" x="32" y="832" width="165" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="View patient medication">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o92-Aq-63E" kind="show" id="aFx-LZ-7VD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZP-KR-cvK">
+                                <rect key="frame" x="287" y="832" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Facetime">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fEa-fC-6Cb"/>
@@ -655,6 +672,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJ8-Ea-stR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3237.68115942029" y="271.875"/>
+        </scene>
+        <!--medication-->
+        <scene sceneID="fBI-Kr-akO">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="medication" storyboardName="medication" referencedIdentifier="medication" id="o92-Aq-63E" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5h-fK-hq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3238" y="752"/>
         </scene>
     </scenes>
     <resources>

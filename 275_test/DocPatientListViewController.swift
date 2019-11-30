@@ -144,10 +144,7 @@ class DocPatientListViewController: UIViewController {
         signout.layer.borderColor = UIColor.black.cgColor
         signout.layer.borderWidth = 0.5
         let hashedDoc = getSha256(string: Variables.email)
-         let ref : DatabaseReference = Database.database().reference()
-        print(Variables.email)
-    
-        print(hashedDoc)
+        let ref : DatabaseReference = Database.database().reference()
        // ref.child("Users").child("GargMAib3EOFGgRYreH6wHAJGH53").child("patients").observeSingleEvent(of: .value, with:
        // /* start of my useless function
         ref.child("Emails").child(hashedDoc).observeSingleEvent(of: .value, with:
@@ -210,13 +207,7 @@ class DocPatientListViewController: UIViewController {
                         
                         print(self.patients[patientnum], patientnum)
                         self.patient1.text = self.patients[patientnum]
-                        
-                        
-                     //   self.patientfirst[patientnum] = patientData["firstName"]!
-                        // *** Can create a Patient class to store patients info, examples on how to get specific attributes are shown below
-                        //Patient.firstName = ["firstName"] as? String ?? ""
-                        //Patient.lasName = ["lastName"] as? String ?? ""
-                        //Patient.age = ["age"] as? String ?? ""
+
                         print(patientData)
                         Variables.patientfirstname[patientnum] = patientData["firstName"]!
                         Variables.patientlastname[patientnum] = patientData["lastName"]!

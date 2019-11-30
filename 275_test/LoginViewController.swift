@@ -81,6 +81,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                                 self.performSegue(withIdentifier: "goToDocMainMenu", sender: self)
                             }
                             else if (value["userType"]  as? String ?? "" == "patient") {
+                                Variables.medicationId = Firebase.Auth.auth().currentUser!.uid
                                 Variables.age = value["age"] as? String ?? ""
                                 Variables.height = value["height"] as? String ?? ""
                                 Variables.weight = value["weight"] as? String ?? ""

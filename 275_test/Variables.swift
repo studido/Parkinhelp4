@@ -15,6 +15,7 @@ class Variables: UIViewController {
     static var firstname = String()
     static var lastname = String()
     static var email = String()
+    static var medicationId = String() //user id of medication schedule
     
     //doctor variables
     static var docname = String()

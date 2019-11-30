@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FirebaseDatabase
 
 func sha256(data : Data) -> Data {
     var hash = [UInt8](repeating: 0,  count: Int(CC_SHA256_DIGEST_LENGTH))
@@ -34,6 +35,20 @@ func getDateObject(strDate : String) -> Date {
     dateFormatter.timeZone = TimeZone.current
     dateFormatter.locale = Locale.current
     return dateFormatter.date(from: strDate) ?? Date()
+    
+}
+
+func getMedicationSchedule(dayOfTheWeek : String, completion: @escaping(_ data:[String:String]) -> Void) {
+    let ref : DatabaseReference! = Database.database().reference()
+    var medicationSchedule : [String: String]!
+    ref.child("Users").child(Variables.medicationId).child("MedicationSchedule").child(dayOfTheWeek).observeSingleEvent(of: .value, with: { (snapshot) in
+        
+        if (snapshot.exists()) {
+            medicationSchedule = (snapshot.value as! [String: String])
+            completion(medicationSchedule)
+        }
+        else{completion(["-1":"-1"])}
+    })
     
 }
 
