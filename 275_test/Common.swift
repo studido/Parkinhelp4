@@ -47,7 +47,7 @@ func getMedicationSchedule(dayOfTheWeek : String, completion: @escaping(_ data:[
             medicationSchedule = (snapshot.value as! [String: String])
             completion(medicationSchedule)
         }
-        else{completion(["-1":"-1"])}
+        else{completion([" ":" "])}
     })
 }
 

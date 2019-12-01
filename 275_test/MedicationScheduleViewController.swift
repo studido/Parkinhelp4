@@ -15,76 +15,79 @@ class MedicationScheduleViewController: UIViewController {
     override func viewDidLoad() {
         
         
-        
-        getMedicationSchedule( dayOfTheWeek: "Monday", completion:
-            {
                 
-                MondayDataDic in
-                
-                var TimeArray = [String]()
-                var EventArray = [String]()
-                
-                for (TimeSet, EventSet) in MondayDataDic
-                {
-                    TimeArray.append(TimeSet)
-                    EventArray.append(EventSet)
-                    
-                    
-                }
-                for i in 0...TimeArray.count-1 //sorting the two arrays
-                {
-                    var minOfTime = TimeArray[i]
-                    if(i==TimeArray.count-1)
+                getMedicationSchedule( dayOfTheWeek: "Monday", completion:
                     {
-                        break
-                    }
-                    for j in i+1...TimeArray.count-1
-                    {
-                        if(TimeArray[j]<minOfTime)
+                        
+                        DataDic in
+                        
+                        var TimeArray = [String]()
+                        var EventArray = [String]()
+                        
+                        for (TimeSet, EventSet) in DataDic
                         {
-                            let temp1=TimeArray[j]
-                            TimeArray[j]=TimeArray[i]
-                            TimeArray[i]=temp1
-                            minOfTime=temp1
-                            let temp2=EventArray[i]
-                            EventArray[i]=EventArray[j]
-                            EventArray[j]=temp2
+                            TimeArray.append(TimeSet)
+                            EventArray.append(EventSet)
+                            
+                            
                         }
-                    }
-                }
-                
-                let label_day=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
-                label_day.center = CGPoint(x:(50), y:(150))
-                label_day.textAlignment = .center
-                label_day.text = "Monday"
-                self.view.addSubview(label_day)
-                
-                
-                for i in 0...TimeArray.count-1
-                {
-                    
-                    let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
-                    label1_1.center = CGPoint(x:(50), y:(50*i+200))
-                    label1_1.textAlignment = .center
-                    label1_1.text = TimeArray[i]
-                    self.view.addSubview(label1_1)
-                    print(TimeArray[i])
-                }
-                
-                for i in 0...EventArray.count-1
-                {
-                    
-                    let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
-                    label1_1.center = CGPoint(x:(150), y:(50*i+200))
-                    label1_1.textAlignment = .center
-                    label1_1.text = EventArray[i]
-                    self.view.addSubview(label1_1)
-                    print(EventArray[i])
-                }
-                
-                
-                
-        })
+                        for i in 0...TimeArray.count-1 //sorting the two arrays
+                        {
+                            var minOfTime = TimeArray[i]
+                            if(i==TimeArray.count-1)
+                            {
+                                break
+                            }
+                            for j in i+1...TimeArray.count-1
+                            {
+                                if(TimeArray[j]<minOfTime)
+                                {
+                                    let temp1=TimeArray[j]
+                                    TimeArray[j]=TimeArray[i]
+                                    TimeArray[i]=temp1
+                                    minOfTime=temp1
+                                    let temp2=EventArray[i]
+                                    EventArray[i]=EventArray[j]
+                                    EventArray[j]=temp2
+                                }
+                            }
+                        }
+                        
+                        let label_day=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
+                        label_day.center = CGPoint(x:(200), y:(150))
+                        label_day.textAlignment = .center
+                        label_day.text = "Monday"
+                        label_day.font = label_day.font.withSize(30)
+                        self.view.addSubview(label_day)
+                        
+                        
+                        for i in 0...TimeArray.count-1
+                        {
+                            
+                            let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
+                            label1_1.center = CGPoint(x:(150), y:(50*i+250))
+                            label1_1.textAlignment = .left
+                            label1_1.text = TimeArray[i]
+                            label1_1.font = label1_1.font.withSize(20)
+                            self.view.addSubview(label1_1)
+                            print(TimeArray[i])
+                        }
+                        
+                        for i in 0...EventArray.count-1
+                        {
+                            
+                            let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
+                            label1_1.center = CGPoint(x:(250), y:(50*i+250))
+                            label1_1.textAlignment = .left
+                            label1_1.text = EventArray[i]
+                            label1_1.font = label1_1.font.withSize(20)
+                            self.view.addSubview(label1_1)
+                            print(EventArray[i])
+                        }
+                        
+                        
+                        
+                })
         
         
         

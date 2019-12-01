@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Medication Schedule View Controller-->
+        <!--Monday View Controller-->
         <scene sceneID="Ctu-bR-4cL">
             <objects>
-                <viewController id="0rd-LQ-ML2" customClass="MedicationScheduleViewController" customModule="_75_test" sceneMemberID="viewController">
+                <viewController id="0rd-LQ-ML2" customClass="MondayViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q8E-VW-g4e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
