@@ -11,29 +11,32 @@ import UIKit
 class MondayViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        
+        //read data under categary "Monday" from firebase
         getMedicationSchedule( dayOfTheWeek: "Monday", completion:
             {
                 
-                DataDic in
+                DataDic in//put the data in DataDic
                 
-                var TimeArray = [String]()
-                var EventArray = [String]()
+                var TimeArray = [String]() //initialize an empty array
+                var EventArray = [String]()//initialize an empty array
                 
-                for (TimeSet, EventSet) in DataDic
+                for (TimeSet, EventSet) in DataDic//seperate the element of DataDic into 2 arrays, one contains the time and one contains the event
                 {
                     TimeArray.append(TimeSet)
                     EventArray.append(EventSet)
                     
                     
                 }
-                for i in 0...TimeArray.count-1 //sorting the two arrays
+                for i in 0...TimeArray.count-1 //this loop is to sort the arrays: TimeArray and EventArray
                 {
                     var minOfTime = TimeArray[i]
                     if(i==TimeArray.count-1)
                     {
                         break
                     }
-                    for j in i+1...TimeArray.count-1
+                    for j in i+1...TimeArray.count-1//sort the two arrays, minimum on the left and max is on right
                     {
                         if(TimeArray[j]<minOfTime)
                         {
@@ -48,6 +51,8 @@ class MondayViewController: UIViewController {
                     }
                 }
                 
+                
+                //this section is to create a label programmatically
                 let label_day=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
                 label_day.center = CGPoint(x:(200), y:(150))
                 label_day.textAlignment = .center
@@ -56,7 +61,9 @@ class MondayViewController: UIViewController {
                 self.view.addSubview(label_day)
                 
                 
-                for i in 0...TimeArray.count-1
+                
+                
+                for i in 0...TimeArray.count-1//this section creates labels showing the Time elements of DataDic
                 {
                     
                     let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
@@ -67,7 +74,7 @@ class MondayViewController: UIViewController {
                     self.view.addSubview(label1_1)
                 }
                 
-                for i in 0...EventArray.count-1
+                for i in 0...EventArray.count-1//this section creates labels showing the Event elements of DataDic
                 {
                     
                     let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))

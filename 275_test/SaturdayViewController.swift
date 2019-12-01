@@ -10,6 +10,12 @@ import UIKit
 
 class SaturdayViewController: UIViewController {
 
+    
+    
+    //all codes are very similar to the codes in MondayViewController class except changes in variables naming, so please see the comments in the file MondayViewController.swift
+    
+    
+    
     override func viewDidLoad() {
         
         getMedicationSchedule( dayOfTheWeek: "Saturday", completion:

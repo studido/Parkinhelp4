@@ -25,10 +25,18 @@
             </objects>
             <point key="canvasLocation" x="-2338" y="-581"/>
         </scene>
-        <!--View Controller-->
+        <!--MainViewController-->
+        <scene sceneID="SWY-MJ-jCW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" referencedIdentifier="MainViewController" id="mjX-y7-w0c" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="488-uK-H6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1112" y="-1564"/>
+        </scene>
+        <!--Medication Main View Controller-->
         <scene sceneID="AeL-vb-v6W">
             <objects>
-                <viewController storyboardIdentifier="medicationschdule" id="7YZ-ld-EfK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="medicationschdule" id="7YZ-ld-EfK" customClass="MedicationMainViewController" customModule="_75_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Px-b6-rKM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,6 +111,15 @@
                                 <rect key="frame" x="160" y="478" width="94" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Thursday"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saB-Xr-h9y">
+                                <rect key="frame" x="10" y="98" width="61" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="&lt;-Home"/>
+                                <connections>
+                                    <segue destination="mjX-y7-w0c" kind="show" id="ZAM-Y9-nTQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aT-7P-BQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="264" y="-1327"/>
+            <point key="canvasLocation" x="263.768115942029" y="-1327.2321428571429"/>
         </scene>
         <!--Tuesday View Controller-->
         <scene sceneID="ocM-RY-2ku">
@@ -375,6 +392,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="YGw-hh-v4l"/>
+        <segue reference="5Qf-cn-uGg"/>
     </inferredMetricsTieBreakers>
 </document>

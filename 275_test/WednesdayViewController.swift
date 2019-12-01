@@ -13,6 +13,8 @@ class WednesdayViewController:UIViewController{
     override func viewDidLoad() {
         
         
+        //all codes are very similar to the codes in MondayViewController class except changes in variables naming, so please see the comments in the file MondayViewController.swift
+        
         getMedicationSchedule( dayOfTheWeek: "Wednesday", completion:
             {
                 

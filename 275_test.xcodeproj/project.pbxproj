@@ -28,6 +28,7 @@
 		4C5032642391EB7D00CC1DF0 /* tuesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */; };
 		4C5032662391F18300CC1DF0 /* WednesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */; };
 		4C8BCBCA2380F25300A3D285 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BCBC92380F25300A3D285 /* EX.swift */; };
+		4C9438EE23938C9E00713C42 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9438ED23938C9D00713C42 /* profileViewController.swift */; };
 		4CA0AB0A2393590A00BA3D91 /* addEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0AB092393590A00BA3D91 /* addEventViewController.swift */; };
 		4CA0AB0C239361A200BA3D91 /* MedicationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0AB0B239361A200BA3D91 /* MedicationMainViewController.swift */; };
 		4CA0AB1023936CED00BA3D91 /* deleteEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0AB0F23936CED00BA3D91 /* deleteEventViewController.swift */; };
@@ -155,6 +156,7 @@
 		4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuesdayViewController.swift; sourceTree = "<group>"; };
 		4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayViewController.swift; sourceTree = "<group>"; };
 		4C8BCBC92380F25300A3D285 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
+		4C9438ED23938C9D00713C42 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		4CA0AB092393590A00BA3D91 /* addEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEventViewController.swift; sourceTree = "<group>"; };
 		4CA0AB0B239361A200BA3D91 /* MedicationMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationMainViewController.swift; sourceTree = "<group>"; };
 		4CA0AB0F23936CED00BA3D91 /* deleteEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteEventViewController.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				9939D4FC23750CE600F1FB1F /* Tremor.storyboard */,
 				A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */,
 				4C0475B023931ECF003FD779 /* medicationschdule.storyboard */,
+				4C9438ED23938C9D00713C42 /* profileViewController.swift */,
 				348982F12368F6D200C623F2 /* AppDelegate.swift */,
 				4CB3A5F1238248F2002824C8 /* armsViewController.swift */,
 				4CE8B381238231FE007D7D77 /* ArrayExtension.swift */,
@@ -813,6 +816,7 @@
 				99D5E12223767930004DFE71 /* TremorOverViewController.swift in Sources */,
 				4CE8B37C23823182007D7D77 /* DataEntry.swift in Sources */,
 				A436108D237F5EA400F12714 /* LoginViewController.swift in Sources */,
+				4C9438EE23938C9E00713C42 /* profileViewController.swift in Sources */,
 				4C0475B5239336E6003FD779 /* ThursdayViewController.swift in Sources */,
 				A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */,
 				4CA0AB0A2393590A00BA3D91 /* addEventViewController.swift in Sources */,
