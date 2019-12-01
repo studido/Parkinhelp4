@@ -60,14 +60,6 @@
             </objects>
             <point key="canvasLocation" x="-2951" y="-682"/>
         </scene>
-        <!--medicationschdule-->
-        <scene sceneID="J1Y-Yg-EdU">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="medicationschdule" storyboardName="medicationschdule" referencedIdentifier="medicationschdule" id="4RR-0Z-l66" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yWe-vS-glB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1085" y="-214"/>
-        </scene>
         <!--Exercise View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -152,14 +144,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="FUG-7q-tF3" kind="show" id="ven-2N-sEj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38g-rv-jek">
-                                <rect key="frame" x="14" y="120" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Schedule"/>
-                                <connections>
-                                    <segue destination="4RR-0Z-l66" kind="show" id="sCJ-Xn-4od"/>
                                 </connections>
                             </button>
                         </subviews>

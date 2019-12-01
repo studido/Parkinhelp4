@@ -20,6 +20,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var TremorMeasurement: UIButton!
     @IBOutlet weak var ExerciseList: UIButton!
     
+    @IBOutlet weak var MedicationSchedule: UIButton!
     
     @IBAction func facetimeButton(_ sender: UIButton) {
         print("facetime button clicked")
@@ -67,6 +68,9 @@ class MainViewController: UIViewController {
         whiteback.layer.cornerRadius = 25
         whiteback.layer.borderColor = UIColor.black.cgColor
         whiteback.layer.borderWidth = 3
+        MedicationSchedule.layer.cornerRadius = 15
+        MedicationSchedule.layer.borderColor = UIColor.black.cgColor
+        MedicationSchedule.layer.borderWidth = 0.5
         // Do any additional setup after loading the view, typically from a nib.
     }
 
