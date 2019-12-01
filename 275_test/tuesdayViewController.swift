@@ -7,45 +7,86 @@
 //
 
 import UIKit
-var listfortime2 = ["12:00","13:00","14:00","15:00"]
-var list2 = ["Take some med1","Do some sport2","Eat some fruit3","Kiss stone's ass"]
 
-class tuesdayViewController:UIViewController,UITableViewDelegate,UITableViewDataSource{
-    
-    @IBOutlet weak var Time2: UILabel!
-    
-    @IBOutlet weak var Event2: UILabel!
-    @IBOutlet weak var tuesble: UITableView!
-    
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (list2.count)
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell2 = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell2")
-        cell2.textLabel?.text = listfortime2[indexPath.row] + "               " + list2[indexPath.row]
-        return(cell2)
-    }
-    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCell.EditingStyle.delete
-        {
-            list2.remove(at: indexPath.row)
-            tuesble.reloadData()
-        }
-    }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        tuesble.reloadData()
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+class tuesdayViewController:UIViewController{
     
     override func viewDidLoad() {
+        
+        //all codes are very similar to the codes in MondayViewController class except changes in variables naming, so please see the comments in the file MondayViewController.swift
+        
+        getMedicationSchedule( dayOfTheWeek: "Tuesday", completion:
+            {
+                
+                DataDic in
+                
+                var TimeArray = [String]()
+                var EventArray = [String]()
+                
+                for (TimeSet, EventSet) in DataDic
+                {
+                    TimeArray.append(TimeSet)
+                    EventArray.append(EventSet)
+                    
+                    
+                }
+                for i in 0...TimeArray.count-1 //sorting the two arrays
+                {
+                    var minOfTime = TimeArray[i]
+                    if(i==TimeArray.count-1)
+                    {
+                        break
+                    }
+                    for j in i+1...TimeArray.count-1
+                    {
+                        if(TimeArray[j]<minOfTime)
+                        {
+                            let temp1=TimeArray[j]
+                            TimeArray[j]=TimeArray[i]
+                            TimeArray[i]=temp1
+                            minOfTime=temp1
+                            let temp2=EventArray[i]
+                            EventArray[i]=EventArray[j]
+                            EventArray[j]=temp2
+                        }
+                    }
+                }
+                
+                let label_day=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
+                label_day.center = CGPoint(x:(200), y:(150))
+                label_day.textAlignment = .center
+                label_day.text = "Tuesday"
+                label_day.font = label_day.font.withSize(30)
+                self.view.addSubview(label_day)
+                
+                
+                for i in 0...TimeArray.count-1
+                {
+                    
+                    let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
+                    label1_1.center = CGPoint(x:(150), y:(50*i+250))
+                    label1_1.textAlignment = .left
+                    label1_1.text = TimeArray[i]
+                    label1_1.font = label1_1.font.withSize(20)
+                    self.view.addSubview(label1_1)
+                }
+                
+                for i in 0...EventArray.count-1
+                {
+                    
+                    let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
+                    label1_1.center = CGPoint(x:(250), y:(50*i+250))
+                    label1_1.textAlignment = .left
+                    label1_1.text = EventArray[i]
+                    label1_1.font = label1_1.font.withSize(20)
+                    self.view.addSubview(label1_1)
+                }
+                
+                
+                
+        })
+        
+        
+        
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
