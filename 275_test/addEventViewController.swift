@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class addEventViewController: UIViewController {
     
@@ -28,15 +29,44 @@ class addEventViewController: UIViewController {
     
     //define the function of the button Confirm
     @IBAction func Confirm(_ sender: Any) {
-        /*dayOfWeekInput.text!
-        timeInput.text!
-        eventInput.text!
-         write those values back to firebase*/
+        //Check dayOfWeekInput is valid
+        if checkValidDayOfWeek(dayOfTheWeek: dayOfWeekInput.text!) == false {
+            let invalidDayAlert = UIAlertController(title: "Invalid day of the week", message: "(Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            invalidDayAlert.addAction(okButton)
+            self.present(invalidDayAlert, animated: true, completion: nil)
+            return
+        }
+        //Check if timeInput is valid
+        if checkValidTime(time: timeInput.text!) == false {
+            let invalidTimeAlert = UIAlertController(title: "Invalid time format", message: "1-12:0-59 AM/PM", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            invalidTimeAlert.addAction(okButton)
+            self.present(invalidTimeAlert, animated: true, completion: nil)
+            return
+        }
         
         
+        //Check if eventInput is valid
+        if (eventInput.text! == "") {
+            let emptyAlert = UIAlertController(title: "Empty event", message: "Please enter an event", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            emptyAlert.addAction(okButton)
+            self.present(emptyAlert, animated: true, completion: nil)
+            return
+        }
         
-        
-        self.performSegue(withIdentifier: "jumpBackM", sender: self)//jump back to MedicationMainVC after click button Confirm
+        addEvent(time: timeInput.text!, event: eventInput.text!, day: dayOfWeekInput.text!, completion: {medDict in
+            let ref : DatabaseReference! = Database.database().reference()
+            ref.updateChildValues(["/Users/\(Variables.medicationId)/MedicationSchedule/\(self.dayOfWeekInput.text!)" : medDict])
+            
+            let successAlert = UIAlertController(title: "Event added", message: "", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
+                self.performSegue(withIdentifier: "jumpBackM", sender: self)//jump back to MedicationMainVC after click button Confirm
+            })
+            successAlert.addAction(okButton)
+            self.present(successAlert, animated: true, completion: nil)
+        })
     }
     
     /*
@@ -59,4 +89,5 @@ extension addEventViewController : UITextFieldDelegate{
         return true
     }
 }
+
 

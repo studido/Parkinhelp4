@@ -62,3 +62,37 @@ func getDayofWeek(_ today: String)-> Int? {
     return weekDay
     
 }
+
+func checkValidDayOfWeek(dayOfTheWeek : String) -> Bool {
+    if (dayOfTheWeek != "Monday" && dayOfTheWeek != "Tuesday" && dayOfTheWeek != "Wednesday" && dayOfTheWeek != "Thursday" && dayOfTheWeek != "Friday" && dayOfTheWeek != "Saturday" && dayOfTheWeek != "Sunday") {
+        return false
+    }
+    
+    return true
+}
+
+func checkValidTime(time : String) -> Bool {
+    let dateFormatterGet = DateFormatter()
+    dateFormatterGet.dateFormat = "HH:mm a"
+    
+    if dateFormatterGet.date(from: time) == nil {
+        return false
+    }
+    
+    return true
+}
+
+func addEvent(time : String, event : String, day : String, completion: @escaping(_ data:[String:String]) -> Void) {
+    let ref : DatabaseReference! = Database.database().reference()
+    var medDict : [String : String]!
+    ref.child("Users").child(Variables.medicationId).child("MedicationSchedule").child(day).observeSingleEvent(of: .value, with: { (snapshot) in
+        if (snapshot.exists()) {
+            medDict = (snapshot.value as! [String: String])
+            medDict[time] = event
+        } else {
+            medDict = [time : event]
+        }
+        
+        completion(medDict)
+    })
+}
