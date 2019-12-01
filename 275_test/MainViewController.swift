@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class MainViewController: UIViewController {
     
@@ -22,9 +23,21 @@ class MainViewController: UIViewController {
     
     
     @IBAction func facetimeButton(_ sender: UIButton) {
-        print("facetime button clicked")
-        facetime(phoneNumber:"+12062350208") // have to somehow connect doctor's number here.
-        print ("end of facetime button")
+        getPhoneNumber(completion: {number in
+            print("facetime button clicked")
+            //facetime(phoneNumber: number) // have to somehow connect doctor's number here.
+            if let facetimeURL:NSURL = NSURL(string: "facetime:+" + number) {
+                let application:UIApplication = UIApplication.shared
+                if (application.canOpenURL(facetimeURL as URL)) {
+                    //application.openURL(facetimeURL as URL);
+                    application.open(facetimeURL as URL, options: [:], completionHandler: nil)
+                    
+                    // this works for opening a website in safari
+                    // UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=89e518dl4I8")! as URL,options:[:],completionHandler: nil)
+                }
+            }
+            print ("end of facetime button")
+        })
     }
     
     private func facetime(phoneNumber:String) {
@@ -39,6 +52,20 @@ class MainViewController: UIViewController {
             }
         }
 
+    }
+    
+    func getPhoneNumber(completion: @escaping(_ data:String) -> Void) {
+        let ref : DatabaseReference! = Database.database().reference()
+        var phoneNumber : String!
+        ref.child("PhoneNumbers").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if (snapshot.exists()) {
+                let value = snapshot.value as! [String: String]
+                phoneNumber = value[Variables.medicationId] ?? "-1"
+                completion(phoneNumber)
+            }
+            else{completion("-1")}
+        })
     }
     
   //  private func facetime(phoneNumber:String) {

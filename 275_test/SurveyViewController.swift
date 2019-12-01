@@ -78,6 +78,7 @@ class SurveyViewController: UIViewController {
         let hashedEmail = getSha256(string: Variables.email)
         ref.updateChildValues(["/Emails/\(hashedEmail)" : ["uid" : "\(uid)"]])
         ref.updateChildValues(["/Users/\(uid)" : userData])
+        ref.updateChildValues(["/PhoneNumbers" : [uid : Variables.contactnumber]])
         
         performSegue(withIdentifier: "surveyresult", sender: self)
         //dont think we need any of this now

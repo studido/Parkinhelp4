@@ -30,6 +30,7 @@ class DoctorViewController: UIViewController {
          FirstName.delegate = self as? UITextFieldDelegate
          LastName.delegate = self as? UITextFieldDelegate
          Classification.delegate = self as? UITextFieldDelegate
+        
  
    //     nameLabel.text = FirstName.text
      //   professionLabel.text = Classification.text
@@ -47,6 +48,7 @@ class DoctorViewController: UIViewController {
         let userData = ["firstName": Variables.firstname,
                         "lastName":  Variables.lastname,
                         "doctorProfession": Variables.docprofession,
+                        "contactNumber": Variables.contactnumber,
                         "email": Variables.email,
                         "userType": "healthcare professional"]
         
@@ -54,6 +56,7 @@ class DoctorViewController: UIViewController {
         let hashedEmail = getSha256(string: Variables.email)
         ref.updateChildValues(["/Emails/\(hashedEmail)" : ["uid" : "\(uid)"]])
         ref.updateChildValues(["/Users/\(uid)" : userData])
+        ref.updateChildValues(["/PhoneNumbers" : [uid : Variables.contactnumber]])
         performSegue(withIdentifier: "docsurveyresult", sender: self)
     }
     
