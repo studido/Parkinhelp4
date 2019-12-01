@@ -28,6 +28,9 @@
 		4C5032642391EB7D00CC1DF0 /* tuesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */; };
 		4C5032662391F18300CC1DF0 /* WednesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */; };
 		4C8BCBCA2380F25300A3D285 /* EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8BCBC92380F25300A3D285 /* EX.swift */; };
+		4CA0AB0A2393590A00BA3D91 /* addEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0AB092393590A00BA3D91 /* addEventViewController.swift */; };
+		4CA0AB0C239361A200BA3D91 /* MedicationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0AB0B239361A200BA3D91 /* MedicationMainViewController.swift */; };
+		4CA0AB1023936CED00BA3D91 /* deleteEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0AB0F23936CED00BA3D91 /* deleteEventViewController.swift */; };
 		4CB3A5E423824272002824C8 /* back2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DB23824271002824C8 /* back2.jpg */; };
 		4CB3A5E523824272002824C8 /* neck2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DC23824271002824C8 /* neck2.jpg */; };
 		4CB3A5E623824272002824C8 /* hand2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4CB3A5DD23824271002824C8 /* hand2.jpg */; };
@@ -152,6 +155,9 @@
 		4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuesdayViewController.swift; sourceTree = "<group>"; };
 		4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WednesdayViewController.swift; sourceTree = "<group>"; };
 		4C8BCBC92380F25300A3D285 /* EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EX.swift; sourceTree = "<group>"; };
+		4CA0AB092393590A00BA3D91 /* addEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEventViewController.swift; sourceTree = "<group>"; };
+		4CA0AB0B239361A200BA3D91 /* MedicationMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationMainViewController.swift; sourceTree = "<group>"; };
+		4CA0AB0F23936CED00BA3D91 /* deleteEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteEventViewController.swift; sourceTree = "<group>"; };
 		4CB3A5DB23824271002824C8 /* back2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back2.jpg; sourceTree = "<group>"; };
 		4CB3A5DC23824271002824C8 /* neck2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neck2.jpg; sourceTree = "<group>"; };
 		4CB3A5DD23824271002824C8 /* hand2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hand2.jpg; sourceTree = "<group>"; };
@@ -365,19 +371,22 @@
 				A4124C6D237F5D0A00D1CEDA /* TremorManager.swift */,
 				99D5E12123767930004DFE71 /* TremorOverViewController.swift */,
 				9939D4F723750A3D00F1FB1F /* TremorViewController.swift */,
-				4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */,
 				4CE8B3892382331B007D7D77 /* UIBezierPathExtension.swift */,
 				A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */,
 				34BB20B6236BC714001379EE /* UserSelectViewController.swift */,
 				A44FCA9D237E22A8000D4B8E /* Variables.swift */,
-				4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */,
 				A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */,
 				4C0475B223931F48003FD779 /* MedicationScheduleViewController.swift */,
+				4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */,
 				4C0475B4239336E6003FD779 /* ThursdayViewController.swift */,
 				4C0475B823933712003FD779 /* SaturdayViewController.swift */,
+				4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */,
 				4C0475BA23933722003FD779 /* SundayViewController.swift */,
 				4C0475B6239336FD003FD779 /* FridayViewController.swift */,
 				4C0475BC23934264003FD779 /* MondayViewController.swift */,
+				4CA0AB0B239361A200BA3D91 /* MedicationMainViewController.swift */,
+				4CA0AB092393590A00BA3D91 /* addEventViewController.swift */,
+				4CA0AB0F23936CED00BA3D91 /* deleteEventViewController.swift */,
 				348982F82368F6D400C623F2 /* Assets.xcassets */,
 				99767344236FC49900C544C5 /* 275_test.xcworkspace */,
 				348982FA2368F6D400C623F2 /* LaunchScreen.storyboard */,
@@ -787,11 +796,13 @@
 				9939D5012376671E00F1FB1F /* fft.swift in Sources */,
 				A4CCDC0A238A8CDA00164D0E /* HandAndArmViewController.swift in Sources */,
 				4CB3A5FA23824FC4002824C8 /* newfootViewController.swift in Sources */,
+				4CA0AB1023936CED00BA3D91 /* deleteEventViewController.swift in Sources */,
 				A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */,
 				4CE8B374238220B7007D7D77 /* ChestViewController.swift in Sources */,
 				4CB3A5EE23824448002824C8 /* faceViewController.swift in Sources */,
 				4CB3A5F2238248F2002824C8 /* armsViewController.swift in Sources */,
 				A4CCDC06238A8C7100164D0E /* HeadViewController.swift in Sources */,
+				4CA0AB0C239361A200BA3D91 /* MedicationMainViewController.swift in Sources */,
 				A4951A8F238DED300062817D /* PatientDetails1ViewController.swift in Sources */,
 				4CE8B380238231E1007D7D77 /* CALayerExtension.swift in Sources */,
 				4CB3A5F623824B45002824C8 /* calfViewController.swift in Sources */,
@@ -804,6 +815,7 @@
 				A436108D237F5EA400F12714 /* LoginViewController.swift in Sources */,
 				4C0475B5239336E6003FD779 /* ThursdayViewController.swift in Sources */,
 				A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */,
+				4CA0AB0A2393590A00BA3D91 /* addEventViewController.swift in Sources */,
 				992EF49D237B88F5007A5573 /* MainViewController.swift in Sources */,
 				4CB3A5F02382445A002824C8 /* neckViewController.swift in Sources */,
 				4C5032662391F18300CC1DF0 /* WednesdayViewController.swift in Sources */,

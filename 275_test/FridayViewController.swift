@@ -68,7 +68,6 @@ class FridayViewController: UIViewController {
                     label1_1.text = TimeArray[i]
                     label1_1.font = label1_1.font.withSize(20)
                     self.view.addSubview(label1_1)
-                    print(TimeArray[i])
                 }
                 
                 for i in 0...EventArray.count-1
@@ -80,7 +79,6 @@ class FridayViewController: UIViewController {
                     label1_1.text = EventArray[i]
                     label1_1.font = label1_1.font.withSize(20)
                     self.view.addSubview(label1_1)
-                    print(EventArray[i])
                 }
                 
                 
