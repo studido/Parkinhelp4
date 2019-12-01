@@ -175,6 +175,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Confirm:" destination="Riv-yc-Ovu" eventType="touchUpInside" id="JUD-Qg-bid"/>
+                                    <action selector="confirmDelete:" destination="hk3-PV-2gr" eventType="touchUpInside" id="hsg-kb-1ul"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="day of week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9v0-zE-ete">
@@ -188,6 +189,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7JS-Tb-Rv2"/>
                     </view>
+                    <connections>
+                        <outlet property="dayDelete" destination="37a-F3-ep7" id="gOI-ej-4Ur"/>
+                        <outlet property="timeDelete" destination="k4k-lP-EMC" id="S3z-fY-cO1"/>
+                        <segue destination="7YZ-ld-EfK" kind="show" identifier="jumpBackM2" id="YGw-hh-v4l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E6b-2q-rzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -368,4 +374,7 @@
             <point key="canvasLocation" x="2610" y="-585"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YGw-hh-v4l"/>
+    </inferredMetricsTieBreakers>
 </document>

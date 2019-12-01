@@ -9,16 +9,27 @@
 import UIKit
 
 class deleteEventViewController: UIViewController {
-
+    @IBOutlet weak var dayDelete: UITextField!
+    
+    @IBOutlet weak var timeDelete: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dayDelete.delegate = self//enable keyboard to hide after click return
+        timeDelete.delegate = self//enable keyboard to hide after click return
+        
         // Do any additional setup after loading the view.
     }
     
     
+    @IBAction func confirmDelete(_ sender: Any) {
+        /*dayDelete.text!
+        timeDelete.text!*/
         
+        self.performSegue(withIdentifier: "jumpBackM2", sender: self)//jump back to MedicationMainVC after click button Confirm
+        
+    }
+    
         
         
         
@@ -34,4 +45,11 @@ class deleteEventViewController: UIViewController {
     }
     */
 
+}
+
+extension deleteEventViewController : UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField)->Bool{
+        textField.resignFirstResponder()
+        return true
+    }
 }
