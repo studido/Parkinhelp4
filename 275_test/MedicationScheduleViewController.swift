@@ -1,26 +1,30 @@
 //
-//  tuesdayViewController.swift
+//  MedicationScheduleViewController.swift
 //  275_test
 //
-//  Created by MICHAEL on 2019-11-29.
+//  Created by MICHAEL on 2019-11-30.
 //  Copyright © 2019 Sterling Smith. All rights reserved.
 //
 
 import UIKit
 
-class tuesdayViewController:UIViewController{
+class MedicationScheduleViewController: UIViewController {
+
+    
     
     override func viewDidLoad() {
         
-        getMedicationSchedule( dayOfTheWeek: "Tuesday", completion:
+        
+        
+        getMedicationSchedule( dayOfTheWeek: "Monday", completion:
             {
                 
-                DataDic in
+                MondayDataDic in
                 
                 var TimeArray = [String]()
                 var EventArray = [String]()
                 
-                for (TimeSet, EventSet) in DataDic
+                for (TimeSet, EventSet) in MondayDataDic
                 {
                     TimeArray.append(TimeSet)
                     EventArray.append(EventSet)
@@ -50,10 +54,9 @@ class tuesdayViewController:UIViewController{
                 }
                 
                 let label_day=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
-                label_day.center = CGPoint(x:(200), y:(150))
+                label_day.center = CGPoint(x:(50), y:(150))
                 label_day.textAlignment = .center
-                label_day.text = "Tuesday"
-                label_day.font = label_day.font.withSize(30)
+                label_day.text = "Monday"
                 self.view.addSubview(label_day)
                 
                 
@@ -61,10 +64,9 @@ class tuesdayViewController:UIViewController{
                 {
                     
                     let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
-                    label1_1.center = CGPoint(x:(150), y:(50*i+250))
-                    label1_1.textAlignment = .left
+                    label1_1.center = CGPoint(x:(50), y:(50*i+200))
+                    label1_1.textAlignment = .center
                     label1_1.text = TimeArray[i]
-                    label1_1.font = label1_1.font.withSize(20)
                     self.view.addSubview(label1_1)
                     print(TimeArray[i])
                 }
@@ -73,10 +75,9 @@ class tuesdayViewController:UIViewController{
                 {
                     
                     let label1_1=UILabel(frame: CGRect(x:0, y:0, width: 250, height:100))
-                    label1_1.center = CGPoint(x:(250), y:(50*i+250))
-                    label1_1.textAlignment = .left
+                    label1_1.center = CGPoint(x:(150), y:(50*i+200))
+                    label1_1.textAlignment = .center
                     label1_1.text = EventArray[i]
-                    label1_1.font = label1_1.font.withSize(20)
                     self.view.addSubview(label1_1)
                     print(EventArray[i])
                 }
@@ -88,19 +89,19 @@ class tuesdayViewController:UIViewController{
         
         
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
     }
     
-    
+
     /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }
