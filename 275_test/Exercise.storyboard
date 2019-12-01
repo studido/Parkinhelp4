@@ -176,14 +176,6 @@
                                 <rect key="frame" x="7" y="80" width="387" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-rZ-iHf">
-                                <rect key="frame" x="7" y="354" width="387" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Jay Alberts, Ph.D. and the Center for Neurological Restoration have discovered that Parkinsons patients who rode with a trainer peddling at 80-90 RPM for an hour three times a week showed a 35% increase in motor function. Learn more about this treatment for Parkinson's Disease here -</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1s-Ff-hMB">
                                 <rect key="frame" x="63" y="586" width="289" height="112"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,6 +188,14 @@
                                     <action selector="calfvideo:" destination="ZLo-SY-ZKi" eventType="touchUpInside" id="LGd-O5-hi7"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-rZ-iHf">
+                                <rect key="frame" x="7" y="353" width="387" height="191"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Jay Alberts, Ph.D. and the Center for Neurological Restoration have discovered a way to help  Parkinsons patients training their foot. Here is a useful video for calf exercise. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="cNR-4F-dRm"/>
@@ -448,8 +448,7 @@
                                 <rect key="frame" x="20" y="342" width="374" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Exercise can be a key part to managing Parkinson's Disease - just ask Ed McCaskey Jr. 
-We're checking out how it's making a difference in his life and in the lives of many other patients.
+                                <string key="text">Exercise can be a key part to managing Parkinson's Disease, Ed McCaskey Jr will introduce some useful exercise for arm protection.
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -479,12 +478,12 @@ We're checking out how it's making a difference in his life and in the lives of 
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Ap-G7-HLe">
-                                <rect key="frame" x="20" y="359" width="374" height="200"/>
+                                <rect key="frame" x="20" y="359" width="374" height="133"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Parkinson's giving you a stiff neck?
 
-Many people with Parkinson's experience pain and stiffness in their joints and muscles. Most commonly in their neck. This can happen for a few different reasons. It can be due to the rigidity, lack of spontaneous movement, that comes along with Parkinson's, Another common reason is due to dystonia, the sustained twisting or posturing of a muscle group or body part. 
+Many people with Parkinson's experience pain and stiffness in their joints and muscles. Chad Moir will tell you how to do exercise for protect your neck. 
 
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -605,7 +604,7 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <rect key="frame" x="20" y="336" width="374" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Our therapist demonstrates how physical therapy can help Parkinson's Disease patients
+                                <string key="text">Here is a video from brilliant therapist demonstrates how physical therapy can help Parkinson's Disease patients
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -647,12 +646,10 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoulder2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hUa-TF-lUI">
                                 <rect key="frame" x="20" y="79" width="374" height="230"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mT5-11-Ga9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Doctor Ed Deboo will show you how to deal with your shoulder problem." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mT5-11-Ga9">
                                 <rect key="frame" x="20" y="367" width="374" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">For additional resources on Parkinson's Disease including books, trigger point tools, foam rollers 
-</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -704,7 +701,7 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <rect key="frame" x="20" y="339" width="374" height="214"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">The perfect chest workout should consist of exercises for your upper chest, middle chest and lower chest.  That said, even that doesn’t make the chest workout complete.  In order to round out your pecs with a well rounded workout you need to fill in the gaps of what is lacking on those popular chest exercises.  That is what we do in this video.</string>
+                                <string key="text">The perfect chest workout for Parkinson's disease should consist of exercises for your upper chest, middle chest and lower chest.  Here is a useful video made by Athlean-X will teach you how to train your upper body.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -744,12 +741,10 @@ Many people with Parkinson's experience pain and stiffness in their joints and m
                                 <rect key="frame" x="20" y="65" width="374" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bFb-Kn-rNX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sherryl Klingelhofe will introduce some useful exercise for your facial movement" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bFb-Kn-rNX">
                                 <rect key="frame" x="20" y="343" width="374" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Sherryl Klingelhofe's dad  experienced Parkinson's disease and they developed lots of exercises!  
-Here's many of them</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
