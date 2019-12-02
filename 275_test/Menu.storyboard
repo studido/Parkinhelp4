@@ -124,6 +124,7 @@
                         <outlet property="TremorGraph" destination="MbH-TF-uYI" id="R3u-wv-pSp"/>
                         <outlet property="TremorMeasurement" destination="0aq-Os-2mo" id="ALD-K6-d51"/>
                         <outlet property="whiteback" destination="XHd-p6-ZGJ" id="unf-hE-ttd"/>
+                        <segue destination="iWF-1d-UoV" kind="show" identifier="goToMedication" id="aXU-4X-228"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -151,7 +152,7 @@
                 <viewControllerPlaceholder storyboardName="medicationschdule" referencedIdentifier="medicationschdule" id="iWF-1d-UoV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NkV-9p-nAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="563" y="-185"/>
+            <point key="canvasLocation" x="446" y="-80"/>
         </scene>
         <!--Exercise-->
         <scene sceneID="mNN-op-apb">
@@ -435,5 +436,6 @@ Team Members :           Sterling Smith (project manager)           Evan Lee
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ulF-qU-3q3"/>
+        <segue reference="aXU-4X-228"/>
     </inferredMetricsTieBreakers>
 </document>

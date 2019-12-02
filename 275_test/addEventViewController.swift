@@ -57,9 +57,6 @@ class addEventViewController: UIViewController {
         }
         
         addEvent(time: timeInput.text!, event: eventInput.text!, day: dayOfWeekInput.text!, completion: {medDict in
-            let ref : DatabaseReference! = Database.database().reference()
-            ref.updateChildValues(["/Users/\(Variables.medicationId)/MedicationSchedule/\(self.dayOfWeekInput.text!)" : medDict])
-            
             let successAlert = UIAlertController(title: "Event added", message: "", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
                 self.performSegue(withIdentifier: "jumpBackM", sender: self)//jump back to MedicationMainVC after click button Confirm

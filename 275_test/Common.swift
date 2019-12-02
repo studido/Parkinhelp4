@@ -93,6 +93,27 @@ func addEvent(time : String, event : String, day : String, completion: @escaping
             medDict = [time : event]
         }
         
+        ref.updateChildValues(["/Users/\(Variables.medicationId)/MedicationSchedule/\(day)" : medDict])
+        completion(medDict)
+    })
+}
+
+func deleteEvent(time : String, day : String, completion: @escaping(_ data:[String:String]) -> Void) {
+    let ref : DatabaseReference! = Database.database().reference()
+    var medDict : [String : String]!
+    ref.child("Users").child(Variables.medicationId).child("MedicationSchedule").child(day).observeSingleEvent(of: .value, with: { (snapshot) in
+        if (snapshot.exists()) {
+            medDict = (snapshot.value as! [String: String])
+            if (medDict.removeValue(forKey: time) == nil) {
+                medDict = ["-1" : "-1"]
+            }
+            else {
+                ref.updateChildValues(["/Users/\(Variables.medicationId)/MedicationSchedule/\(day)" : medDict])
+            }
+        } else {
+            medDict = ["-1" : "-1"]
+        }
+        
         completion(medDict)
     })
 }

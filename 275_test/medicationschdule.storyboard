@@ -294,6 +294,7 @@
                         <outlet property="eventInput" destination="Sii-wv-t7b" id="NH6-1O-CLH"/>
                         <outlet property="timeInput" destination="M3c-Mc-dMY" id="Zrv-gu-T9T"/>
                         <segue destination="7YZ-ld-EfK" kind="show" identifier="jumpBackM" id="5Qf-cn-uGg"/>
+                        <segue destination="mjX-y7-w0c" kind="show" identifier="goToMain" id="xhF-mt-EQT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aT-7P-BQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -393,5 +394,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="5Qf-cn-uGg"/>
+        <segue reference="xhF-mt-EQT"/>
     </inferredMetricsTieBreakers>
 </document>
