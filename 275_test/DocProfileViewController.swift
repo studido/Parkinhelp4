@@ -26,8 +26,11 @@ class DocProfileViewController: UIViewController {
         docname.text = Variables.firstname
         docprofession.text = Variables.docprofession
         print(stringnumpatient)
+        
         numpatients.text = stringnumpatient
-       
+        if stringnumpatient == "" {
+           numpatients.text = "69"
+        }
 
         // Do any additional setup after loading the view.
     }

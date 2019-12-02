@@ -15,11 +15,10 @@ class DocPatientListViewController: UIViewController {
     var patients = [String()]
     var wait = 0
     var numpatients = Int()
-    
-    @IBOutlet weak var patient1button: UIButton!
+
+    @IBOutlet weak var docpatient: UIImageView!
     @IBOutlet weak var DocAcc: UIButton!
-    
-    @IBOutlet weak var patient1: UILabel!
+
     @IBOutlet weak var patientlist: UILabel!
     
     
@@ -41,12 +40,12 @@ class DocPatientListViewController: UIViewController {
             var emailsList : [String: String]!
             if email != "" && email! != Variables.email {
                 let hashedEmail = getSha256(string: email!)
-                
+                print("here0")
                 let ref : DatabaseReference = Database.database().reference()
                 //Check if the provided email exists in databse
                 
                 ref.child("Emails").child(hashedEmail).observeSingleEvent(of: .value, with: { (snapshot) in
-                    
+                    print("here1")
                   print(  snapshot.key, snapshot.exists() )
                     if (snapshot.exists()) {
                         let val = snapshot.value as! [String: String]
@@ -147,6 +146,8 @@ class DocPatientListViewController: UIViewController {
         signout.layer.cornerRadius = 15
         signout.layer.borderColor = UIColor.black.cgColor
         signout.layer.borderWidth = 0.5
+        docpatient.layer.borderWidth = 1.5
+        docpatient.layer.cornerRadius = 25
 //        var patientFName = ["Patient", "Patient", "Patient"]
 //
 //        var patientLName = ["1", "2", "3"]
@@ -157,6 +158,7 @@ class DocPatientListViewController: UIViewController {
     
     
     func getListOfPatients() {
+        
         let ref : DatabaseReference = Database.database().reference()
         ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).child("patients").observeSingleEvent(of: .value, with:
             {  (snapshot) in
@@ -164,6 +166,8 @@ class DocPatientListViewController: UIViewController {
                     var patientlist : [String: String]
                     patientlist = snapshot.value as! [String: String]
                     let patientemail = Array(patientlist.values)
+                    self.numpatients = patientemail.count
+                    Variables.numpatient = String(self.numpatients)
                     var i = 0
                     while (i < patientemail.count){
                         self.getPatientData(email: patientemail[i], patientnum: i)

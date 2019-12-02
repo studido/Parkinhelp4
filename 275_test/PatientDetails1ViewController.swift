@@ -21,6 +21,7 @@ class PatientDetails1ViewController: UIViewController {
     @IBOutlet weak var patientLastName: UILabel!
     @IBOutlet weak var patientEmail: UILabel!
     
+    @IBOutlet weak var medschedule: UIButton!
     @IBAction func goToPatientMedicationSchedule() {
         Variables.medicationId = Variables.patientUID[myIndex]
         self.performSegue(withIdentifier: "goToMeds", sender: self)
@@ -65,7 +66,12 @@ class PatientDetails1ViewController: UIViewController {
         whiteback.layer.borderWidth = 1.5
         whiteback.layer.cornerRadius = 15
         */
-        
+        whiteback.layer.borderWidth = 1.5
+        whiteback.layer.cornerRadius = 15
+        patientdetails.layer.borderWidth = 1.5
+        patientdetails.layer.cornerRadius = 15
+        medschedule.layer.borderWidth = 0.5
+        medschedule.layer.cornerRadius = 15
         // Do any additional setup after loading the view.
     }
     

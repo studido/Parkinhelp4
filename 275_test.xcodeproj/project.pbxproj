@@ -92,6 +92,7 @@
 		A44FCA9A237E1A88000D4B8E /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */; };
 		A44FCA9E237E22A8000D4B8E /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44FCA9D237E22A8000D4B8E /* Variables.swift */; };
 		A45290C5237E37D5003F8D06 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45290C4237E37D5003F8D06 /* DoctorViewController.swift */; };
+		A4766E322394F4CF004001E3 /* doctorpatient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4766E312394F4CF004001E3 /* doctorpatient.jpg */; };
 		A48E4EEA23701EE1008B4F96 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EE923701EE1008B4F96 /* background.jpg */; };
 		A48E4EEC237024B4008B4F96 /* frame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EEB237024B4008B4F96 /* frame.jpg */; };
 		A48E4EEE23702B3B008B4F96 /* white.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A48E4EED23702B3B008B4F96 /* white.jpg */; };
@@ -223,6 +224,7 @@
 		A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		A44FCA9D237E22A8000D4B8E /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		A45290C4237E37D5003F8D06 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		A4766E312394F4CF004001E3 /* doctorpatient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = doctorpatient.jpg; path = ../../parkinhelptestsavenov29/Parkinhelp4/doctorpatient.jpg; sourceTree = "<group>"; };
 		A48E4EE923701EE1008B4F96 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		A48E4EEB237024B4008B4F96 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
 		A48E4EED23702B3B008B4F96 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
@@ -293,6 +295,7 @@
 				A4361090237F878000F12714 /* tremors.jpg */,
 				A4C1065C237E3C0E006ACF47 /* doctorbackground.png */,
 				A44FCA95237E079A000D4B8E /* dumbbell.png */,
+				A4766E312394F4CF004001E3 /* doctorpatient.jpg */,
 				A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */,
 				A48E4EED23702B3B008B4F96 /* white.jpg */,
 				A48E4EEB237024B4008B4F96 /* frame.jpg */,
@@ -583,6 +586,7 @@
 				99767345236FC49900C544C5 /* 275_test.xcworkspace in Resources */,
 				4CB3A5E423824272002824C8 /* back2.jpg in Resources */,
 				4CB3A5E923824272002824C8 /* chest2.jpg in Resources */,
+				A4766E322394F4CF004001E3 /* doctorpatient.jpg in Resources */,
 				4C0475B123931ECF003FD779 /* medicationschdule.storyboard in Resources */,
 				A4CCDC02238A77F500164D0E /* WeeklySurvey.storyboard in Resources */,
 			);
