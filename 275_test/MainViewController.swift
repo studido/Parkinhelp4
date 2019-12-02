@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     var topView: UIView?
     
     @IBOutlet weak var GraphLabel: UILabel!
+    @IBOutlet weak var facetimeedit: UIButton!
     
     @IBOutlet weak var whiteback: UIImageView!
     @IBOutlet weak var TremorGraph: UIButton!
@@ -70,6 +71,9 @@ class MainViewController: UIViewController {
         MedicationSchedule.layer.cornerRadius = 15
         MedicationSchedule.layer.borderColor = UIColor.black.cgColor
         MedicationSchedule.layer.borderWidth = 0.5
+        facetimeedit.layer.cornerRadius = 15
+        facetimeedit.layer.borderColor = UIColor.black.cgColor
+        facetimeedit.layer.borderWidth = 0.5
         // Do any additional setup after loading the view, typically from a nib.
     }
 

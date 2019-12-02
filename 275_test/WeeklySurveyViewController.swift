@@ -68,16 +68,19 @@ class WeeklySurveyViewController: UIViewController {
     
     @IBAction func SaveButton(_ sender: Any) {
         if difficultyLabel.text != ""{
-        if repincrease == 1{
+            if repincrease == 1 {
             var repitition = UserDefaults.standard.object(forKey: "Repitition") as? String
             var intrep : Int?  = Int(repitition!)
+                if intrep! < 4{
             intrep! += 1
+                }
             repitition = String(intrep!)
             UserDefaults.standard.set(repitition, forKey: "Repitition")}
         if intensityincrease == 1{
             var intensity = UserDefaults.standard.object(forKey: "Intensity") as? String
             var intensityint : Int?  = Int(intensity!)
             let difficulty : Int? = Int(difficultyLabel.text!)
+            if intensityint! < 10 {
             if difficulty! < 3{
                 intensityint! += 3
             }
@@ -86,6 +89,7 @@ class WeeklySurveyViewController: UIViewController {
             }
             else {
                 intensityint! += 1
+            }
             }
             intensity = String(intensityint!)
             UserDefaults.standard.set(intensity, forKey: "Intensity")

@@ -11,13 +11,15 @@ import FirebaseDatabase
 
 class addEventViewController: UIViewController {
     
+    @IBOutlet weak var confirm: UIButton!
     //initialize textfields
     @IBOutlet weak var dayOfWeekInput: UITextField!
     @IBOutlet weak var timeInput: UITextField!
     @IBOutlet weak var eventInput: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        confirm.layer.cornerRadius = 15
+        confirm.layer.borderWidth = 1
         
         dayOfWeekInput.delegate = self//enable keyboard to hide after click return
         timeInput.delegate = self//enable keyboard to hide after click return

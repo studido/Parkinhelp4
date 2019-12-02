@@ -100,6 +100,7 @@
 		A4C1065D237E3C0E006ACF47 /* doctorbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A4C1065C237E3C0E006ACF47 /* doctorbackground.png */; };
 		A4C1065F237E444C006ACF47 /* DocProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */; };
 		A4C10661237E4573006ACF47 /* DocPatientListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */; };
+		A4C84D0923951305008C3FD6 /* gray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4C84D0823951305008C3FD6 /* gray.jpg */; };
 		A4CCDC02238A77F500164D0E /* WeeklySurvey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */; };
 		A4CCDC04238A872100164D0E /* UpperBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */; };
 		A4CCDC06238A8C7100164D0E /* HeadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CCDC05238A8C7100164D0E /* HeadViewController.swift */; };
@@ -232,6 +233,7 @@
 		A4C1065C237E3C0E006ACF47 /* doctorbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctorbackground.png; sourceTree = "<group>"; };
 		A4C1065E237E444C006ACF47 /* DocProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocProfileViewController.swift; sourceTree = "<group>"; };
 		A4C10660237E4573006ACF47 /* DocPatientListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocPatientListViewController.swift; sourceTree = "<group>"; };
+		A4C84D0823951305008C3FD6 /* gray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gray.jpg; sourceTree = "<group>"; };
 		A4CCDC01238A77F500164D0E /* WeeklySurvey.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WeeklySurvey.storyboard; sourceTree = "<group>"; };
 		A4CCDC03238A872100164D0E /* UpperBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperBodyViewController.swift; sourceTree = "<group>"; };
 		A4CCDC05238A8C7100164D0E /* HeadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadViewController.swift; sourceTree = "<group>"; };
@@ -297,6 +299,7 @@
 				A44FCA95237E079A000D4B8E /* dumbbell.png */,
 				A4766E312394F4CF004001E3 /* doctorpatient.jpg */,
 				A44FCA93237E01D0000D4B8E /* surveybackground.jpeg */,
+				A4C84D0823951305008C3FD6 /* gray.jpg */,
 				A48E4EED23702B3B008B4F96 /* white.jpg */,
 				A48E4EEB237024B4008B4F96 /* frame.jpg */,
 				A48E4EE923701EE1008B4F96 /* background.jpg */,
@@ -387,9 +390,9 @@
 				A441A9F2238A659D0061828A /* WeeklySurveyViewController.swift */,
 				4C0475B223931F48003FD779 /* MedicationScheduleViewController.swift */,
 				4C5032652391F18300CC1DF0 /* WednesdayViewController.swift */,
-				4C0475B4239336E6003FD779 /* ThursdayViewController.swift */,
 				4C0475B823933712003FD779 /* SaturdayViewController.swift */,
 				4C5032632391EB7D00CC1DF0 /* tuesdayViewController.swift */,
+				4C0475B4239336E6003FD779 /* ThursdayViewController.swift */,
 				4C0475BA23933722003FD779 /* SundayViewController.swift */,
 				4C0475B6239336FD003FD779 /* FridayViewController.swift */,
 				4C0475BC23934264003FD779 /* MondayViewController.swift */,
@@ -568,6 +571,7 @@
 				992EF4A0237B88F5007A5573 /* Menu.storyboard in Resources */,
 				993139D1236BBF24008802A9 /* GoogleService-Info.plist in Resources */,
 				A44FCA98237E19D7000D4B8E /* Recommend.storyboard in Resources */,
+				A4C84D0923951305008C3FD6 /* gray.jpg in Resources */,
 				A4C1065D237E3C0E006ACF47 /* doctorbackground.png in Resources */,
 				A44FCA94237E01D0000D4B8E /* surveybackground.jpeg in Resources */,
 				A44FCA96237E079A000D4B8E /* dumbbell.png in Resources */,

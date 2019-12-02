@@ -19,6 +19,7 @@ class DoctorViewController: UIViewController {
     @IBOutlet weak var FirstName: UITextField!
     @IBOutlet weak var LastName: UITextField!
     @IBOutlet weak var Classification: UITextField!
+    @IBOutlet weak var PhoneNumber: UITextField!
     
 
     override func viewDidLoad() {
@@ -43,7 +44,7 @@ class DoctorViewController: UIViewController {
         Variables.firstname = FirstName.text!
         Variables.lastname = LastName.text!
         Variables.docprofession = Classification.text!
-        
+        Variables.contactnumber = PhoneNumber.text!
         let ref : DatabaseReference! = Database.database().reference()
         let userData = ["firstName": Variables.firstname,
                         "lastName":  Variables.lastname,
@@ -57,6 +58,7 @@ class DoctorViewController: UIViewController {
         ref.updateChildValues(["/Emails/\(hashedEmail)" : ["uid" : "\(uid)"]])
         ref.updateChildValues(["/Users/\(uid)" : userData])
         ref.updateChildValues(["/PhoneNumbers" : [uid : Variables.contactnumber]])
+        
         performSegue(withIdentifier: "docsurveyresult", sender: self)
     }
     

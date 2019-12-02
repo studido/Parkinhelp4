@@ -181,11 +181,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pqr-AI-fPa">
-                                <rect key="frame" x="114" y="783" width="260" height="30"/>
+                                <rect key="frame" x="164" y="783" width="210" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5517910980403562" green="0.73889016749937175" blue="0.80420174870466321" alpha="0.57889524647887325" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Done (must fill out everything)">
+                                <state key="normal" title="Done (must input data)">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="1" green="0.99772075650000003" blue="0.87070597100000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>

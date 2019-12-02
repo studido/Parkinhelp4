@@ -11,11 +11,14 @@ import FirebaseDatabase
 
 class deleteEventViewController: UIViewController {
     @IBOutlet weak var dayDelete: UITextField!
+    @IBOutlet weak var confirm: UIButton!
     
     @IBOutlet weak var timeDelete: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        confirm.layer.cornerRadius = 15
+        confirm.layer.borderWidth = 1
         dayDelete.delegate = self//enable keyboard to hide after click return
         timeDelete.delegate = self//enable keyboard to hide after click return
         
