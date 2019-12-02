@@ -16,6 +16,7 @@ class Variables: UIViewController {
     static var lastname = String()
     static var email = String()
     static var medicationId = String() //user id of medication schedule
+    static var phoneId = String() //user id of phone number that we are trying to facetime with
     
     //doctor variables
     static var docname = String()

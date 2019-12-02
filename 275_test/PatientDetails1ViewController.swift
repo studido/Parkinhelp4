@@ -26,6 +26,24 @@ class PatientDetails1ViewController: UIViewController {
         self.performSegue(withIdentifier: "goToMeds", sender: self)
     }
     
+    @IBAction func facetimeButton(_ sender: UIButton) {
+        Variables.phoneId = Variables.patientUID[myIndex]
+        getPhoneNumber(completion: {number in
+            print("facetime button clicked")
+            if let facetimeURL:NSURL = NSURL(string: "facetime:+" + number) {
+                let application:UIApplication = UIApplication.shared
+                if (application.canOpenURL(facetimeURL as URL)) {
+                    //application.openURL(facetimeURL as URL);
+                    application.open(facetimeURL as URL, options: [:], completionHandler: nil)
+                    
+                    // this works for opening a website in safari
+                    // UIApplication.shared.open(URL(string:"https://www.youtube.com/watch?v=89e518dl4I8")! as URL,options:[:],completionHandler: nil)
+                }
+            }
+            print ("end of facetime button")
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

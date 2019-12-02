@@ -119,3 +119,18 @@ func deleteEvent(time : String, day : String, completion: @escaping(_ data:[Stri
         completion(medDict)
     })
 }
+
+
+func getPhoneNumber(completion: @escaping(_ data:String) -> Void) {
+    let ref : DatabaseReference! = Database.database().reference()
+    var phoneNumber : String!
+    ref.child("PhoneNumbers").observeSingleEvent(of: .value, with: { (snapshot) in
+        
+        if (snapshot.exists()) {
+            let value = snapshot.value as! [String: String]
+            phoneNumber = value[Variables.phoneId] ?? "-1"
+            completion(phoneNumber)
+        }
+        else{completion("-1")}
+    })
+}

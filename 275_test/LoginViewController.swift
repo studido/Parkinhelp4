@@ -82,6 +82,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate, GIDSignInDelegate {
                             }
                             else if (value["userType"]  as? String ?? "" == "patient") {
                                 Variables.medicationId = Firebase.Auth.auth().currentUser!.uid
+                                Variables.phoneId = value["doctor"] as? String ?? ""
                                 Variables.age = value["age"] as? String ?? ""
                                 Variables.height = value["height"] as? String ?? ""
                                 Variables.weight = value["weight"] as? String ?? ""
