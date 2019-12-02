@@ -22,10 +22,10 @@ class Variables: UIViewController {
     static var docname = String()
     static var docprofession = String()
     static var numpatient = String()
-    static var patientfirstname = [String()]
-    static var patientlastname = [String()]
-    static var patientemail = [String()]
-    static var patientUID = [String()]
+    static var patientfirstname = [String]()
+    static var patientlastname = [String]()
+    static var patientemail = [String]()
+    static var patientUID = [String]()
     
     //patient variables
     static var age = String()

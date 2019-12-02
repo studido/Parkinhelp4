@@ -158,7 +158,8 @@ class DocPatientListViewController: UIViewController {
     
     
     func getListOfPatients() {
-        
+        print(Variables.patientfirstname)
+        if (Variables.patientfirstname.count > 0) { return }
         let ref : DatabaseReference = Database.database().reference()
         ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).child("patients").observeSingleEvent(of: .value, with:
             {  (snapshot) in
