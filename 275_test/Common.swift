@@ -73,7 +73,7 @@ func checkValidDayOfWeek(dayOfTheWeek : String) -> Bool {
 
 func checkValidTime(time : String) -> Bool {
     let dateFormatterGet = DateFormatter()
-    dateFormatterGet.dateFormat = "HH:mm a"
+    dateFormatterGet.dateFormat = "HH:mm"
     
     if dateFormatterGet.date(from: time) == nil {
         return false

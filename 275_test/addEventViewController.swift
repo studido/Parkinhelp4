@@ -39,7 +39,7 @@ class addEventViewController: UIViewController {
         }
         //Check if timeInput is valid
         if checkValidTime(time: timeInput.text!) == false {
-            let invalidTimeAlert = UIAlertController(title: "Invalid time format", message: "1-12:0-59 AM/PM", preferredStyle: .alert)
+            let invalidTimeAlert = UIAlertController(title: "Invalid time format", message: "Input like 08:30 or 19:30", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
             invalidTimeAlert.addAction(okButton)
             self.present(invalidTimeAlert, animated: true, completion: nil)
@@ -57,9 +57,9 @@ class addEventViewController: UIViewController {
         }
         
         addEvent(time: timeInput.text!, event: eventInput.text!, day: dayOfWeekInput.text!, completion: {medDict in
-            let successAlert = UIAlertController(title: "Event added", message: "", preferredStyle: .alert)
+            let successAlert = UIAlertController(title: "Event added, click Back to leave this page", message: "", preferredStyle: .alert)
             let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
-                self.performSegue(withIdentifier: "jumpBackM", sender: self)//jump back to MedicationMainVC after click button Confirm
+                /*self.performSegue(withIdentifier: "jumpBackM", sender: self)//jump back to MedicationMainVC after click button Confirm*/
             })
             successAlert.addAction(okButton)
             self.present(successAlert, animated: true, completion: nil)

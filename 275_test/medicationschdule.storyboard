@@ -43,14 +43,6 @@
             </objects>
             <point key="canvasLocation" x="-749" y="-1732"/>
         </scene>
-        <!--MainViewController-->
-        <scene sceneID="SWY-MJ-jCW">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Menu" referencedIdentifier="MainViewController" id="mjX-y7-w0c" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="488-uK-H6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1112" y="-1564"/>
-        </scene>
         <!--Medication Main View Controller-->
         <scene sceneID="AeL-vb-v6W">
             <objects>
@@ -129,14 +121,8 @@
                                 <rect key="frame" x="160" y="478" width="94" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Thursday"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saB-Xr-h9y">
-                                <rect key="frame" x="340" y="811" width="47" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="HOME"/>
                                 <connections>
-                                    <segue destination="mjX-y7-w0c" kind="show" id="ZAM-Y9-nTQ"/>
+                                    <segue destination="BPH-wU-Tal" kind="show" id="oSl-zN-RkP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjL-Mw-csg">
@@ -278,8 +264,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time (example: 08:30 AM)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9t-tY-w0h">
-                                <rect key="frame" x="55" y="342" width="204" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time (example: 08:30 or 19:30)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9t-tY-w0h">
+                                <rect key="frame" x="55" y="342" width="241" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -320,7 +306,6 @@
                         <outlet property="eventInput" destination="Sii-wv-t7b" id="NH6-1O-CLH"/>
                         <outlet property="timeInput" destination="M3c-Mc-dMY" id="Zrv-gu-T9T"/>
                         <segue destination="7YZ-ld-EfK" kind="show" identifier="jumpBackM" id="5Qf-cn-uGg"/>
-                        <segue destination="mjX-y7-w0c" kind="show" identifier="goToMain" id="xhF-mt-EQT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aT-7P-BQX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -400,7 +385,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey2-vU-Gud" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="-581"/>
+            <point key="canvasLocation" x="264" y="-581"/>
         </scene>
         <!--Friday View Controller-->
         <scene sceneID="Wpc-Pp-vb5">
@@ -479,7 +464,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l45-ql-ZNR"/>
-        <segue reference="ZAM-Y9-nTQ"/>
+        <segue reference="5Qf-cn-uGg"/>
     </inferredMetricsTieBreakers>
 </document>

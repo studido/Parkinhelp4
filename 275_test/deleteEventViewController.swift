@@ -54,9 +54,9 @@ class deleteEventViewController: UIViewController {
                 self.present(invalidAlert, animated: true, completion: nil)
             } else {
                 
-                let successAlert = UIAlertController(title: "Event deleted", message: "", preferredStyle: .alert)
+                let successAlert = UIAlertController(title: "Event deleted, click Back to leave this page", message: "", preferredStyle: .alert)
                 let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
-                    self.performSegue(withIdentifier: "jumpBackM2", sender: self)//jump back to MedicationMainVC after click button Confirm
+                    /*self.performSegue(withIdentifier: "jumpBackM2", sender: self)//jump back to MedicationMainVC after click button Confirm*/
                 })
                 successAlert.addAction(okButton)
                 self.present(successAlert, animated: true, completion: nil)
