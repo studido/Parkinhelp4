@@ -28,19 +28,7 @@ var age = ""
     @IBOutlet weak var Repititionlabel: UILabel!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-                /*
-                let totalex1 : Int? = Int(Variables.age)
-                let totalrep1 : Int? = Int(Variables.weight)
-                let totalex2 = String(totalex1!)
-                let totalrep2 = String(totalrep1!)
-                totalex.text = totalex2
-                totalrep.text = totalrep2
-                */
-        
-        
-        
-        
+        super.viewDidLoad()        
                 if let repitition = UserDefaults.standard.object(forKey: "Repitition") as? String
                 {
                     let totalrep1 = UserDefaults.standard.object(forKey: "Intensity") as? String

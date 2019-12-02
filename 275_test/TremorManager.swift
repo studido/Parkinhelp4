@@ -75,6 +75,15 @@ class TremorManager {
         let y:[[Double]] = [userAcceleration.0, userAcceleration.1, userAcceleration.2]
         return [fft.process(y, _fps: fps), fft.process(x, _fps: fps)]
     }
+
+    // For unit testing purposes only
+    func setUserAcceleration(x : ([Double] , [Double], [Double])) {
+        userAcceleration = x
+    }
+    
+    func setRotationRate(x : ([Double] , [Double], [Double])) {
+        rotationRate = x
+    }
     
     //check to see if device motion available and set default parameters
     fileprivate func initialize()

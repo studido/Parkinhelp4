@@ -141,19 +141,56 @@ class _75_testUITests: XCTestCase {
         app.navigationBars["_75_test.ExerciseView"].buttons["Home"].tap()
     }
     //THE FOLLOWING DOCTOR ACCOUNT TEST MUST BE PERFORMED FROM THE DOCTOR ACCOUNT MAIN MENU
-    //Doctor test account: usertesting275.04@gmail.com
-    //Email: Group4Password
-    func testDoctorAccount() {
+    //Doctor test account: sfucmpt275group4@gmail.com
+    //Password : Group4Password
+    func testDoctorMyAccount() {
         
         let app = XCUIApplication()
         app.buttons["My Account"].tap()
         XCTAssert(app.staticTexts["Name:"].exists)
         XCTAssert(app.staticTexts["Profession:"].exists)
         XCTAssert(app.staticTexts["Number of Patients:"].exists)
-        app.buttons["Back"].tap()
-        XCTAssert(app.staticTexts["Patient 1"].exists)
-        XCTAssert(app.staticTexts["Patient 2"].exists)
-        XCTAssert(app.staticTexts["Patient 3"].exists)
+    }
+    
+    func testDoctorDetails() {
+        let app = XCUIApplication()
+        let backButton = app.buttons["Back"]
+        let tablesQuery = app.tables
+        let backToMainMenuButton = app.buttons["Back to main menu"]
+        app.buttons["Your Patient List"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Jeff"]/*[[".cells.staticTexts[\"Jeff\"]",".staticTexts[\"Jeff\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        XCTAssert(app.staticTexts["First Name:"].exists)
+        XCTAssert(app.staticTexts["Last Name:"].exists)
+        XCTAssert(app.staticTexts["Email:"].exists)
+        app.buttons["View Patient Medication Schedule"].tap()
+        app.buttons["Monday"].tap()
+        XCTAssert(app.staticTexts["Monday"].exists)
+        backButton.tap()
+        app.buttons["Tuesday"].tap()
+        XCTAssert(app.staticTexts["Tuesday"].exists)
+        backButton.tap()
+        app.buttons["Wednesday"].tap()
+        XCTAssert(app.staticTexts["Wednesday"].exists)
+        backButton.tap()
+        app.buttons["Thursday"].tap()
+        XCTAssert(app.staticTexts["Thursday"].exists)
+        backButton.tap()
+        app.buttons["Friday"].tap()
+        XCTAssert(app.staticTexts["Friday"].exists)
+        backButton.tap()
+        app.buttons["Saturday"].tap()
+        XCTAssert(app.staticTexts["Saturday"].exists)
+        backButton.tap()
+        app.buttons["Sunday"].tap()
+        XCTAssert(app.staticTexts["Sunday"].exists)
+        backButton.tap()
+        app.buttons["Add  /"].tap()
+        backButton.tap()
+        app.buttons["Delete"].tap()
+        backButton.tap()
+        backButton.tap()
+        backToMainMenuButton.tap()
+        
     }
     
     

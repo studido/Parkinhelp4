@@ -81,7 +81,92 @@ class _75_testTests: XCTestCase {
         
         })
     }
-
+    
+    func testModifyDatabase() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        var firstName = "john"
+        var lastName = "doe"
+        var weight = "170"
+        var age = "79"
+        var height = "180"
+        var gender = "male"
+        var dateOfBirth = "12-10/1855"
+        var contactNumber = "6042339505"
+        var durationOfDisease = "41"
+        var repetitions = "2"
+        var intensity = "3"
+        var email = "johndoe@gmail.com"
+        var userType = "patient"
+        
+        let ref : DatabaseReference! = Database.database().reference()
+        let userData = ["firstName": firstName,
+                        "lastName":  lastName,
+                        "weight":  weight,
+                        "age":  age,
+                        "height":  height,
+                        "gender":  gender,
+                        "dateOfBirth":  dateOfBirth,
+                        "contactNumber":  contactNumber,
+                        "durationOfDisease":  durationOfDisease,
+                        "repetitions":  repetitions,
+                        "intensity":  intensity,
+                        "email" : email,
+                        "userType": userType]
+        
+        let uid = "dummy_uid"
+        ref.updateChildValues(["/Users/\(uid)" : userData])
+        
+        firstName = "johnModified"
+        lastName = "doeModified"
+        weight = "170Modified"
+        age = "79Modified"
+        height = "180Modified"
+        gender = "maleModified"
+        dateOfBirth = "12-10/1855Modified"
+        contactNumber = "6042339505Modified"
+        durationOfDisease = "41Modified"
+        repetitions = "2Modified"
+        intensity = "3Modified"
+        email = "johndoe@gmail.comModified"
+        userType = "patientModified"
+        
+        let userDataModified = ["firstName": firstName,
+                        "lastName":  lastName,
+                        "weight":  weight,
+                        "age":  age,
+                        "height":  height,
+                        "gender":  gender,
+                        "dateOfBirth":  dateOfBirth,
+                        "contactNumber":  contactNumber,
+                        "durationOfDisease":  durationOfDisease,
+                        "repetitions":  repetitions,
+                        "intensity":  intensity,
+                        "email" : email,
+                        "userType": userType]
+        
+        ref.updateChildValues(["/Users/\(uid)" : userDataModified])
+        
+        ref.child("Users").child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+            XCTAssertTrue(snapshot.exists())
+            let value = snapshot.value as! [String: Any]
+            XCTAssertEqual(firstName, value["firstName"] as? String ?? "")
+            XCTAssertEqual(lastName, value["lastName"] as? String ?? "")
+            XCTAssertEqual(age, value["age"] as? String ?? "")
+            XCTAssertEqual(weight, value["weight"] as? String ?? "")
+            XCTAssertEqual(height, value["height"] as? String ?? "")
+            XCTAssertEqual(gender, value["gender"] as? String ?? "")
+            XCTAssertEqual(contactNumber, value["contactNumber"] as? String ?? "")
+            XCTAssertEqual(durationOfDisease, value["durationOfDisease"] as? String ?? "")
+            XCTAssertEqual(email, value["email"] as? String ?? "")
+            XCTAssertEqual(userType, value["userType"] as? String ?? "")
+            XCTAssertEqual(dateOfBirth, value["dateOfBirth"] as? String ?? "")
+            XCTAssertEqual(repetitions, value["repetitions"] as? String ?? "")
+            XCTAssertEqual(intensity, value["intensity"] as? String ?? "")
+        })
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

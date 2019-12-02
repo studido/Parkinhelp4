@@ -10,11 +10,7 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-var patientFName = ["Patient", "Patient", "Patient"]
-
-var patientLName = ["1", "2", "3"]
-var patientDescription = ["P1Email", "P2Email", "P3Email"]
-
+//variable to indiciate the index of patientsList (Variables.patientFirstName) the user clicked on
 var myIndex = 0
 
 
@@ -33,19 +29,13 @@ class PTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        //return patientFName.count
         return Variables.patientfirstname.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        //cell.textLabel?.text = patientFName[indexPath.row]
         cell.textLabel?.text = Variables.patientfirstname[indexPath.row]
-        // Configure the cell...
-
         return cell
     }
     

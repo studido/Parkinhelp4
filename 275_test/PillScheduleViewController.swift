@@ -21,7 +21,6 @@ class PillScheduleViewController: UIViewController {
         guard let menuViewController = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
         menuViewController.didTapMenuType = {menuType in
             self.transitionToNew(menuType)
-            //print(menuType)
         }
         menuViewController.modalPresentationStyle = .overCurrentContext
         menuViewController.transitioningDelegate = self as? UIViewControllerTransitioningDelegate
