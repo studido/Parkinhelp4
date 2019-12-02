@@ -69,15 +69,19 @@ class DocPatientListViewController: UIViewController {
                                     emailsList[patientUID] = email!
                                 }
 
+                            } else {
+                                emailsList = [patientUID : email!]
                             }
-                            emailsList = [patientUID : email!]
-                             ref.updateChildValues(["/Users/\(uid)/patients" : emailsList])
+                            ref.updateChildValues(["/Users/\(uid)/patients" : emailsList])
                             
                             //Update patients info with doctors email
                             ref.child("Users").child(patientUID).child("doctor").setValue(Variables.email)
                             
                             let successAlert = UIAlertController(title: "Successfully added patient", message: "", preferredStyle: .alert)
-                            let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                            let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
+                                self.getPatientData(email: email!, patientnum: Variables.patientfirstname.count)
+                                
+                            })
                             successAlert.addAction(okButton)
                             self.removeSpinner()
                             self.present(successAlert, animated: true, completion: nil)
@@ -143,78 +147,52 @@ class DocPatientListViewController: UIViewController {
         signout.layer.cornerRadius = 15
         signout.layer.borderColor = UIColor.black.cgColor
         signout.layer.borderWidth = 0.5
-        let hashedDoc = getSha256(string: Variables.email)
-        let ref : DatabaseReference = Database.database().reference()
-       // ref.child("Users").child("GargMAib3EOFGgRYreH6wHAJGH53").child("patients").observeSingleEvent(of: .value, with:
-       //
-        /* start of my useless function
-        ref.child("Emails").child(hashedDoc).observeSingleEvent(of: .value, with:
-            { (datashot) in
-            
-                let docuid = datashot.value as! [String: String]
-                let docid = docuid["uid"]
-                
-                ref.child("Users").child(docid!).child("patients").observeSingleEvent(of: .value, with:
-                    {   (snapshot) in
-                        
-                        var patientlist : [String: String]
-                        patientlist = snapshot.value as! [String: String]
-                        print(patientlist.values)
-                        let patientemail = Array(patientlist.values)
-                         self.numpatients = patientemail.count
-                        Variables.numpatient = String(self.numpatients)
-                        var i = 0
-                        while (i < self.numpatients){
-                            self.getPatientData(email: patientemail[i], patientnum: i)
-                            while(self.wait != 0){}
-                            
-                           self.patient1.text = self.patients[i]
-                            //self.patient1.text = "sdf"
-                            print("here5", i, self.numpatients)
-                            
-    
-                            i += 1
-                        }
-                })
-            
-        }) // end of my useless function*/
- 
-        
-        
-    //    getPatientData(email: Variables.email)
-        
-        
-       
-
-        
-        
+//        var patientFName = ["Patient", "Patient", "Patient"]
+//
+//        var patientLName = ["1", "2", "3"]
+//        var patientDescription = ["P1Email", "P2Email", "P3Email"]
+        getListOfPatients()
         
     }
     
     
+    func getListOfPatients() {
+        let ref : DatabaseReference = Database.database().reference()
+        ref.child("Users").child(Firebase.Auth.auth().currentUser!.uid).child("patients").observeSingleEvent(of: .value, with:
+            {  (snapshot) in
+                if (snapshot.exists()) {
+                    var patientlist : [String: String]
+                    patientlist = snapshot.value as! [String: String]
+                    let patientemail = Array(patientlist.values)
+                    var i = 0
+                    while (i < patientemail.count){
+                        self.getPatientData(email: patientemail[i], patientnum: i)
+                        while(self.wait != 0){}
+                        self.wait = 0
+                        i += 1
+                    }
+                }
+        })
+    }
+    
 
 
     func getPatientData(email : String, patientnum: Int) {
+        print("trying to get patients data for ", email)
         let hashedEmail = getSha256(string: email)
         let ref : DatabaseReference = Database.database().reference()
         ref.child("Emails").child(hashedEmail).observeSingleEvent(of: .value, with: { (snapshot) in
             if (snapshot.exists()) {
                 let value = snapshot.value as! [String: Any]
                 let patientUID = value["uid"] as? String ?? ""
+                Variables.patientUID.append(patientUID)
                 ref.child("Users").child(patientUID).observeSingleEvent(of: .value, with: { (datashot) in
-                    if datashot.exists()  {
-                        let patientData = datashot.value as! [String: String]
-                        self.patients[patientnum] = patientData["firstName"]!
-                        
-                        print(self.patients[patientnum], patientnum)
-                        self.patient1.text = self.patients[patientnum]
-
-                        print(patientData)
-                        Variables.patientfirstname[patientnum] = patientData["firstName"]!
-                        Variables.patientlastname[patientnum] = patientData["lastName"]!
-                        Variables.patientemail[patientnum] = patientData["email"]!
-                        
-                        self.wait = 1
+                    if (datashot.exists())  {
+                        let patientData = datashot.value as! [String: Any]
+                        //self.patients[patientnum] = patientData["firstName"] as? String ?? ""
+                        Variables.patientfirstname.append(patientData["firstName"] as? String ?? "")
+                        Variables.patientlastname.append(patientData["lastName"] as? String ?? "")
+                        Variables.patientemail.append(patientData["email"] as? String ?? "")
                     }
                     else {
                         //Error - User does not exist in our database
@@ -223,7 +201,9 @@ class DocPatientListViewController: UIViewController {
                 })
             } else {
                 //Error - Users email does not exist under emails
-            }})
+            }
+            self.wait = 1
+        })
 
         
     }

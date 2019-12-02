@@ -24,6 +24,7 @@ class Variables: UIViewController {
     static var patientfirstname = [String()]
     static var patientlastname = [String()]
     static var patientemail = [String()]
+    static var patientUID = [String()]
     
     //patient variables
     static var age = String()

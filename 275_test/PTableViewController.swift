@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 var patientFName = ["Patient", "Patient", "Patient"]
 
@@ -32,14 +34,16 @@ class PTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return patientFName.count
+        //return patientFName.count
+        return Variables.patientfirstname.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = patientFName[indexPath.row]
+        //cell.textLabel?.text = patientFName[indexPath.row]
+        cell.textLabel?.text = Variables.patientfirstname[indexPath.row]
         // Configure the cell...
 
         return cell
@@ -47,7 +51,7 @@ class PTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         myIndex = indexPath.row // indexPath.row has the row user clicked on
-        performSegue(withIdentifier: "segue", sender: self)
+        performSegue(withIdentifier: "goToPatientDetails", sender: self)
     }
     
 

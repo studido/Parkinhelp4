@@ -82,6 +82,7 @@ func checkValidTime(time : String) -> Bool {
     return true
 }
 
+// Add event for medication
 func addEvent(time : String, event : String, day : String, completion: @escaping(_ data:[String:String]) -> Void) {
     let ref : DatabaseReference! = Database.database().reference()
     var medDict : [String : String]!
@@ -98,6 +99,7 @@ func addEvent(time : String, event : String, day : String, completion: @escaping
     })
 }
 
+// Delete event for medication
 func deleteEvent(time : String, day : String, completion: @escaping(_ data:[String:String]) -> Void) {
     let ref : DatabaseReference! = Database.database().reference()
     var medDict : [String : String]!

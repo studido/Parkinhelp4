@@ -21,12 +21,22 @@ class PatientDetails1ViewController: UIViewController {
     @IBOutlet weak var patientLastName: UILabel!
     @IBOutlet weak var patientEmail: UILabel!
     
+    @IBAction func goToPatientMedicationSchedule() {
+        Variables.medicationId = Variables.patientUID[myIndex]
+        self.performSegue(withIdentifier: "goToMeds", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        patientFirstName.text = patientFName[myIndex]
-        patientLastName.text = patientLName[myIndex]
-        patientEmail.text = patientDescription[myIndex]
+        
+        patientFirstName.text = Variables.patientfirstname[myIndex]
+        patientLastName.text = Variables.patientlastname[myIndex]
+        patientEmail.text = Variables.patientemail[myIndex]
+        
+//        patientFirstName.text = patientFName[myIndex]
+//        patientLastName.text = patientLName[myIndex]
+//        patientEmail.text = patientDescription[myIndex]
         
         /*Commented
         firstname.text = Variables.patientfirstname[0]
