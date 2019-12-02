@@ -224,7 +224,7 @@
 		A44FCA99237E1A88000D4B8E /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		A44FCA9D237E22A8000D4B8E /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		A45290C4237E37D5003F8D06 /* DoctorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
-		A4766E312394F4CF004001E3 /* doctorpatient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = doctorpatient.jpg; path = ../../parkinhelptestsavenov29/Parkinhelp4/doctorpatient.jpg; sourceTree = "<group>"; };
+		A4766E312394F4CF004001E3 /* doctorpatient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doctorpatient.jpg; sourceTree = "<group>"; };
 		A48E4EE923701EE1008B4F96 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		A48E4EEB237024B4008B4F96 /* frame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frame.jpg; sourceTree = "<group>"; };
 		A48E4EED23702B3B008B4F96 /* white.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = white.jpg; sourceTree = "<group>"; };
