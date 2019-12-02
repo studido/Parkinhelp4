@@ -131,10 +131,10 @@
                                 <state key="normal" title="Thursday"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saB-Xr-h9y">
-                                <rect key="frame" x="10" y="98" width="61" height="32"/>
+                                <rect key="frame" x="340" y="811" width="47" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="&lt;-Home"/>
+                                <state key="normal" title="HOME"/>
                                 <connections>
                                     <segue destination="mjX-y7-w0c" kind="show" id="ZAM-Y9-nTQ"/>
                                 </connections>
