@@ -71,10 +71,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNw-3e-W02">
-                                <rect key="frame" x="50" y="832" width="165" height="30"/>
+                                <rect key="frame" x="48" y="832" width="169" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="repeat survey direct link"/>
+                                <state key="normal" title="update survey direct link"/>
                                 <connections>
                                     <segue destination="Woa-Qb-xXW" kind="show" id="Mmk-TS-krq"/>
                                 </connections>
