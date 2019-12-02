@@ -74,7 +74,7 @@ class DocPatientListViewController: UIViewController {
                             ref.updateChildValues(["/Users/\(uid)/patients" : emailsList])
                             
                             //Update patients info with doctors email
-                            ref.child("Users").child(patientUID).child("doctor").setValue(Firebase.Auth.auth().currentUser!)
+                            ref.child("Users").child(patientUID).child("doctor").setValue(uid)
                             
                             let successAlert = UIAlertController(title: "Successfully added patient", message: "", preferredStyle: .alert)
                             let okButton = UIAlertAction(title: "Ok", style: .default, handler: {(alert: UIAlertAction!) in
